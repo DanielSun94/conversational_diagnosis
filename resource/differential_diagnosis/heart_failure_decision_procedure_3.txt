@@ -1,0 +1,37 @@
+Title: Decision Procedure for Diagnosing Chronic Heart Failure
+
+Start
+
+#QUESTION #1#: Are there risk factors present (e.g., history of MI, arterial hypertension, CAD, diabetes mellitus, alcohol misuse, CKD, cardiotoxic chemotherapy, family history of CMP or sudden death)?
+  - Yes: #PROCEED TO QUESTION #2#
+  - No: #PROCEED TO QUESTION #2#
+
+#QUESTION #2#: Are there symptoms or signs of heart failure (e.g., breathlessness, ankle swelling, limb swelling, orthopnoea, paroxysmal nocturnal dyspnoea, reduced exercise tolerance, fatigue, tiredness, increased time to recover after exercise)?
+  - Yes: #PROCEED TO QUESTION #3#
+  - No: YOU DON'T HAVE heart failure
+
+#QUESTION #3#: Is the ECG abnormal (e.g., AF, Q waves, LV hypertrophy, widened QRS complex)?
+  - Yes: #PROCEED TO QUESTION #4#
+  - No: #PROCEED TO QUESTION #4#
+
+#QUESTION #4#: Are NT-proBNP levels elevated (≥ 125 pg/mL) or BNP levels elevated (≥ 35 pg/mL)?
+  - Yes: #PROCEED TO QUESTION #6#
+  - No: #PROCEED TO QUESTION #5#
+
+#QUESTION #5#: Despite normal NT-proBNP/BNP levels, is heart failure still strongly suspected, or are these biomarkers unavailable?
+  - Yes: #PROCEED TO QUESTION #6#
+  - No: YOU DON'T HAVE heart failure
+
+#QUESTION #6#: Does echocardiography show abnormal findings (e.g., dysfunction, low ejection fraction, abnormal chamber size, LVH, regional wall motion abnormalities, etc.)?
+  - Yes: #PROCEED TO QUESTION #7#
+  - No: YOU DON'T HAVE heart failure
+
+#QUESTION #7#: Is the LVEF ≤ 40%?
+  - Yes: YOU HAVE Heart Failure with reduced Ejection Fraction (HFrEF)
+  - No: #PROCEED TO QUESTION #8#
+
+#QUESTION #8#: Is the LVEF between 41-49%?
+  - Yes: YOU HAVE Heart Failure with mid-range Ejection Fraction (HFmrEF)
+  - No: YOU HAVE Heart Failure with preserved Ejection Fraction (HFpEF)
+
+End

@@ -1,0 +1,3 @@
+nohup: ignoring input
+2024-01-23 18:52:14,712 29163 train 163 epoch:     0, train average symptom: 14.817051, test average symptom: 15.287326, train first level symptom: 2.815079, test first level symptom: 2.826389
+2024-01-23 18:52:14,713 29163 train 167 epoch:     0, train average hit: 1.380765, test average hit: 1.404514, train first level hit: 1.036863, test first level hit: 1.032118

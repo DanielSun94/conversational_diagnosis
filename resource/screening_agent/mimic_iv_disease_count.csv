@@ -1,0 +1,6203 @@
+﻿top k disease,1
+key,all
+icd_code,count,delete,English,Chinese
+7865,3338,,
+486,3213,,"Pneumonia, organism unspecified"
+5849,3124,,"Acute kidney failure, unspecified"
+4140,2999,,
+a419,2848,,
+389,2814,,
+v581,2553,,
+7890,2552,,
+4283,2460,,
+4107,2453,,
+5990,2451,,"Urinary tract infection, site not specified"
+4273,2321,,
+5770,2161,,Acute pancreatitis
+4282,2123,,
+7802,1850,,Syncope and collapse
+i214,1716,,
+i130,1597,,
+i251,1547,,
+6826,1523,,"Cellulitis and abscess of leg, except foot"
+n179,1496,,
+z511,1440,,
+9966,1349,,
+j189,1326,,
+9985,1284,,
+5621,1271,,
+384,1229,,
+4151,1220,,
+4912,1174,,
+n390,1172,,
+4349,1137,,
+9967,1108,,
+2765,1084,,
+5188,1066,,
+4341,1059,,
+i110,1054,,
+5070,1022,,Pneumonitis due to inhalation of food or vomitus
+7806,960,,Fever
+4278,951,,
+431,947,,Intracerebral hemorrhage
+2506,926,,
+4241,922,,Aortic valve disorders
+9968,922,,
+4402,913,,
+5789,899,,"Hemorrhage of gastrointestinal tract, unspecified"
+2918,893,,
+2508,881,,
+84,879,,
+2963,856,,
+i634,837,,
+88,836,,
+a415,832,,
+l031,821,,
+t814,815,,
+i269,765,,
+9981,723,,
+t828,719,,
+j441,714,,
+4932,678,,
+7870,665,,
+e116,664,,
+4939,655,,
+2501,644,,
+5609,644,,Unspecified intestinal obstruction
+i502,639,,
+2962,634,,
+2880,625,,Diseases of white blood cells
+3459,620,,
+1983,619,,Secondary malignant neoplasm of brain and spinal cord
+i503,612,,
+2761,610,,Hyposmolality and/or hyponatremia
+5589,607,,Other and unspecified noninfectious gastroenteritis and colitis
+9993,600,,
+4534,599,,
+5745,598,,
+9974,593,,"Digestive system complications, not elsewhere classified"
+4580,587,,Orthostatic hypotension
+k566,586,,
+r078,583,,
+5761,574,,Cholangitis
+r55,565,,
+4284,560,,
+i350,553,,
+5781,540,,Blood in stool
+k918,535,,
+k703,532,,
+2780,530,,
+8522,527,,
+f102,524,,
+7803,519,,
+5640,513,,
+k573,511,,
+4039,508,,
+i489,505,,
+5712,490,,Alcoholic cirrhosis of liver
+5722,490,,Hepatic encephalopathy
+4271,482,,Paroxysmal ventricular tachycardia
+42,482,,
+j960,474,,
+5608,457,,
+4829,453,,"Bacterial pneumonia, unspecified"
+7331,453,,
+4359,452,,Unspecified transient cerebral ischemia
+7860,447,,
+a418,446,,
+2969,439,,
+j690,434,,
+5762,432,,Obstruction of bile duct
+k921,426,,
+381,414,,
+2957,411,,
+4331,410,,
+7879,410,,
+3861,405,,
+a047,402,,
+1550,397,,"Malignant neoplasm of liver, primary"
+k859,396,,
+s065,393,,
+2989,393,,Unspecified psychosis
+7221,390,,
+3483,385,,
+7804,384,,Dizziness and giddiness
+3498,383,,
+g92,383,,
+3381,380,,
+1985,370,,Secondary malignant neoplasm of bone and bone marrow
+m480,366,,
+f329,364,,
+a084,363,,
+8202,363,,
+i480,361,,
+5740,357,,
+7840,354,,Headache
+2028,353,,
+5308,348,,
+k831,347,,
+5118,347,,Pleural effus nec not tb
+7809,344,,
+4019,344,,Unspecified essential hypertension
+g409,339,,
+5119,337,,Unspecified pleural effusion
+4280,335,,"Congestive heart failure, unspecified"
+c793,334,,
+3451,333,,
+i639,332,,
+6823,332,,Cellulitis and abscess of upper arm and forearm
+2964,330,,
+r101,330,,
+2050,330,,
+7907,329,,Bacteremia
+5715,329,,Cirrhosis of liver without mention of alcohol
+i951,329,,
+i132,327,,
+311,326,,"Depressive disorder, not elsewhere classified"
+t835,323,,
+3454,323,,
+i702,321,,
+1570,320,,Malignant neoplasm of head of pancreas
+5771,320,,Chronic pancreatitis
+i824,317,,
+4104,316,,
+e115,314,,
+2500,313,,
+380,312,,
+e871,307,,
+k922,305,,
+4659,305,,Acute upper respiratory infections of unspecified site
+6827,304,,"Cellulitis and abscess of foot, except toes"
+e660,300,,
+k805,298,,
+2953,298,,
+5672,297,,
+4871,296,,Influenza with other respiratory manifestations
+6489,296,,
+7807,294,,
+2767,293,,Hyperpotassemia
+8520,292,,
+j459,292,,
+k746,291,,
+r509,290,,
+5845,287,,Acute kidney failure with lesion of tubular necrosis
+799,285,,
+5901,285,,
+7153,284,,
+9965,284,,
+2030,283,,
+k830,282,,
+f332,282,,
+a410,280,,
+i472,280,,
+k729,280,,
+2189,280,,"Leiomyoma of uterus, unspecified"
+2928,280,,
+5559,275,,Regional enteritis of unspecified site
+7288,274,,
+8050,272,,
+k318,272,,
+r109,270,,
+3383,270,,Neoplasm related pain (acute) (chronic)
+t802,269,,
+k572,269,,
+5693,268,,Hemorrhage of rectum and anus
+5378,267,,
+7242,267,,Lumbago
+k590,266,,
+e101,266,,
+5314,264,,
+340,262,,Multiple sclerosis
+4101,261,,
+5698,260,,
+k529,258,,
+7194,257,,
+5908,256,,
+1623,255,,"Malignant neoplasm of upper lobe, bronchus or lung"
+c341,253,,
+7240,250,,
+5355,249,,
+704,249,,
+t861,245,,
+4589,243,,"Hypotension, unspecified"
+5711,242,,Acute alcoholic hepatitis
+i211,239,,
+9976,239,,
+8070,238,,
+g459,236,,
+4240,235,,Mitral valve disorders
+2740,235,,Gouty arthropathy
+5780,235,,Hematemesis
+k701,235,,
+2851,234,,Acute posthemorrhagic anemia
+c795,232,,
+r079,232,,
+4239,231,,Unspecified disease of pericardium
+430,231,,Subarachnoid hemorrhage
+5324,230,,
+2536,229,,Other disorders of neurohypophysis
+r112,229,,
+90,227,,
+s224,224,,
+j962,223,,
+5550,222,,Regional enteritis of small intestine
+7812,222,,Abnormality of gait
+1976,221,,Secondary malignant neoplasm of retroperitoneum and peritoneum
+5409,221,,Acute appendicitis without mention of peritonitis
+1977,220,,"Malignant neoplasm of liver, secondary"
+5920,220,,Calculus of kidney
+4660,220,,Acute bronchitis
+i638,219,,
+s066,219,,
+2968,218,,
+2507,217,,
+r569,217,,
+5191,215,,
+3469,214,,
+4049,214,,
+k801,214,,
+1970,213,,Secondary malignant neoplasm of lung
+4260,213,,"Atrioventricular block, complete"
+5301,211,,
+5569,210,,"Ulcerative colitis, unspecified"
+c833,210,,
+k565,209,,
+5921,207,,Calculus of ureter
+k851,206,,
+2859,206,,"Anemia, unspecified"
+9964,206,,
+i120,206,,
+1830,205,,Malignant neoplasm of ovary
+2965,205,,
+g404,204,,
+c920,204,,
+e860,203,,
+d709,203,,
+4598,203,,
+i442,203,,
+3455,203,,
+707,202,,
+i210,202,,
+j90,202,,
+6822,202,,Cellulitis and abscess of trunk
+4209,202,,
+d62,201,,
+2809,199,,"Iron deficiency anemia, unspecified"
+479,195,,
+e106,195,,
+s721,194,,
+9654,194,,"Poisoning by aromatic analgesics, not elsewhere classified"
+4321,194,,Subdural hemorrhage
+g893,193,,
+4552,193,,Internal hemorrhoids with other complication
+e222,192,,
+j398,191,,
+2504,190,,
+6824,189,,"Cellulitis and abscess of hand, except fingers and thumb"
+s720,189,,
+7820,189,,Disturbance of skin sensation
+2754,188,,
+i340,187,,
+k358,186,,
+c250,183,,
+4210,183,,Acute and subacute bacterial endocarditis
+j159,183,,
+5768,183,,Other specified disorders of biliary tract
+8054,182,,Closed fracture of lumbar vertebra without mention of spinal cord injury
+4030,182,,
+1820,181,,"Malignant neoplasm of corpus uteri, except isthmus"
+6820,179,,Cellulitis and abscess of face
+t827,179,,
+5696,179,,
+7245,178,,"Backache, unspecified"
+5741,178,,
+k254,177,,
+j069,176,,
+i618,175,,
+c786,174,,
+9650,174,,
+4582,172,,
+n170,171,,
+1629,170,,"Malignant neoplasm of bronchus and lung, unspecified"
+570,170,,Acute and subacute necrosis of liver
+g408,169,,
+9960,169,,
+2800,169,,Iron deficiency anemia secondary to blood loss (chronic)
+i471,168,,
+7302,168,,
+k800,168,,
+c220,167,,
+i671,165,,
+7110,165,,
+v560,165,,
+c541,165,,
+k852,165,,
+7800,164,,Alteration of consciousness
+5579,163,,Unspecified vascular insufficiency of intestine
+7211,163,,Cervical spondylosis with myelopathy
+9951,163,,"Angioneurotic edema, not elsewhere classified"
+c900,163,,
+5742,162,,
+i160,161,,
+i313,160,,
+1628,159,,Malignant neoplasm of other parts of bronchus or lung
+5749,159,,
+3382,159,,
+5522,159,,
+5750,158,,Acute cholecystitis
+8200,157,,
+5997,156,,Hematuria
+r060,156,,
+8052,155,,Closed fracture of dorsal [thoracic] vertebra without mention of spinal cord injury
+5552,155,,Regional enteritis of small intestine with large intestine
+i652,155,,
+1625,153,,"Malignant neoplasm of lower lobe, bronchus or lung"
+5532,153,,
+7837,153,,Adult failure to thrive
+k920,152,,
+2873,152,,
+7298,150,,
+t864,150,,
+8208,149,,Closed fracture of unspecified part of neck of femur
+j958,149,,
+i635,149,,
+c780,149,,
+c343,149,,
+r103,149,,
+6930,149,,Dermatitis due to drugs and medicines taken internally
+t857,149,,
+m511,148,,
+5570,148,,Acute vascular insufficiency of intestine
+3071,148,,Anorexia nervosa
+2826,148,,
+k264,147,,
+7300,146,,
+i080,146,,
+t845,145,,
+3030,145,,
+e875,145,,
+8082,144,,Closed fracture of pubis
+7872,143,,
+888,143,,
+i631,143,,
+2852,143,,
+i611,142,,
+g934,142,,
+2841,142,,Pancytopenia
+5772,141,,Cyst and pseudocyst of pancreas
+5354,141,,
+r42,141,,
+4261,141,,
+2252,140,,Benign neoplasm of cerebral meninges
+k500,140,,
+3000,140,,
+k803,139,,
+7295,138,,Pain in limb
+7847,138,,Epistaxis
+k810,137,,
+5307,136,,Gastroesophageal laceration-hemorrhage syndrome
+7895,136,,
+b349,136,,
+5190,136,,
+k720,135,,
+q231,134,,
+i710,134,,
+f39,134,,
+4442,133,,
+3453,132,,Grand mal status
+8530,132,,
+9983,131,,
+j111,131,,
+t855,131,,
+5363,131,,Gastroparesis
+n12,131,,
+1988,131,,
+e114,130,,
+i161,130,,
+r788,129,,
+a09,129,,
+i21a,129,,
+g402,129,,
+4410,128,,
+7336,128,,Tietze's disease
+2181,128,,Intramural leiomyoma of uterus
+2768,128,,Hypopotassemia
+4373,128,,"Cerebral aneurysm, nonruptured"
+705,127,,
+7213,127,,Lumbosacral spondylosis without myelopathy
+d509,127,,
+3962,127,,Mitral valve insufficiency and aortic valve stenosis
+515,126,,Postinflammatory pulmonary fibrosis
+9961,126,,"Mechanical complication of other vascular device, implant, and graft"
+k519,125,,
+7227,125,,
+7909,124,,
+8012,124,,
+9988,124,,
+5362,123,,Persistent vomiting
+7159,123,,
+e43,122,,
+j101,121,,
+f29,121,,
+5364,121,,
+t813,120,,
+e112,120,,
+r197,120,,
+8120,120,,
+i495,120,,
+4414,120,,Abdominal aneurysm without mention of rupture
+4824,119,,
+7071,119,,
+3310,118,,Alzheimer's disease
+k297,118,,
+566,117,,Abscess of anal and rectal regions
+1890,117,,"Malignant neoplasm of kidney, except pelvis"
+c787,117,,
+k804,117,,
+4870,117,,Influenza with pneumonia
+i620,116,,
+4010,116,,Malignant essential hypertension
+5601,115,,Paralytic ileus
+r531,114,,
+3458,114,,
+k521,113,,
+i714,113,,
+m628,112,,
+9975,112,,"Urinary complications, not elsewhere classified"
+4109,112,,
+5551,112,,Regional enteritis of large intestine
+j440,112,,
+r001,111,,
+4388,111,,
+r51,111,,
+m798,111,,
+3468,110,,
+k579,110,,
+k509,110,,
+5128,110,,Other spontaneous pneumothorax
+1561,110,,Malignant neoplasm of extrahepatic bile ducts
+1911,110,,Malignant neoplasm of frontal lobe
+k704,109,,
+k625,108,,
+7823,108,,Edema
+t856,107,,
+1551,107,,Malignant neoplasm of intrahepatic bile ducts
+2920,107,,Drug withdrawal
+b20,107,,
+d570,107,,
+g401,107,,
+i959,106,,
+f432,106,,
+9694,106,,Poisoning by benzodiazepine-based tranquilizers
+m462,106,,
+2910,106,,Alcohol withdrawal delirium
+6810,106,,
+f209,105,,
+i330,105,,
+k219,104,,
+n10,104,,
+4029,104,,
+m845,104,,
+i481,103,,
+4538,103,,Venous thrombosis nec
+6202,103,,Other and unspecified ovarian cyst
+5694,103,,
+4403,103,,
+k861,103,,
+7299,103,,Soft tissue dis nec/nos
+k807,103,,
+3241,103,,Intraspinal abscess
+d259,102,,
+s320,102,,
+7990,101,,
+185,100,,Malignant neoplasm of prostate
+g35,100,,
+n132,100,,
+t874,100,,
+9982,99,,"Accidental puncture or laceration during a procedure, not elsewhere classified"
+c349,99,,
+9708,99,,Poisoning by other specified central nervous system stimulants
+7851,98,,Palpitations
+539,98,,
+9971,98,,"Cardiac complications, not elsewhere classified"
+s828,97,,
+a408,97,,
+f319,97,,
+5720,97,,Abscess of liver
+9970,97,,
+g892,97,,
+388,96,,
+t846,96,,
+6184,96,,"Uterovaginal prolapse, unspecified"
+k806,96,,
+383,95,,
+9690,95,,Poisoning-antidepressant
+9351,95,,Foreign body in esophagus
+3320,95,,Paralysis agitans
+1510,95,,Malignant neoplasm of cardia
+m545,95,,
+3050,95,,
+k508,94,,
+7100,94,,Systemic lupus erythematosus
+j100,94,,
+3570,93,,Acute infective polyneuritis
+d701,93,,
+d649,93,,
+k652,93,,
+e104,92,,
+5751,92,,
+4432,91,,
+i441,91,,
+k430,91,,
+g20,91,,
+d320,90,,
+8212,90,,
+d618,90,,
+g891,90,,
+k353,90,,
+f039,90,,
+8230,90,,
+f500,90,,
+e835,89,,
+4821,89,,Pneumonia due to Pseudomonas
+6000,88,,
+f312,88,,
+i632,88,,
+7070,88,,
+7863,88,,Hemoptysis
+5566,88,,Universal ulcerative (chronic) colitis
+m255,88,,
+t818,88,,
+193,88,,Malignant neoplasm of thyroid gland
+7210,88,,Cervical spondylosis without myelopathy
+3318,88,,
+7862,88,,Cough
+i081,88,,
+i81,88,,
+t391,87,,
+i978,87,,
+4100,87,,
+8518,86,,
+g439,86,,
+4274,86,,
+2040,86,,
+5109,86,,Empyema without mention of fistula
+2554,86,,
+k648,85,,
+i952,85,,
+382,85,,
+f200,85,,
+490,84,,"Bronchitis, not specified as acute or chronic"
+5641,84,,Irritable bowel syndrome
+s220,84,,
+d693,84,,
+e877,84,,
+d500,83,,
+2942,83,,
+i693,83,,
+l024,83,,
+4168,83,,Other chronic pulmonary heart diseases
+5688,83,,
+i504,83,,
+o268,83,,
+j950,83,,
+4102,82,,
+7301,82,,
+l032,82,,
+i615,82,,
+k432,81,,
+2639,81,,Unspecified protein-calorie malnutrition
+1972,81,,Secondary malignant neoplasm of pleura
+i610,81,,
+s724,80,,
+2387,80,,
+5533,80,,Diaphragmatic hernia without mention of obstruction or gangrene
+k941,80,,
+5733,79,,"Hepatitis, unspecified"
+2766,79,,Fluid overload disorder
+2113,79,,Benign neoplasm of colon
+1748,79,,Malignant neoplasm of other specified sites of female breast
+9973,79,,Surg complic-respir syst
+i633,79,,
+k501,78,,
+r418,78,,
+j841,78,,
+i712,78,,
+220,77,,Benign neoplasm of ovary
+7291,77,,"Myalgia and myositis, unspecified"
+8134,77,,
+9972,77,,"Peripheral vascular complications, not elsewhere classified"
+h811,77,,
+3098,77,,
+s270,76,,
+7810,76,,Abnormal involuntary movements
+6262,76,,Excessive or frequent menstruation
+a081,76,,
+4941,76,,Bronchiectasis with acute exacerbation
+k802,76,,
+n998,75,,
+8210,75,,
+1578,75,,Malignant neoplasm of other specified sites of pancreas
+4340,75,,
+f339,74,,
+m541,74,,
+2959,74,,
+s063,74,,
+d683,74,,
+5779,74,,Unspecified disease of pancreas
+i083,74,,
+k913,74,,
+3001,73,,
+1579,73,,"Malignant neoplasm of pancreas, part unspecified"
+1984,73,,Secondary malignant neoplasm of other parts of nervous system
+f250,73,,
+5724,73,,Hepatorenal syndrome
+i319,72,,
+c798,72,,
+2502,72,,
+4103,72,,
+c509,72,,
+6110,72,,Inflammatory disease of breast
+g431,71,,
+2041,71,,
+9623,71,,Poisoning by insulins and antidiabetic agents
+1533,71,,Malignant neoplasm of sigmoid colon
+n136,71,,
+5401,71,,Acute appendicitis with peritoneal abscess
+t858,70,,
+5571,70,,Chronic vascular insufficiency of intestine
+5603,70,,
+7231,70,,Cervicalgia
+k567,70,,
+k942,70,,
+1541,69,,Malignant neoplasm of rectum
+4298,69,,
+452,69,,Portal vein thrombosis
+f259,69,,
+t826,69,,
+5130,69,,Abscess of lung
+4111,69,,Intermediate coronary syndrome
+3460,69,,
+m471,69,,
+7845,69,,Speech disturbance nec
+c61,69,,
+g610,68,,
+k528,68,,
+9986,68,,Persistent postoperative fistula
+3090,68,,Adjustment disorder with depressed mood
+k552,68,,
+t783,68,,
+j09x,67,,
+7244,67,,"Thoracic or lumbosacral neuritis or radiculitis, unspecified"
+k559,67,,
+4412,67,,Thoracic aneurysm without mention of rupture
+1974,67,,Secondary malignant neoplasm of small intestine including duodenum
+r131,66,,
+i777,66,,
+s821,66,,
+j110,66,,
+k449,65,,
+9963,65,,
+5368,65,,Dyspepsia and other specified disorders of function of stomach
+c221,65,,
+3510,65,,Bell's palsy
+e876,65,,
+i10,64,,
+1749,64,,"Malignant neoplasm of breast (female), unspecified"
+c259,64,,
+f318,64,,
+n401,64,,
+g700,64,,
+3580,64,,
+l022,64,,
+v588,64,,
+9240,64,,
+i272,63,,
+c20,63,,
+7931,63,,Nonspecific (abnormal) findings on radiological and other examination of lung field
+5272,63,,Sialoadenitis
+f101,63,,
+4377,63,,Transient global amnesia
+c562,62,,
+r627,62,,
+4270,62,,Paroxysmal supraventricular tachycardia
+f316,62,,
+2966,62,,
+7243,62,,Sciatica
+2762,62,,Acidosis
+m861,62,,
+k226,62,,
+7225,62,,
+6180,61,,
+1622,61,,Malignant neoplasm of main bronchus
+5602,61,,Volvulus
+7882,61,,
+5302,61,,
+7334,61,,
+1912,61,,Malignant neoplasm of temporal lobe
+l763,61,,
+j969,61,,
+k510,61,,
+2875,61,,"Thrombocytopenia, unspecified"
+o996,60,,
+h813,60,,
+5370,60,,Acquired hypertrophic pyloric stenosis
+n995,60,,
+v580,60,,
+r791,60,,
+k750,60,,
+4329,60,,Unspecified intracranial hemorrhage
+4828,60,,
+3004,60,,Dysthymic disorder
+h812,59,,
+n309,59,,
+5303,59,,Stricture and stenosis of esophagus
+5353,59,,
+5501,59,,
+3488,59,,Brain conditions nec
+t402,59,,
+785,59,,
+t840,59,,
+5349,59,,
+5344,59,,
+j869,58,,
+j938,58,,
+c160,58,,
+i213,58,,
+1978,58,,Secondary malignant neoplasm of other digestive organs and spleen
+m109,58,,
+s422,58,,
+5746,57,,
+75,57,,
+l030,57,,
+5748,57,,
+k858,57,,
+91,57,,
+j980,57,,
+e111,57,,
+i609,57,,
+m478,56,,
+6466,56,,
+4254,56,,Other primary cardiomyopathies
+2180,56,,Submucous leiomyoma of uterus
+9693,56,,"Poisoning by other antipsychotics, neuroleptics, and major tranquilizers"
+3315,56,,Idiopathic normal pressure hydrocephalus (INPH)
+c73,56,,
+7904,55,,Nonspecific elevation of levels of transaminase or lactic acid dehydrogenase [LDH]
+o141,55,,
+8080,55,,Closed fracture of acetabulum
+5950,55,,Acute cystitis
+m796,55,,
+3092,55,,
+5300,54,,Achalasia and cardiospasm
+4139,54,,Other and unspecified angina pectoris
+i469,54,,
+g309,54,,
+k550,54,,
+5163,54,,Idiopathic fibrosing alveolitis
+k420,54,,
+l270,54,,
+t825,54,,
+6811,54,,
+t830,54,,
+e110,54,,
+920,54,,"Contusion of face, scalp, and neck except eye(s)"
+c569,54,,
+j188,54,,
+e861,54,,
+3410,54,,Neuromyelitis optica
+s026,53,,
+o993,53,,
+2760,53,,Hyperosmolality and/or hypernatremia
+m868,53,,
+5568,53,,Other ulcerative colitis
+t424,53,,
+i743,53,,
+v071,53,,
+k863,53,,
+2773,53,,
+d251,53,,
+7338,53,,
+k122,53,,
+6440,53,,
+531,53,,
+e854,53,,
+c711,53,,
+5723,52,,Portal hypertension
+3039,52,,
+4332,52,,
+2182,52,,Subserous leiomyoma of uterus
+r911,52,,
+t865,52,,
+g438,52,,
+r040,52,,
+4275,52,,Cardiac arrest
+1128,52,,
+f445,52,,
+i619,51,,
+g061,51,,
+m512,51,,
+7270,51,,
+n832,51,,
+t181,51,,
+5714,51,,
+e131,51,,
+2749,50,,"Gout, unspecified"
+k221,50,,
+5778,50,,Other specified diseases of pancreas
+n200,50,,
+7866,50,,"Swelling, mass, or lump in chest"
+m968,50,,
+m472,50,,
+7821,50,,Rash and other nonspecific skin eruption
+5121,50,,Iatrogenic pneumothorax
+5959,50,,"Cystitis, unspecified"
+r740,50,,
+5747,50,,
+6049,50,,
+7819,50,,
+k766,50,,
+r538,50,,
+6425,50,,
+135,49,,Sarcoidosis
+5305,49,,Dyskinesia of esophagus
+5738,49,,Other specified disorders of liver
+s324,49,,
+6484,49,,
+i614,49,,
+3078,49,,
+5521,49,,Umbilical hernia with obstruction
+6468,49,,
+5938,49,,
+k868,49,,
+c561,49,,
+703,49,,
+j208,48,,
+2830,48,,Autoimmune hemolytic anemias
+7263,48,,
+514,48,,Pulmonary congestion and hypostasis
+m485,48,,
+496,48,,"Chronic airway obstruction, not elsewhere classified"
+1534,48,,Malignant neoplasm of cecum
+6424,48,,
+i678,48,,
+1536,48,,Malignant neoplasm of ascending colon
+6430,48,,
+6825,48,,Cellulitis and abscess of buttock
+2115,48,,Benign neoplasm of liver and biliary passages
+1913,48,,Malignant neoplasm of parietal lobe
+3457,47,,
+f333,47,,
+i630,47,,
+5509,47,,
+c187,47,,
+2092,47,,
+6084,47,,Other inflammatory disorders of male genital organs
+4592,47,,Compression of vein
+k311,47,,
+c712,47,,
+7230,47,,Spinal stenosis in cervical region
+8730,47,,"Open wound of scalp, without mention of complication"
+i301,47,,
+r042,46,,
+j948,46,,
+7140,46,,Rheumatoid arthritis
+i352,46,,
+6331,46,,
+2904,46,,
+m000,46,,
+m940,46,,
+8022,46,,
+s723,46,,
+k352,46,,
+4782,46,,
+5856,46,,End stage renal disease
+s121,46,,
+m844,45,,
+m171,45,,
+8734,45,,
+3801,45,,
+i129,45,,
+f419,45,,
+f323,45,,
+1744,45,,Malignant neoplasm of upper-outer quadrant of female breast
+4372,45,,Hypertensive encephalopathy
+f603,45,,
+4930,45,,
+5563,45,,Ulcerative (chronic) proctosigmoiditis
+i518,45,,
+l033,45,,
+z121,45,,
+r918,45,,
+8060,45,,
+8010,45,,
+7339,45,,
+3330,45,,Other degenerative diseases of the basal ganglia
+i490,45,,
+i212,45,,
+r268,45,,
+a411,45,,
+3785,45,,
+5400,44,,Acute appendicitis with generalized peritonitis
+5691,44,,Rectal prolapse
+5225,44,,Periapical abscess without sinus
+481,44,,Pneumococcal pneumonia [Streptococcus pneumoniae pneumonia]
+7220,44,,Displacement of cervical intervertebral disc without myelopathy
+a692,44,,
+k758,44,,
+i482,44,,
+4333,44,,
+a401,44,,
+a403,44,,
+2097,44,,
+5697,44,,
+4888,44,,
+2930,44,,Delirium due to conditions classified elsewhere
+k436,43,,
+4588,43,,Other specified hypotension
+c19,43,,
+5743,43,,
+r502,43,,
+m549,43,,
+5319,43,,
+2051,43,,
+i958,43,,
+g360,43,,
+3379,43,,Unspecified disorder of autonomic nervous system
+k651,43,,
+i309,42,,
+s325,42,,
+8024,42,,Closed fracture of malar and maxillary bones
+3682,42,,Diplopia
+2948,42,,Other persistent mental disorders due to conditions classified elsewhere
+2381,42,,Neoplasm of uncertain behavior of connective and other soft tissue
+k562,42,,
+2020,42,,
+7478,42,,
+2021,42,,
+4466,42,,Thrombotic microangiopathy
+r310,42,,
+c182,42,,
+7813,42,,Lack of coordination
+6259,41,,Unspecified symptom associated with female genital organs
+1571,41,,Malignant neoplasm of body of pancreas
+2411,41,,Nontoxic multinodular goiter
+f23,41,,
+3339,41,,
+2886,41,,
+m500,41,,
+3688,41,,Other specified visual disturbances
+6821,41,,Cellulitis and abscess of neck
+4568,41,,Varices of other sites
+s272,41,,
+z515,41,,
+s722,41,,
+t817,41,,
+1918,41,,Malignant neoplasm of other parts of brain
+g454,41,,
+c155,41,,
+6929,41,,"Contact dermatitis and other eczema, unspecified cause"
+3489,41,,Unspecified condition of brain
+q273,41,,
+7850,40,,"Tachycardia, unspecified"
+c340,40,,
+c240,40,,
+k917,40,,
+4448,40,,
+t405,40,,
+t401,40,,
+5528,40,,"Hernia of other specified sites, with obstruction"
+2273,40,,Benign neoplasm of pituitary gland and craniopharyngeal duct
+4428,40,,
+z432,40,,
+v551,40,,
+j455,40,,
+g030,40,,
+3272,40,,
+i724,40,,
+k661,40,,
+k208,39,,
+k047,39,,
+5958,39,,
+5351,39,,
+5356,39,,
+261,39,,Nutritional marasmus
+1991,39,,Other malignant neoplasm without specification of site
+4358,39,,Other specified transient cerebral ischemias
+8002,39,,
+c782,39,,
+e105,39,,
+g939,39,,
+9663,39,,Poisoning by other and unspecified anticonvulsants
+r188,39,,
+v552,39,,
+c642,39,,
+n300,39,,
+f322,38,,
+462,38,,Acute pharyngitis
+j849,38,,
+d648,38,,
+7856,38,,Enlargement of lymph nodes
+7384,38,,Acquired spondylolisthesis
+k838,38,,
+k850,38,,
+m542,38,,
+4558,38,,Unspecified hemorrhoids with other complication
+s024,38,,
+2509,38,,
+r200,38,,
+3229,38,,"Meningitis, unspecified"
+6480,38,,
+d703,38,,
+c910,38,,
+s141,38,,
+c851,38,,
+c911,38,,
+8244,38,,"Bimalleolar fracture, closed"
+4131,38,,Prinzmetal angina
+475,38,,Peritonsillar abscess
+1540,37,,Malignant neoplasm of rectosigmoid junction
+i260,37,,
+m321,37,,
+8026,37,,Closed fracture of orbital floor (blow-out)
+6142,37,,"Salpingitis and oophoritis not specified as acute, subacute, or chronic"
+k638,37,,
+7943,37,,
+b179,37,,
+9590,37,,
+5523,37,,Diaphragmatic hernia with obstruction
+4476,37,,"Arteritis, unspecified"
+b378,37,,
+a879,37,,
+4251,37,,Hypertrophic obstructive cardiomyopathy
+r000,37,,
+3482,37,,Benign intracranial hypertension
+4238,37,,Other specified diseases of pericardium
+6149,37,,Unspecified inflammatory disease of female pelvic organs and tissues
+6213,37,,
+2019,36,,
+k611,36,,
+8650,36,,
+i351,36,,
+k222,36,,
+m808,36,,
+m190,36,,
+1173,36,,Aspergillosis
+s021,36,,
+k112,36,,
+i872,36,,
+3481,36,,Anoxic brain damage
+3490,36,,Reaction to spinal or lumbar puncture
+3558,36,,"Mononeuritis of lower limb, unspecified"
+2512,36,,"Hypoglycemia, unspecified"
+f112,36,,
+86,36,,
+3314,36,,Obstructive hydrocephalus
+t823,36,,
+2971,36,,Delusional disorder
+r298,36,,
+k220,36,,
+5184,36,,"Acute edema of lung, unspecified"
+k30,36,,
+d469,36,,
+8020,35,,Closed fracture of nasal bones
+6171,35,,Endometriosis of ovary
+4555,35,,External hemorrhoids with other complication
+r090,35,,
+c794,35,,
+r410,35,,
+k315,35,,
+k632,35,,
+9241,35,,
+1363,35,,Pneumocystosis
+s271,35,,
+1562,35,,Malignant neoplasm of ampulla of vater
+i608,35,,
+t878,35,,
+1888,35,,Malignant neoplasm of other specified sites of bladder
+k284,35,,
+8248,35,,"Unspecified fracture of ankle, closed"
+s525,35,,
+1518,35,,Malignant neoplasm of other specified sites of stomach
+c169,34,,
+3968,34,,Multiple involvement of mitral and aortic valves
+k209,34,,
+i971,34,,
+s223,34,,
+3681,34,,
+3238,34,,
+3018,34,,
+n939,34,,
+c641,34,,
+2449,34,,Unspecified acquired hypothyroidism
+8100,34,,
+j449,34,,
+c784,34,,
+v533,34,,
+5180,34,,Pulmonary collapse
+5168,34,,Other specified alveolar and parietoalveolar pneumonopathies
+8246,34,,"Trimalleolar fracture, closed"
+g318,33,,
+d735,33,,
+3352,33,,
+5320,33,,
+k551,33,,
+7265,33,,Enthesopathy of hip region
+4105,33,,
+2420,33,,
+g510,33,,
+4462,33,,
+l762,33,,
+e870,33,,
+v718,33,,
+5673,33,,
+t821,33,,
+5398,33,,
+5329,33,,
+f431,33,,
+i483,33,,
+i257,33,,
+4809,33,,"Viral pneumonia, unspecified"
+7190,33,,
+5565,33,,Left-sided ulcerative (chronic) colitis
+2798,33,,Other specified disorders involving the immune mechanism
+k767,32,,
+s822,32,,
+8600,32,,Traumatic pneumothorax without mention of open wound into thorax
+c859,32,,
+v714,32,,
+8220,32,,Closed fracture of patella
+c504,32,,
+t432,32,,
+k440,32,,
+7843,32,,Aphasia
+v765,32,,
+5934,32,,Other ureteric obstruction
+1520,32,,Malignant neoplasm of duodenum
+k224,32,,
+1975,32,,Secondary malignant neoplasm of large intestine and rectum
+6748,32,,
+2116,32,,"Benign neoplasm of pancreas, except islets of Langerhans"
+2921,32,,
+m600,32,,
+7229,31,,
+f015,31,,
+4801,31,,Pneumonia due to respiratory syncytial virus
+j152,31,,
+e274,31,,
+2895,31,,
+5185,31,,Pulmonary insufficiency following trauma and surgery
+5280,31,,
+325,31,,Phlebitis and thrombophlebitis of intracranial venous sinuses
+9520,31,,
+6423,31,,
+1369,31,,Unspecified infectious and parasitic diseases
+3623,31,,
+k958,31,,
+t868,31,,
+9962,31,,"Mechanical complication of nervous system device, implant, and graft"
+c348,31,,
+i871,31,,
+r002,31,,
+2520,31,,
+1508,31,,Malignant neoplasm of other specified part of esophagus
+c92z,30,,
+8056,30,,Closed fracture of sacrum and coccyx without mention of spinal cord injury
+9726,30,,Poisoning by other antihypertensive agents
+s423,30,,
+k580,30,,
+j40,30,,
+1505,30,,Malignant neoplasm of lower third of esophagus
+1509,30,,"Malignant neoplasm of esophagus, unspecified site"
+8122,30,,
+n813,30,,
+6411,30,,
+4413,30,,"Abdominal aneurysm, ruptured"
+c7a8,30,,
+2375,30,,Neoplasm of uncertain behavior of brain and spinal cord
+1624,30,,"Malignant neoplasm of middle lobe, bronchus or lung"
+s120,30,,
+3332,30,,Myoclonus
+d352,30,,
+3311,30,,
+m161,30,,
+1960,30,,"Secondary and unspecified malignant neoplasm of lymph nodes of head, face, and neck"
+c49a,30,,
+3450,30,,
+2853,30,,Antineoplastic chemotherapy induced anemia
+6427,30,,
+r108,30,,
+7824,30,,"Jaundice, unspecified, not of newborn"
+4330,30,,
+d702,30,,
+m112,30,,
+4787,30,,
+7842,29,,"Swelling, mass, or lump in head and neck"
+4465,29,,Giant cell arteritis
+5110,29,,Pleurisy without mention of effusion or current tuberculosis
+1809,29,,"Malignant neoplasm of cervix uteri, unspecified site"
+7248,29,,Other symptoms referable to back
+r339,29,,
+o998,29,,
+m866,29,,
+a400,29,,
+k433,29,,
+g978,29,,
+i613,29,,
+i739,29,,
+k403,29,,
+5581,29,,Gastroenteritis and colitis due to radiation
+547,29,,
+c679,29,,
+i222,28,,
+9352,28,,Foreign body in stomach
+n709,28,,
+l025,28,,
+l891,28,,
+7464,28,,Congenital insufficiency of aortic valve
+7261,28,,
+j848,28,,
+c251,28,,
+k627,28,,
+3239,28,,"Unspecified causes of encephalitis, myelitis, and encephalomyelitis"
+8252,28,,
+7169,28,,
+t509,28,,
+g629,28,,
+3040,28,,
+5648,28,,
+1560,28,,Malignant neoplasm of gallbladder
+2429,28,,
+r600,28,,
+e102,28,,
+i826,28,,
+3578,28,,
+2005,28,,
+e050,28,,
+6494,28,,
+c241,28,,
+3963,28,,Mitral valve insufficiency and aortic valve insufficiency
+k259,28,,
+2951,28,,
+b029,28,,
+702,27,,
+6164,27,,Other abscess of vulva
+c180,27,,
+1713,27,,"Malignant neoplasm of connective and other soft tissue of lower limb, including hip"
+1519,27,,"Malignant neoplasm of stomach, unspecified site"
+c710,27,,
+i864,27,,
+k754,27,,
+c342,27,,
+m800,27,,
+1572,27,,Malignant neoplasm of tail of pancreas
+6752,27,,
+532,27,,
+k518,27,,
+s701,27,,
+k409,27,,
+n131,27,,
+8130,27,,
+4578,27,,Other noninfectious disorders of lymphatic channels
+n739,27,,
+4408,27,,Atherosclerosis of other specified arteries
+4464,27,,Wegener's granulomatosis
+k289,26,,
+j454,26,,
+i890,26,,
+j439,26,,
+8072,26,,Closed fracture of sternum
+d728,26,,
+c921,26,,
+r21,26,,
+k869,26,,
+3099,26,,Unspecified adjustment reaction
+4118,26,,
+n186,26,,
+c785,26,,
+5350,26,,
+2330,26,,Carcinoma in situ of breast
+2913,26,,Alcohol-induced psychotic disorder with hallucinations
+f22,26,,
+s390,26,,
+8124,26,,
+b192,26,,
+a86,26,,
+7832,26,,
+8670,26,,"Injury to bladder and urethra, without mention of open wound into cavity"
+t848,26,,
+1889,26,,"Malignant neoplasm of bladder, part unspecified"
+5373,26,,Other obstruction of duodenum
+k860,26,,
+3384,26,,Chronic pain syndrome
+7234,26,,Brachial neuritis or radiculitis NOS
+4535,26,,
+m501,26,,
+c159,26,,
+3989,26,,
+5744,26,,
+7266,26,,
+f199,25,,
+632,25,,Missed abortion
+1179,25,,Other and unspecified mycoses
+1539,25,,"Malignant neoplasm of colon, unspecified site"
+i953,25,,
+2956,25,,
+k210,25,,
+k292,25,,
+6010,25,,Acute prostatitis
+t886,25,,
+k631,25,,
+v553,25,,
+e46,25,,
+f411,25,,
+8472,25,,Sprain of lumbar
+r470,25,,
+m869,25,,
+m431,25,,
+d695,25,,
+c170,25,,
+d271,25,,
+i728,25,,
+m008,25,,
+m510,25,,
+5562,25,,Ulcerative (chronic) proctitis
+e162,25,,
+j471,25,,
+1122,25,,Candidiasis of other urogenital sites
+r190,25,,
+n178,25,,
+n201,25,,
+4590,25,,"Hemorrhage, unspecified"
+9331,25,,Foreign body in larynx
+9950,25,,Other anaphylactic reaction
+7893,25,,
+c7a1,25,,
+j470,25,,
+e042,25,,
+c801,24,,
+4229,24,,
+5283,24,,Cellulitis and abscess of oral soft tissues
+v504,24,,
+d696,24,,
+t796,24,,
+s424,24,,
+s360,24,,
+5728,24,,Other sequelae of chronic liver disease
+v554,24,,
+n812,24,,
+n288,24,,
+5939,24,,Unspecified disorder of kidney and ureter
+m316,24,,
+8640,24,,
+7197,24,,Difficulty in walking
+b159,24,,
+3462,24,,
+g122,24,,
+c539,24,,
+9956,24,,
+j181,24,,
+2111,24,,Benign neoplasm of stomach
+1919,24,,"Malignant neoplasm of brain, unspecified"
+s062,24,,
+2952,24,,
+6431,24,,
+k681,24,,
+j129,24,,
+z516,24,,
+4739,24,,Unspecified sinusitis (chronic)
+262,24,,Other severe protein-calorie malnutrition
+6412,24,,
+6420,24,,
+r202,24,,
+3240,23,,Intracranial abscess
+2883,23,,Eosinophilia
+4439,23,,"Peripheral vascular disease, unspecified"
+k950,23,,
+o470,23,,
+t426,23,,
+b600,23,,
+5339,23,,
+3569,23,,Unspecified hereditary and idiopathic peripheral neuropathy
+n814,23,,
+3501,23,,Trigeminal neuralgia
+m009,23,,
+7455,23,,Ostium secundum type atrial septal defect
+6205,23,,"Torsion of ovary, ovarian pedicle, or fallopian tube"
+537,23,,
+i509,23,,
+1961,23,,Secondary and unspecified malignant neoplasm of intrathoracic lymph nodes
+j36,23,,
+1588,23,,Malignant neoplasm of specified parts of peritoneum
+2874,23,,Secondary thrombocytopenia
+c7a0,23,,
+4423,23,,Aneurysm of artery of lower extremity
+9977,23,,
+3760,23,,
+2929,23,,Unspecified drug-induced mental disorder
+q282,23,,
+3594,23,,Toxic myopathy
+9998,23,,Transfusion reaction nec
+3209,23,,Meningitis due to unspecified bacterium
+7080,23,,Allergic urticaria
+725,23,,Polymyalgia rheumatica
+5650,23,,Anal fissure
+4571,23,,Other lymphedema
+l023,23,,
+6185,23,,Prolapse of vaginal vault after hysterectomy
+f314,23,,
+k589,23,,
+8680,23,,
+a414,23,,
+k628,23,,
+c189,23,,
+7381,23,,
+1512,23,,Malignant neoplasm of pyloric antrum
+7191,23,,
+k623,23,,
+8232,23,,
+6238,23,,Other specified noninflammatory disorders of vagina
+824,22,,
+i96,22,,
+1963,22,,Secondary and unspecified malignant neoplasm of lymph nodes of axilla and upper limb
+2848,22,,
+g448,22,,
+6088,22,,
+4783,22,,
+r102,22,,
+3773,22,,
+2396,22,,Neoplasm of unspecified nature of brain
+i200,22,,
+6183,22,,"Uterovaginal prolapse, complete"
+4417,22,,"Thoracoabdominal aneurysm, without mention of rupture"
+b027,22,,
+9713,22,,Poisoning by sympatholytics [antiadrenergics]
+c713,22,,
+c7b8,22,,
+2752,22,,Disorders of magnesium metabolism
+c492,22,,
+4276,22,,
+b171,22,,
+f311,22,,
+1981,22,,Secondary malignant neoplasm of other urinary organs
+3419,22,,"Demyelinating disease of central nervous system, unspecified"
+i201,22,,
+e872,22,,
+v628,22,,
+5716,22,,Biliary cirrhosis
+3102,22,,Postconcussion syndrome
+r319,22,,
+t383,22,,
+8470,22,,Sprain of neck
+s420,22,,
+r05,22,,
+2026,22,,
+530,22,,
+4290,22,,"Myocarditis, unspecified"
+591,22,,Hydronephrosis
+7905,22,,Other nonspecific abnormal serum enzyme levels
+2002,22,,
+5390,21,,
+5325,21,,
+2958,21,,
+3361,21,,Vascular myelopathies
+5183,21,,Pulmonary eosinophilia
+n280,21,,
+g938,21,,
+4401,21,,Atherosclerosis of renal artery
+r508,21,,
+m658,21,,
+b59,21,,
+k296,21,,
+j939,21,,
+4160,21,,Primary pulmonary hypertension
+5718,21,,Other chronic nonalcoholic liver disease
+543,21,,
+v728,21,,
+5181,21,,Interstitial emphysema
+5310,21,,
+3094,21,,Adjustment disorder with mixed disturbance of emotions and conduct
+h538,21,,
+m254,21,,
+h532,21,,
+j931,21,,
+k250,21,,
+k429,21,,
+6662,21,,
+c184,21,,
+i976,21,,
+s010,21,,
+j041,21,,
+7855,21,,
+t447,21,,
+8911,21,,"Open wound of knee, leg [except thigh], and ankle, complicated"
+2004,21,,
+n304,21,,
+k513,21,,
+t838,21,,
+2254,21,,Benign neoplasm of spinal meninges
+8084,21,,
+499,21,,
+o210,21,,
+8404,21,,Rotator cuff (capsule) sprain
+48,21,,
+k940,21,,
+2630,21,,Malnutrition of moderate degree
+5808,21,,
+4880,21,,Influenza due to identified avian influenza virus
+1125,21,,Disseminated candidiasis
+j13,21,,
+g403,21,,
+c252,21,,
+6188,21,,
+m100,20,,
+i341,20,,
+2967,20,,"Bipolar I disorder, most recent episode (or current) unspecified"
+541,20,,"Appendicitis, unqualified"
+s023,20,,
+f410,20,,
+k123,20,,
+g08,20,,
+o861,20,,
+683,20,,Acute lymphadenitis
+4619,20,,"Acute sinusitis, unspecified"
+4928,20,,Other emphysema
+2027,20,,
+3079,20,,"Other and unspecified special symptoms or syndromes, not elsewhere classified"
+c773,20,,
+5678,20,,
+3075,20,,
+3559,20,,Mononeuritis of unspecified site
+f331,20,,
+2112,20,,"Benign neoplasm of duodenum, jejunum, and ileum"
+i300,20,,
+4106,20,,
+i629,20,,
+c837,20,,
+4370,20,,Cerebral atherosclerosis
+s125,20,,
+c718,20,,
+s823,20,,
+9591,20,,
+2505,20,,
+e210,20,,
+4532,20,,Other venous embolism and thrombosis of inferior vena cava
+i878,20,,
+2280,20,,
+k649,20,,
+f458,20,,
+k581,20,,
+s273,20,,
+o109,20,,
+e039,20,,
+6701,20,,
+9802,20,,Toxic effect of isopropyl alcohol
+5790,20,,Celiac disease
+f315,19,,
+5968,19,,Other specified disorders of bladder
+m548,19,,
+6140,19,,Acute salpingitis and oophoritis
+3863,19,,
+r110,19,,
+35,19,,
+b270,19,,
+g720,19,,
+o995,19,,
+6268,19,,Other disorders of menstruation and other abnormal bleeding from female genital tract
+5560,19,,Ulcerative (chronic) enterocolitis
+c788,19,,
+310,19,,
+4822,19,,Pneumonia due to Hemophilus influenzae [H. influenzae]
+8488,19,,Other specified sites of sprains and strains
+7873,19,,"Flatulence, eructation, and gas pain"
+l88,19,,
+j386,19,,
+j479,19,,
+3960,19,,Mitral valve stenosis and aortic valve stenosis
+7214,19,,
+c719,19,,
+k578,19,,
+t820,19,,
+9979,19,,
+j029,19,,
+6951,19,,Erythema multiforme
+936,19,,Foreign body in intestine and colon
+i82c,19,,
+949,19,,
+j80,19,,
+k298,19,,
+i421,19,,
+9778,19,,Poisoning by other specified drugs and medicinal substances
+8510,19,,
+6486,19,,
+9651,18,,Poisoning by salicylates
+9952,18,,
+s370,18,,
+5315,18,,
+1962,18,,Secondary and unspecified malignant neoplasm of intra-abdominal lymph nodes
+9630,18,,Poisoning by antiallergic and antiemetic drugs
+j390,18,,
+7531,18,,
+5651,18,,Anal fistula
+k598,18,,
+k269,18,,
+92,18,,
+4232,18,,Constrictive pericarditis
+7058,18,,
+j82,18,,
+i825,18,,
+9221,18,,Contusion of chest wall
+f109,18,,
+7103,18,,Dermatomyositis
+30,18,,
+h933,18,,
+s222,18,,
+n202,18,,
+r478,18,,
+6478,18,,
+s321,18,,
+t435,18,,
+k711,18,,
+i098,18,,
+o600,18,,
+9678,18,,Poisoning by other sedatives and hypnotics
+g903,18,,
+2503,18,,
+9697,18,,Poison-psychostimulants
+4020,18,,
+m311,18,,
+3543,18,,Lesion of radial nerve
+t808,18,,
+9223,18,,
+4518,18,,
+8505,18,,Concussion with loss of consciousness of unspecified duration
+o001,18,,
+a045,18,,
+j860,18,,
+k712,18,,
+1742,18,,Malignant neoplasm of upper-inner quadrant of female breast
+j810,18,,
+6173,18,,Endometriosis of pelvic peritoneum
+z431,18,,
+z430,18,,
+k768,18,,
+1532,18,,Malignant neoplasm of descending colon
+k564,18,,
+6482,18,,
+j704,18,,
+529,18,,
+j209,18,,
+f313,18,,
+2778,18,,
+6179,18,,"Endometriosis, site unspecified"
+9341,18,,Foreign body in main bronchus
+v584,17,,
+8602,17,,Traumatic hemothorax without mention of open wound into thorax
+k265,17,,
+c253,17,,
+3369,17,,Unspecified disease of spinal cord
+n938,17,,
+a481,17,,
+k561,17,,
+k570,17,,
+n492,17,,
+8501,17,,
+1530,17,,Malignant neoplasm of hepatic flexure
+i052,17,,
+m791,17,,
+179,17,,"Malignant neoplasm of uterus, part unspecified"
+b258,17,,
+a774,17,,
+o114,17,,
+3484,17,,Compression of brain
+6743,17,,
+g932,17,,
+l021,17,,
+59,17,,
+8449,17,,Sprains and strains of unspecified site of knee and leg
+n328,17,,
+d496,17,,
+85,17,,
+6271,17,,Postmenopausal bleeding
+6170,17,,Endometriosis of uterus
+8821,17,,"Open wound of hand except finger(s) alone, complicated"
+2858,17,,Other specified anemias
+5620,17,,
+k515,17,,
+d591,17,,
+7148,17,,
+e512,17,,
+2949,17,,Unspecified persistent mental disorders due to conditions classified elsewhere
+d120,17,,
+c23,17,,
+m250,17,,
+b377,17,,
+6270,17,,Premenopausal menorrhagia
+4422,17,,Aneurysm of iliac artery
+o601,17,,
+t430,17,,
+n835,17,,
+i742,17,,
+7161,17,,
+o459,17,,
+n850,17,,
+m960,17,,
+s124,17,,
+f129,17,,
+4108,17,,
+5100,17,,Empyema with fistula
+4040,17,,
+2270,17,,Benign neoplasm of adrenal gland
+c258,17,,
+g43a,17,,
+2884,17,,Hemophagocytic syndromes
+f202,17,,
+j851,17,,
+6960,17,,Psoriatic arthropathy
+j151,17,,
+2898,17,,
+6390,17,,Genital tract and pelvic infection following abortion or ectopic and molar pregnancies
+s028,17,,
+g048,17,,
+5531,16,,Umbilical hernia without mention of obstruction or gangrene
+t182,16,,
+d252,16,,
+6182,16,,"Uterovaginal prolapse, incomplete"
+8514,16,,
+t404,16,,
+3942,16,,Mitral stenosis with insufficiency
+k512,16,,
+k460,16,,
+8660,16,,
+j984,16,,
+1514,16,,Malignant neoplasm of body of stomach
+l732,16,,
+478,16,,
+7561,16,,
+m726,16,,
+2954,16,,
+6959,16,,Unspecified erythematous condition
+2870,16,,Allergic purpura
+1808,16,,Malignant neoplasm of other specified sites of cervix
+t393,16,,
+z433,16,,
+s361,16,,
+4031,16,,
+h492,16,,
+c163,16,,
+6442,16,,
+6144,16,,Chronic or unspecified parametritis and pelvic cellulitis
+1531,16,,Malignant neoplasm of transverse colon
+1971,16,,Secondary malignant neoplasm of mediastinum
+6581,16,,
+g405,16,,
+9729,16,,Poisoning by other and unspecified agents primarily affecting the cardiovascular system
+5198,16,,"Other diseases of respiratory system, not elsewhere classified"
+g253,16,,
+2096,16,,
+c770,16,,
+i776,16,,
+m651,16,,
+1589,16,,"Malignant neoplasm of peritoneum, unspecified"
+g453,16,,
+2732,16,,Other paraproteinemias
+3056,16,,
+5758,16,,Other specified disorders of gallbladder
+b259,16,,
+o908,16,,
+l975,16,,
+d270,16,,
+k644,16,,
+9349,16,,"Foreign body in respiratory tree, unspecified"
+2390,16,,Neoplasm of unspecified nature of digestive system
+t510,16,,
+2490,16,,
+b023,16,,
+7274,15,,
+8910,15,,"Open wound of knee, leg [except thigh], and ankle, without mention of complication"
+j019,15,,
+i740,15,,
+5739,15,,Unspecified disorder of liver
+k439,15,,
+m464,15,,
+s801,15,,
+d132,15,,
+n764,15,,
+4643,15,,
+i493,15,,
+4940,15,,Bronchiectasis without acute exacerbation
+g936,15,,
+6256,15,,"Stress incontinence, female"
+n308,15,,
+f05,15,,
+8811,15,,
+j981,15,,
+s368,15,,
+k862,15,,
+3093,15,,Adjustment disorder with disturbance of conduct
+i704,15,,
+i612,15,,
+8011,15,,
+k743,15,,
+7293,15,,
+s761,15,,
+o988,15,,
+2819,15,,Unspecified deficiency anemia
+s328,15,,
+8310,15,,
+3467,15,,
+t841,15,,
+g912,15,,
+m272,15,,
+d481,15,,
+7224,15,,Degeneration of cervical intervertebral disc
+4440,15,,Embolism and thrombosis of abdominal aorta
+d350,15,,
+k260,15,,
+i400,15,,
+3059,15,,
+d177,15,,
+z434,15,,
+n800,15,,
+4641,15,,
+j942,15,,
+4781,15,,
+542,15,,Other appendicitis
+5699,15,,Unspecified disorder of intestine
+c257,15,,
+d694,15,,
+8161,15,,
+1120,15,,Candidiasis of mouth
+n453,15,,
+o469,15,,
+7238,15,,Other syndromes affecting cervical region
+8242,15,,"Fracture of lateral malleolus, closed"
+d619,15,,
+s069,15,,
+m138,15,,
+8062,15,,
+d136,15,,
+4878,15,,Influenza with other manifestations
+g931,15,,
+4786,15,,Edema of larynx
+s126,14,,
+l958,14,,
+o240,14,,
+i082,14,,
+4560,14,,Esophageal varices with bleeding
+7849,14,,
+j156,14,,
+4338,14,,
+s060,14,,
+i975,14,,
+8448,14,,Sprains and strains of other specified sites of knee and leg
+c829,14,,
+4785,14,,Other diseases of vocal cords
+f208,14,,
+c772,14,,
+2753,14,,Disorders of phosphorus metabolism
+s131,14,,
+9698,14,,Poisoning by other specified psychotropic agents
+4148,14,,Other specified forms of chronic ischemic heart disease
+8450,14,,
+g618,14,,
+c186,14,,
+7104,14,,Polymyositis
+8032,14,,
+t451,14,,
+3047,14,,
+d721,14,,
+t450,14,,
+2007,14,,
+9953,14,,"Allergy, unspecified, not elsewhere classified"
+v548,14,,
+4820,14,,Pneumonia due to Klebsiella pneumoniae
+5933,14,,Stricture or kinking of ureter
+7078,14,,Chronic ulcer of other specified sites
+b004,14,,
+s520,14,,
+a049,14,,
+3940,14,,Mitral stenosis
+2362,14,,Neoplasm of uncertain behavior of ovary
+l026,14,,
+e883,14,,
+2355,14,,Neoplasm of uncertain behavior of other and unspecified digestive organs
+m79a,14,,
+9800,14,,Toxic effect of ethyl alcohol
+7516,14,,
+2230,14,,"Benign neoplasm of kidney, except pelvis"
+4536,14,,Venous embolism and thrombosis of superficial vessels of lower extremity
+5680,14,,Peritoneal adhesions (postoperative) (postinfection)
+6828,14,,Cellulitis and abscess of other specified sites
+s920,14,,
+d122,14,,
+z481,14,,
+n920,14,,
+2794,14,,Autoimmune disease nec
+463,14,,Acute tonsillitis
+4230,14,,Hemopericardium
+g971,14,,
+b374,14,,
+t436,14,,
+j852,14,,
+1504,14,,Malignant neoplasm of middle third of esophagus
+f251,14,,
+i691,14,,
+s818,14,,
+1727,14,,"Malignant melanoma of skin of lower limb, including hip"
+9222,13,,Contusion of abdominal wall
+1548,13,,"Malignant neoplasm of other sites of rectum, rectosigmoid junction, and anus"
+5080,13,,Acute pulmonary manifestations due to radiation
+4881,13,,Influenza due to identified novel H1N1 influenza virus
+i308,13,,
+r591,13,,
+c162,13,,
+g310,13,,
+g935,13,,
+6208,13,,"Other noninflammatory disorders of ovary, fallopian tube, and broad ligament"
+1982,13,,Secondary malignant neoplasm of skin
+5289,13,,Other and unspecified diseases of the oral soft tissues
+m353,13,,
+8135,13,,
+f078,13,,
+n950,13,,
+m711,13,,
+k413,13,,
+z038,13,,
+d150,13,,
+s521,13,,
+3461,13,,
+i674,13,,
+k317,13,,
+6462,13,,
+i82b,13,,
+k613,13,,
+t811,13,,
+1580,13,,Malignant neoplasm of retroperitoneum
+6253,13,,Dysmenorrhea
+1552,13,,"Malignant neoplasm of liver, not specified as primary or secondary"
+k37,13,,
+m329,13,,
+6191,13,,"Digestive-genital tract fistula, female"
+a020,13,,
+j985,13,,
+h669,13,,
+i420,13,,
+5793,13,,Other and unspecified postsurgical nonabsorption
+2271,13,,Benign neoplasm of parathyroid gland
+m069,13,,
+5334,13,,
+6143,13,,Acute parametritis and pelvic cellulitis
+4162,13,,Chronic pulmonary embolism
+b022,13,,
+k626,13,,
+8250,13,,"Fracture of calcaneus, closed"
+3829,13,,Unspecified otitis media
+b279,13,,
+c811,13,,
+k610,13,,
+c819,13,,
+c570,13,,
+z400,13,,
+6958,13,,
+3002,13,,
+7142,13,,Other rheumatoid arthritis with visceral or systemic involvement
+k811,13,,
+6860,13,,
+1844,13,,"Malignant neoplasm of vulva, unspecified site"
+k36,13,,
+o230,13,,
+h050,13,,
+4178,13,,Other specified diseases of pulmonary circulation
+j850,13,,
+s820,13,,
+k668,13,,
+r590,13,,
+6201,13,,Corpus luteum cyst or hematoma
+d3a8,13,,
+1914,13,,Malignant neoplasm of occipital lobe
+c55,13,,
+6869,13,,Unspecified local infection of skin and subcutaneous tissue
+709,13,,
+5996,13,,
+2790,13,,
+1965,13,,Secondary and unspecified malignant neoplasm of lymph nodes of inguinal region and lower limb
+g442,13,,
+b451,13,,
+r652,13,,
+d539,13,,
+6732,13,,
+1715,13,,Malignant neoplasm of connective and other soft tissue of abdomen
+8604,13,,Traumatic pneumohemothorax without mention of open wound into thorax
+r111,13,,
+n133,13,,
+g500,13,,
+o142,13,,
+2331,13,,Carcinoma in situ of cervix uteri
+k633,13,,
+7098,13,,Other specified disorders of skin
+i713,13,,
+2357,13,,"Neoplasm of uncertain behavior of trachea, bronchus, and lung"
+2733,13,,Macroglobulinemia
+k808,13,,
+6497,13,,
+m706,12,,
+i603,12,,
+7189,12,,
+4460,12,,Polyarteritis nodosa
+c501,12,,
+d135,12,,
+i723,12,,
+4610,12,,Acute maxillary sinusitis
+6019,12,,"Prostatitis, unspecified"
+485,12,,"Bronchopneumonia, organism unspecified"
+g444,12,,
+r748,12,,
+5600,12,,Intussusception
+6181,12,,Uterine prolapse without mention of vaginal wall prolapse
+5902,12,,Renal and perinephric abscess
+d250,12,,
+k710,12,,
+5848,12,,Acute kidney failure with other specified pathological lesion in kidney
+4661,12,,
+1832,12,,Malignant neoplasm of fallopian tube
+k659,12,,
+q612,12,,
+8810,12,,
+o994,12,,
+2538,12,,Other disorders of the pituitary and other syndromes of diencephalohypophyseal origin
+k255,12,,
+9999,12,,"Other and unspecified complications of medical care, not elsewhere classified"
+3485,12,,Cerebral edema
+l089,12,,
+q211,12,,
+f111,12,,
+i868,12,,
+j982,12,,
+n993,12,,
+2038,12,,
+4110,12,,Postmyocardial infarction syndrome
+5224,12,,Acute apical periodontitis of pulpal origin
+k853,12,,
+t465,12,,
+s022,12,,
+t822,12,,
+k819,12,,
+661,12,,
+8832,12,,"Open wound of finger(s), with tendon involvement"
+o990,12,,
+g951,12,,
+n801,12,,
+9670,12,,Poisoning by barbiturates
+j121,12,,
+g608,12,,
+4510,12,,Phlebitis and thrombophlebitis of superficial vessels of lower extremities
+1723,12,,Malignant melanoma of skin of other and unspecified parts of face
+7367,12,,
+9642,12,,Poisoning by anticoagulants
+t780,12,,
+j020,12,,
+8390,12,,
+6597,12,,
+b169,12,,
+i498,12,,
+5961,12,,Intestinovesical fistula
+3331,12,,Essential and other specified forms of tremor
+k223,12,,
+3599,12,,"Myopathy, unspecified"
+3568,12,,Other specified idiopathic peripheral neuropathy
+k295,12,,
+5520,12,,
+9752,12,,Poisoning by skeletal muscle relaxants
+m513,12,,
+4381,12,,
+9916,12,,Hypothermia
+3123,12,,
+t179,12,,
+f121,12,,
+c830,12,,
+e440,12,,
+k290,12,,
+2960,12,,
+o429,12,,
+t875,12,,
+g373,12,,
+4294,12,,Functional disturbances following cardiac surgery
+m459,12,,
+2770,12,,
+2093,12,,
+r471,11,,
+2511,11,,Other specified hypoglycemia
+549,11,,
+t183,11,,
+o9a2,11,,
+v530,11,,
+d490,11,,
+2352,11,,"Neoplasm of uncertain behavior of stomach, intestines, and rectum"
+a083,11,,
+g976,11,,
+8438,11,,Sprains and strains of other specified sites of hip and thigh
+s825,11,,
+l020,11,,
+7275,11,,
+j452,11,,
+7919,11,,Other nonspecific findings on examination of urine
+j051,11,,
+i131,11,,
+j961,11,,
+119,11,,
+k571,11,,
+7830,11,,Anorexia
+g628,11,,
+9828,11,,Toxic effect of other nonpetroleum-based solvents
+2811,11,,Other vitamin B12 deficiency anemia
+o343,11,,
+t831,11,,
+o441,11,,
+1573,11,,Malignant neoplasm of pancreatic duct
+4268,11,,
+1910,11,,"Malignant neoplasm of cerebrum, except lobes and ventricles"
+3731,11,,
+c218,11,,
+a310,11,,
+d708,11,,
+s064,11,,
+d508,11,,
+c154,11,,
+9230,11,,
+m002,11,,
+c508,11,,
+t407,11,,
+i716,11,,
+c321,11,,
+6945,11,,Pemphigoid
+8638,11,,
+i508,11,,
+4959,11,,Unspecified allergic alveolitis and pneumonitis
+e273,11,,
+1737,11,,"Other malignant neoplasm of skin of lower limb, including hip"
+a021,11,,
+2384,11,,Polycythemia vera
+8831,11,,"Open wound of finger(s), complicated"
+c915,11,,
+s614,11,,
+2662,11,,Other B-complex deficiencies
+t859,11,,
+c450,11,,
+i514,11,,
+4823,11,,
+1882,11,,Malignant neoplasm of lateral wall of urinary bladder
+g909,11,,
+i750,11,,
+r296,11,,
+7801,11,,Hallucinations
+d801,11,,
+798,11,,
+7876,11,,Incontinence of feces
+6161,11,,
+i822,11,,
+s123,11,,
+h341,11,,
+i254,11,,
+2003,11,,
+d361,11,,
+c502,11,,
+i601,11,,
+2102,11,,Benign neoplasm of major salivary glands
+k520,11,,
+3412,11,,
+i616,11,,
+5951,11,,Chronic interstitial cystitis
+2866,11,,Defibrination syndrome
+r943,11,,
+g952,11,,
+6429,11,,
+c771,11,,
+n823,11,,
+n809,11,,
+r451,11,,
+d180,10,,
+9711,10,,Poisoning by parasympatholytics (anticholinergics and antimuscarinics) and spasmolytics
+g588,10,,
+i258,10,,
+c903,10,,
+m068,10,,
+3393,10,,"Drug induced headache, not elsewhere classified"
+k910,10,,
+8110,10,,
+5379,10,,Unspecified disorder of stomach and duodenum
+5679,10,,Unspecified peritonitis
+k900,10,,
+i071,10,,
+k285,10,,
+2148,10,,Lipoma of other specified sites
+h830,10,,
+k225,10,,
+9589,10,,
+z510,10,,
+5111,10,,"Pleurisy with effusion, with mention of a bacterial cause other than tuberculosis"
+o133,10,,
+c530,10,,
+e869,10,,
+2893,10,,"Lymphadenitis, unspecified, except mesenteric"
+o421,10,,
+g039,10,,
+5374,10,,Fistula of stomach or duodenum
+6564,10,,
+2410,10,,Nontoxic uninodular goiter
+n611,10,,
+4802,10,,Pneumonia due to parainfluenza virus
+g959,10,,
+8921,10,,"Open wound of foot except toe(s) alone, complicated"
+s301,10,,
+3042,10,,
+k227,10,,
+t847,10,,
+j039,10,,
+1175,10,,Cryptococcosis
+t824,10,,
+6580,10,,
+z450,10,,
+4478,10,,Other specified disorders of arteries and arterioles
+1569,10,,"Malignant neoplasm of biliary tract, part unspecified site"
+c924,10,,
+t842,10,,
+7468,10,,
+9631,10,,Poisoning by antineoplastic and immunosuppressive drugs
+k759,10,,
+l978,10,,
+d841,10,,
+2001,10,,
+4450,10,,
+m608,10,,
+5120,10,,Spontaneous tension pneumothorax
+8233,10,,
+d3a0,10,,
+6582,10,,
+7101,10,,Systemic sclerosis
+6476,10,,
+6341,10,,
+o722,10,,
+9992,10,,"Other vascular complications of medical care, not elsewhere classified"
+8249,10,,"Unspecified fracture of ankle, open"
+g894,10,,
+j180,10,,
+i977,10,,
+d868,10,,
+r269,10,,
+2250,10,,Benign neoplasm of brain
+3372,10,,
+k916,10,,
+3089,10,,Unspecified acute reaction to stress
+7280,10,,Infective myositis
+2831,10,,
+9658,10,,Poisoning by other specified analgesics and antipyretics
+n410,10,,
+m461,10,,
+f132,10,,
+f302,10,,
+9273,10,,Crushing injury of finger(s)
+4530,10,,Budd-chiari syndrome
+c158,10,,
+4474,10,,Celiac artery compression syndrome
+8238,10,,
+796,10,,
+c923,10,,
+1987,10,,Secondary malignant neoplasm of adrenal gland
+7093,10,,Degenerative skin disorders
+d860,10,,
+3083,10,,Other acute reactions to stress
+z018,10,,
+c227,10,,
+1538,10,,Malignant neoplasm of other specified sites of large intestine
+g910,10,,
+f430,10,,
+f151,10,,
+3542,10,,Lesion of ulnar nerve
+o149,10,,
+l768,10,,
+3950,10,,Rheumatic aortic stenosis
+9348,10,,Foreign body in other specified parts bronchus and lung
+c437,10,,
+8460,10,,Sprain of lumbosacral (joint) (ligament)
+7202,10,,"Sacroiliitis, not elsewhere classified"
+1535,10,,Malignant neoplasm of appendix vermiformis
+o241,10,,
+c228,10,,
+n610,10,,
+1973,10,,Secondary malignant neoplasm of other respiratory organs
+5264,10,,Inflammatory conditions of jaw
+v550,9,,
+1725,9,,"Malignant melanoma of skin of trunk, except scrotum"
+r338,9,,
+b348,9,,
+1741,9,,Malignant neoplasm of central portion of female breast
+9008,9,,
+2651,9,,Other and unspecified manifestations of thiamine deficiency
+z332,9,,
+j122,9,,
+s202,9,,
+2155,9,,Other benign neoplasm of connective and other soft tissue of abdomen
+i660,9,,
+s300,9,,
+7165,9,,
+s518,9,,
+m465,9,,
+g562,9,,
+f454,9,,
+t79a,9,,
+i428,9,,
+6713,9,,
+2555,9,,Other adrenal hypofunction
+m751,9,,
+5233,9,,
+6350,9,,
+5819,9,,Nephrotic syndrome with unspecified pathological lesion in kidney
+r208,9,,
+6359,9,,
+93,9,,
+3313,9,,Communicating hydrocephalus
+n321,9,,
+c791,9,,
+d631,9,,
+l973,9,,
+2090,9,,
+s523,9,,
+m310,9,,
+7373,9,,
+2015,9,,
+3003,9,,Obsessive-compulsive disorders
+m704,9,,
+7854,9,,Gangrene
+i898,9,,
+7963,9,,Nonspecific low blood pressure reading
+938,9,,"Foreign body in digestive system, unspecified"
+1724,9,,Malignant melanoma of skin of scalp and neck
+5941,9,,Other calculus in bladder
+i429,9,,
+7955,9,,Nonspecific reaction to tuberculin skin test without active tuberculosis
+7260,9,,Adhesive capsulitis of shoulder
+2251,9,,Benign neoplasm of cranial nerves
+g958,9,,
+7184,9,,
+k658,9,,
+7297,9,,
+6952,9,,Erythema nodosum
+m351,9,,
+e059,9,,
+2008,9,,
+v561,9,,
+1733,9,,Other malignant neoplasm of skin of other and unspecified parts of face
+g049,9,,
+7108,9,,Other specified diffuse diseases of connective tissue
+i606,9,,
+n981,9,,
+8469,9,,Sprain of unspecified site of sacroiliac region
+o860,9,,
+3064,9,,Gastrointestinal malfunction arising from mental factors
+3792,9,,
+m191,9,,
+c183,9,,
+8500,9,,Concussion with no loss of consciousness
+c505,9,,
+9724,9,,Poisoning by coronary vasodilators
+m970,9,,
+g819,9,,
+8509,9,,"Concussion, unspecified"
+3202,9,,Streptococcal meningitis
+z390,9,,
+5306,9,,"Diverticulum of esophagus, acquired"
+d151,9,,
+3480,9,,Cerebral cysts
+2869,9,,Other and unspecified coagulation defects
+g211,9,,
+2781,9,,Localized adiposity
+6542,9,,
+n508,9,,
+4511,9,,
+7881,9,,Dysuria
+e052,9,,
+a409,9,,
+a938,9,,
+9684,9,,Poisoning by other and unspecified general anesthetics
+m064,9,,
+n138,9,,
+8064,9,,Closed fracture of lumbar spine with spinal cord injury
+i484,9,,
+h490,9,,
+7292,9,,"Neuralgia, neuritis, and radiculitis, unspecified"
+t862,9,,
+l120,9,,
+270,9,,
+1231,9,,Cysticercosis
+r688,9,,
+9958,9,,
+g060,9,,
+8028,9,,Closed fracture of other facial bones
+9679,9,,Poisoning by unspecified sedative or hypnotic
+8240,9,,"Fracture of medial malleolus, closed"
+t178,9,,
+s913,9,,
+4470,9,,"Arteriovenous fistula, acquired"
+2521,9,,Hypoparathyroidism
+g458,9,,
+5194,9,,Disorders of diaphragm
+t461,9,,
+j811,9,,
+d391,9,,
+e271,9,,
+1361,9,,Behcet's syndrome
+5695,9,,Abscess of intestine
+3337,9,,
+6467,9,,
+r561,9,,
+c831,9,,
+2114,9,,Benign neoplasm of rectum and anal canal
+t850,9,,
+2867,9,,Acquired coagulation factor deficiency
+f448,8,,
+k660,8,,
+d134,8,,
+s323,8,,
+r570,8,,
+840,8,,
+o135,8,,
+n049,8,,
+c480,8,,
+b182,8,,
+3799,8,,
+s421,8,,
+7805,8,,
+9744,8,,Poisoning by other diuretics
+s122,8,,
+1712,8,,"Malignant neoplasm of connective and other soft tissue of upper limb, including shoulder"
+z480,8,,
+j392,8,,
+c519,8,,
+4430,8,,Raynaud's syndrome
+g540,8,,
+i830,8,,
+f141,8,,
+3338,8,,
+d761,8,,
+h342,8,,
+e806,8,,
+i050,8,,
+l308,8,,
+c37,8,,
+i311,8,,
+4279,8,,"Cardiac dysrhythmia, unspecified"
+e538,8,,
+7906,8,,Other abnormal blood chemistry
+7424,8,,Other specified congenital anomalies of brain
+d572,8,,
+s008,8,,
+1513,8,,Malignant neoplasm of fundus of stomach
+3557,8,,
+c181,8,,
+i748,8,,
+c844,8,,
+k558,8,,
+m170,8,,
+1745,8,,Malignant neoplasm of lower-outer quadrant of female breast
+5304,8,,Perforation of esophagus
+1410,8,,Malignant neoplasm of base of tongue
+s681,8,,
+z473,8,,
+t390,8,,
+9959,8,,
+k915,8,,
+6111,8,,Hypertrophy of breast
+g620,8,,
+g440,8,,
+4382,8,,
+o211,8,,
+2839,8,,"Acquired hemolytic anemia, unspecified"
+l271,8,,
+112,8,,
+g930,8,,
+g038,8,,
+c503,8,,
+v510,8,,
+6961,8,,Other psoriasis
+k635,8,,
+2561,8,,Other ovarian hyperfunction
+4471,8,,Stricture of artery
+4618,8,,Other acute sinusitis
+i745,8,,
+v535,8,,
+g009,8,,
+k719,8,,
+7948,8,,Nonspecific abnormal results of function study of liver
+k575,8,,
+d66,8,,
+d123,8,,
+4645,8,,
+i278,8,,
+j108,8,,
+3575,8,,Alcoholic polyneuropathy
+m313,8,,
+1503,8,,Malignant neoplasm of upper third of esophagus
+t455,8,,
+7503,8,,"Tracheoesophageal fistula, esophageal atresia and stenosis"
+1743,8,,Malignant neoplasm of lower-inner quadrant of female breast
+f338,8,,
+5060,8,,Bronchitis and pneumonitis due to fumes and vapors
+8132,8,,
+q254,8,,
+c858,8,,
+n811,8,,
+6868,8,,Other specified local infections of skin and subcutaneous tissue
+8213,8,,
+5998,8,,
+s018,8,,
+4267,8,,Anomalous atrioventricular excitation
+e113,8,,
+n028,8,,
+940,8,,
+9696,8,,Poisoning by psychodysleptics (hallucinogens)
+8013,8,,
+b370,8,,
+8392,8,,
+2849,8,,"Aplastic anemia, unspecified"
+d594,8,,
+c481,8,,
+8900,8,,"Open wound of hip and thigh, without mention of complication"
+d051,8,,
+o234,8,,
+c783,8,,
+6850,8,,Pilonidal cyst with abscess
+8140,8,,
+m713,8,,
+3540,8,,Carpal tunnel syndrome
+6740,8,,
+t784,8,,
+m846,8,,
+q613,8,,
+2491,8,,
+2127,8,,Benign neoplasm of heart
+2988,8,,Other and unspecified reactive psychosis
+i828,8,,
+2903,8,,Senile dementia with delirium
+3970,8,,Diseases of tricuspid valve
+j930,8,,
+6210,8,,Polyp of corpus uteri
+5888,8,,
+s522,8,,
+r579,8,,
+7151,8,,
+n803,8,,
+s826,8,,
+k435,8,,
+e662,8,,
+8479,8,,Sprain of unspecified site of back
+t428,8,,
+6541,8,,
+8245,8,,"Bimalleolar fracture, open"
+c168,8,,
+r441,8,,
+c482,8,,
+61,8,,
+r458,8,,
+1840,8,,Malignant neoplasm of vagina
+5160,8,,Pulmonary alveolar proteinosis
+6012,7,,Abscess of prostate
+1568,7,,Malignant neoplasm of other specified sites of gallbladder and extrahepatic bile ducts
+i771,7,,
+b003,7,,
+d46z,7,,
+i831,7,,
+c930,7,,
+2748,7,,
+4554,7,,External thrombosed hemorrhoids
+l408,7,,
+6338,7,,
+d578,7,,
+c651,7,,
+v670,7,,
+t782,7,,
+s800,7,,
+o031,7,,
+7183,7,,
+9680,7,,Poisoning by central nervous system muscle-tone depressants
+c672,7,,
+6141,7,,Chronic salpingitis and oophoritis
+n451,7,,
+g445,7,,
+8748,7,,"Open wound of other and unspecified parts of neck, without mention of complication"
+g911,7,,
+d758,7,,
+7808,7,,Generalized hyperhidrosis
+6751,7,,
+8439,7,,Sprains and strains of unspecified site of hip and thigh
+7592,7,,Anomalies of other endocrine glands
+6258,7,,Other specified symptoms associated with female genital organs
+8261,7,,Open fracture of one or more phalanges of foot
+7902,7,,
+g032,7,,
+g834,7,,
+5690,7,,Anal and rectal polyp
+1716,7,,Malignant neoplasm of connective and other soft tissue of pelvis
+t175,7,,
+m797,7,,
+8812,7,,
+t888,7,,
+3055,7,,
+6619,7,,
+s623,7,,
+6117,7,,
+4242,7,,"Tricuspid valve disorders, specified as nonrheumatic"
+9712,7,,Poisoning by sympathomimetics [adrenergics]
+i208,7,,
+i458,7,,
+3008,7,,
+c792,7,,
+d65,7,,
+4438,7,,
+4730,7,,Chronic maxillary sinusitis
+d333,7,,
+k602,7,,
+n393,7,,
+i741,7,,
+a523,7,,
+s365,7,,
+b441,7,,
+s612,7,,
+k828,7,,
+i248,7,,
+2422,7,,
+2900,7,,"Senile dementia, uncomplicated"
+9920,7,,Heat stroke and sunstroke
+i270,7,,
+2118,7,,Benign neoplasm of retroperitoneum and peritoneum
+7476,7,,
+7510,7,,Meckel's diverticulum
+n258,7,,
+7278,7,,
+a413,7,,
+g901,7,,
+n816,7,,
+o985,7,,
+m544,7,,
+n151,7,,
+e272,7,,
+7267,7,,
+c402,7,,
+3128,7,,
+1735,7,,"Other malignant neoplasm of skin of trunk, except scrotum"
+3336,7,,Genetic torsion dystonia
+o008,7,,
+7573,7,,
+g908,7,,
+o341,7,,
+6422,7,,
+4411,7,,"Thoracic aneurysm, ruptured"
+5649,7,,Unspecified functional disorder of intestine
+k640,7,,
+o140,7,,
+q283,7,,
+b509,7,,
+k721,7,,
+s626,7,,
+z518,7,,
+m023,7,,
+j150,7,,
+g040,7,,
+1611,7,,Malignant neoplasm of supraglottis
+k582,7,,
+b028,7,,
+3429,7,,
+l974,7,,
+8711,7,,Ocular laceration with prolapse or exposure of intraocular tissue
+m244,7,,
+g308,7,,
+6479,7,,
+i706,7,,
+b019,7,,
+k421,7,,
+2094,7,,
+g961,7,,
+2980,7,,Depressive type psychosis
+f309,7,,
+f191,7,,
+6432,7,,
+c161,7,,
+1726,7,,"Malignant melanoma of skin of upper limb, including shoulder"
+8483,7,,Sprain of ribs
+o021,7,,
+1511,7,,Malignant neoplasm of pylorus
+3860,7,,
+6545,7,,
+c7b0,7,,
+4265,7,,
+c164,7,,
+g919,7,,
+g300,7,,
+5285,7,,Diseases of lips
+r798,7,,
+l010,7,,
+m179,7,,
+9691,7,,Poisoning by phenothiazine-based tranquilizers
+r221,7,,
+1707,7,,Malignant neoplasm of long bones of lower limb
+m061,7,,
+8860,7,,"Traumatic amputation of other finger(s) (complete) (partial), without mention of complication"
+9165,7,,"Insect bite, nonvenomous of hip, thigh, leg, and ankle, infected"
+6332,7,,
+6221,7,,
+k319,7,,
+m1a9,7,,
+2738,7,,Other disorders of plasma protein metabolism
+c52,7,,
+c188,6,,
+f447,6,,
+6349,6,,
+3550,6,,Lesion of sciatic nerve
+8260,6,,Closed fracture of one or more phalanges of foot
+h340,6,,
+c817,6,,
+d869,6,,
+f648,6,,
+b488,6,,
+c852,6,,
+8540,6,,
+3865,6,,
+z421,6,,
+8408,6,,Sprains and strains of other specified sites of shoulder and upper arm
+r140,6,,
+2865,6,,Hemorrhagic disorder due to intrinsic circulating anticoagulants
+n419,6,,
+i169,6,,
+20,6,,
+5967,6,,Hemorrhage into bladder wall
+7841,6,,Throat pain
+i711,6,,
+s430,6,,
+i778,6,,
+6410,6,,
+l209,6,,
+o758,6,,
+g960,6,,
+9000,6,,
+4830,6,,Pneumonia due to mycoplasma pneumoniae
+l896,6,,
+3009,6,,Unspecified nonpsychotic mental disorder
+n990,6,,
+6040,6,,"Orchitis, epididymitis, and epididymo-orchitis, with abscess"
+9452,6,,
+8074,6,,Flail chest
+j158,6,,
+2428,6,,
+1420,6,,Malignant neoplasm of parotid gland
+i675,6,,
+4441,6,,Embolism and thrombosis of thoracic aorta
+m543,6,,
+3576,6,,Polyneuropathy due to drugs
+i440,6,,
+c33,6,,
+i701,6,,
+226,6,,Benign neoplasm of thyroid glands
+c629,6,,
+3391,6,,
+c781,6,,
+c678,6,,
+7158,6,,
+b010,6,,
+k402,6,,
+5989,6,,"Urethral stricture, unspecified"
+7940,6,,
+d321,6,,
+j700,6,,
+f444,6,,
+2824,6,,
+l893,6,,
+o342,6,,
+e161,6,,
+b440,6,,
+i422,6,,
+m130,6,,
+t854,6,,
+408,6,,
+8800,6,,
+1123,6,,Candidiasis of skin and nails
+i602,6,,
+6351,6,,
+3774,6,,
+f449,6,,
+6178,6,,Endometriosis of other specified sites
+j329,6,,
+5839,6,,"Nephritis and nephropathy, not specified as acute or chronic, with unspecified pathological lesion in kidney"
+3343,6,,Other cerebellar ataxia
+312,6,,
+s011,6,,
+3335,6,,Other choreas
+e232,6,,
+e890,6,,
+r908,6,,
+3743,6,,
+i820,6,,
+5273,6,,Abscess of salivary gland
+i209,6,,
+v717,6,,
+c01,6,,
+7463,6,,Congenital stenosis of aortic valve
+4041,6,,
+2979,6,,Unspecified paranoid state
+i720,6,,
+3551,6,,Meralgia paresthetica
+5965,6,,
+i703,6,,
+m503,6,,
+m702,6,,
+1537,6,,Malignant neoplasm of splenic flexure
+6082,6,,
+f328,6,,
+m502,6,,
+6269,6,,Unspecified disorders of menstruation and other abnormal bleeding from female genital tract
+k812,6,,
+5900,6,,
+k113,6,,
+3129,6,,Unspecified disturbance of conduct
+1714,6,,Malignant neoplasm of connective and other soft tissue of thorax
+s020,6,,
+i850,6,,
+4400,6,,Atherosclerosis of aorta
+6078,6,,
+r58,6,,
+4297,6,,
+c763,6,,
+j328,6,,
+7195,6,,
+v556,6,,
+g621,6,,
+g473,6,,
+c946,6,,
+d470,6,,
+i700,6,,
+o030,6,,
+c884,6,,
+d471,6,,
+6120,6,,Deformity of reconstructed breast
+i361,6,,
+1891,6,,Malignant neoplasm of renal pelvis
+j702,6,,
+7366,6,,Other acquired deformities of knee
+i456,6,,
+g062,6,,
+5764,6,,Fistula of bile duct
+c548,6,,
+f159,6,,
+d124,6,,
+t659,6,,
+3723,6,,
+1618,6,,Malignant neoplasm of other specified sites of larynx
+c671,6,,
+4378,6,,Other ill-defined cerebrovascular disease
+m125,6,,
+h469,6,,
+g975,6,,
+4920,6,,Emphysematous bleb
+g724,6,,
+6340,6,,
+8150,6,,
+o882,6,,
+684,6,,Impetigo
+i255,6,,
+6073,6,,Priapism
+j128,6,,
+m952,6,,
+k769,6,,
+o219,6,,
+2312,6,,Carcinoma in situ of bronchus and lung
+1639,6,,"Malignant neoplasm of pleura, unspecified"
+4533,6,,Other venous embolism and thrombosis of renal vein
+d599,6,,
+e834,6,,
+l309,6,,
+j387,6,,
+7883,6,,
+8786,6,,"Open wound of vagina, without mention of complication"
+s700,6,,
+d684,6,,
+s000,6,,
+c674,6,,
+71,6,,
+h539,6,,
+m245,6,,
+d45,6,,
+7048,6,,Other specified diseases of hair and hair follicles
+9984,6,,Foreign body accidentally left during a procedure
+r827,6,,
+6557,6,,
+6118,6,,Breast disorders nec
+7217,6,,Traumatic spondylopathy
+d473,6,,
+7276,6,,
+c774,6,,
+i607,6,,
+k612,6,,
+h601,6,,
+6745,6,,
+5798,6,,Other specified intestinal malabsorption
+n719,6,,
+5210,6,,
+a150,6,,
+6510,6,,
+r251,6,,
+l511,6,,
+m898,6,,
+e898,6,,
+k716,6,,
+o903,6,,
+1734,6,,Other malignant neoplasm of scalp and skin of neck
+s686,6,,
+e096,6,,
+c950,6,,
+e340,6,,
+9551,5,,Injury to median nerve
+f438,5,,
+7921,5,,Nonspecific abnormal findings in stool contents
+t403,5,,
+m317,5,,
+q446,5,,
+r945,5,,
+c099,5,,
+c249,5,,
+i851,5,,
+r091,5,,
+9720,5,,Poisoning by cardiac rhythm regulators
+f418,5,,
+q048,5,,
+4059,5,,
+h160,5,,
+8641,5,,
+c799,5,,
+2386,5,,Neoplasm of uncertain behavior of plasma cells
+527,5,,
+g252,5,,
+e058,5,,
+4658,5,,Acute upper respiratory infections of other multiple sites
+l898,5,,
+n210,5,,
+4550,5,,Internal hemorrhoids without mention of complication
+2469,5,,Unspecified disorder of thyroid
+5584,5,,
+k654,5,,
+d748,5,,
+e874,5,,
+c435,5,,
+3069,5,,Unspecified psychophysiological malfunction
+3321,5,,Secondary parkinsonism
+1710,5,,"Malignant neoplasm of connective and other soft tissue of head, face, and neck"
+g10,5,,
+9248,5,,"Contusion of multiple sites, not elsewhere classified"
+7166,5,,
+o046,5,,
+i650,5,,
+d370,5,,
+9583,5,,Posttraumatic wound infection not elsewhere classified
+2060,5,,
+8000,5,,
+m609,5,,
+6150,5,,"Acute inflammatory diseases of uterus, except cervix"
+g905,5,,
+5439,5,,Other and unspecified diseases of appendix
+7089,5,,"Urticaria, unspecified"
+i721,5,,
+r270,5,,
+i774,5,,
+c538,5,,
+a870,5,,
+7018,5,,Other specified hypertrophic and atrophic conditions of skin
+i513,5,,
+k450,5,,
+f28,5,,
+q230,5,,
+9980,5,,"Postoperative shock, not elsewhere classified"
+8042,5,,
+120,5,,
+s923,5,,
+d891,5,,
+r419,5,,
+3610,5,,
+i605,5,,
+8247,5,,"Trimalleolar fracture, open"
+a521,5,,
+m339,5,,
+6700,5,,
+s924,5,,
+5311,5,,
+9656,5,,
+s161,5,,
+g379,5,,
+7483,5,,"Other anomalies of larynx, trachea, and bronchus"
+6923,5,,Contact dermatitis and other eczema due to drugs and medicines in contact with skin
+6357,5,,
+6426,5,,
+j940,5,,
+i707,5,,
+4263,5,,Other left bundle branch block
+j988,5,,
+m348,5,,
+n281,5,,
+g255,5,,
+t711,5,,
+c796,5,,
+h814,5,,
+o113,5,,
+b448,5,,
+3370,5,,Idiopath auto neuropathy
+f310,5,,
+1468,5,,Malignant neoplasm of other specified sites of oropharynx
+s824,5,,
+f122,5,,
+o034,5,,
+f09,5,,
+f192,5,,
+l972,5,,
+l892,5,,
+d510,5,,
+i779,5,,
+r400,5,,
+r739,5,,
+d497,5,,
+4141,5,,
+n394,5,,
+979,5,,
+n040,5,,
+k266,5,,
+6495,5,,
+2391,5,,Neoplasm of unspecified nature of respiratory system
+k614,5,,
+m546,5,,
+4421,5,,Aneurysm of renal artery
+s501,5,,
+l400,5,,
+3545,5,,Mononeuritis multiplex
+9100,5,,"Abrasion or friction burn of face, neck, and scalp except eye, without mention of infection"
+7241,5,,Pain in thoracic spine
+6544,5,,
+9779,5,,Poisoning by unspecified drug or medicinal substance
+d592,5,,
+9340,5,,Foreign body in trachea
+t528,5,,
+1892,5,,Malignant neoplasm of ureter
+3669,5,,Unspecified cataract
+4249,5,,
+1922,5,,Malignant neoplasm of spinal cord
+3552,5,,Other lesion of femoral nerve
+r260,5,,
+8471,5,,Sprain of thoracic
+9661,5,,Poisoning by hydantoin derivatives
+m131,5,,
+j102,5,,
+d381,5,,
+b008,5,,
+7473,5,,Anomalies of pulmonary artery
+3316,5,,Corticobasal degeneration
+j028,5,,
+r634,5,,
+9832,5,,Toxic effect of caustic alkalis
+i249,5,,
+o721,5,,
+1104,5,,Dermatophytosis of foot
+j155,5,,
+j701,5,,
+390,5,,Rheumatic fever without mention of heart involvement
+701,5,,
+e858,5,,
+s921,5,,
+8363,5,,"Dislocation of patella, closed"
+i726,5,,
+2769,5,,Electrolyte and fluid disorders not elsewhere classified
+l979,5,,
+s290,5,,
+g240,5,,
+5582,5,,Toxic gastroenteritis and colitis
+g40b,5,,
+4938,5,,
+s373,5,,
+i998,5,,
+7287,5,,
+8023,5,,
+k279,5,,
+4351,5,,Vertebral artery syndrome
+n301,5,,
+s625,5,,
+n141,5,,
+o991,5,,
+319,5,,Unspecified intellectual disabilities
+4376,5,,Nonpyogenic thrombosis of intracranial venous sinus
+z428,5,,
+2777,5,,Dysmetabolic syndrome X
+l088,5,,
+7844,5,,
+r413,5,,
+n111,5,,
+g248,5,,
+3017,5,,Antisocial personality disorder
+6488,5,,
+j043,5,,
+j22,5,,
+m479,5,,
+c778,5,,
+5186,5,,Allergic bronchopulmonary aspergillosis
+2750,5,,Disorders of iron metabolism
+6708,5,,
+6146,5,,"Pelvic peritoneal adhesions, female (postoperative) (postinfection)"
+c578,5,,
+498,5,,
+l259,5,,
+1893,5,,Malignant neoplasm of urethra
+9947,5,,Asphyxiation and strangulation
+9587,5,,Traumatic subcutaneous emphysema
+r220,5,,
+e880,5,,
+7868,5,,Hiccough
+m864,5,,
+o76,5,,
+8524,5,,
+b020,5,,
+g258,5,,
+9617,5,,Poisoning by antiviral drugs
+6419,5,,
+c165,5,,
+l988,5,,
+i051,5,,
+i82a,5,,
+i677,5,,
+r222,5,,
+j340,5,,
+8820,5,,"Open wound of hand except finger(s) alone, without mention of complication"
+m961,5,,
+g319,5,,
+1515,5,,"Malignant neoplasm of lesser curvature of stomach, unspecified"
+m659,5,,
+d686,5,,
+1620,5,,Malignant neoplasm of trachea
+m750,5,,
+5078,5,,Pneumonitis due to other solids and liquids
+e063,5,,
+i708,5,,
+j384,5,,
+f459,5,,
+3052,5,,
+k822,5,,
+i699,5,,
+3418,5,,Other demyelinating diseases of central nervous system
+m941,5,,
+j42,5,,
+1543,4,,"Malignant neoplasm of anus, unspecified site"
+5952,4,,Other chronic cystitis
+r651,4,,
+8651,4,,
+1103,4,,Dermatophytosis of groin and perianal area
+d480,4,,
+k820,4,,
+6398,4,,Other specified complications following abortion or ectopic and molar pregnancy
+i452,4,,
+3101,4,,Personality change due to conditions classified elsewhere
+n62,4,,
+5754,4,,Perforation of gallbladder
+k052,4,,
+2721,4,,Pure hyperglyceridemia
+2897,4,,Methemoglobinemia
+z465,4,,
+3390,4,,
+2150,4,,"Other benign neoplasm of connective and other soft tissue of head, face, and neck"
+8611,4,,
+c828,4,,
+g560,4,,
+189,4,,
+s728,4,,
+o033,4,,
+i725,4,,
+6661,4,,
+c211,4,,
+t658,4,,
+3784,4,,
+l028,4,,
+5643,4,,Vomiting following gastrointestinal surgery
+4021,4,,
+t185,4,,
+n818,4,,
+1121,4,,Candidiasis of vulva and vagina
+6200,4,,Follicular cyst of ovary
+6989,4,,Unspecified pruritic disorder
+k912,4,,
+4738,4,,Other chronic sinusitis
+7262,4,,"Other affections of shoulder region, not elsewhere classified"
+1915,4,,Malignant neoplasm of ventricles
+h546,4,,
+8605,4,,Traumatic pneumohemothorax with open wound into thorax
+f509,4,,
+1522,4,,Malignant neoplasm of ileum
+1980,4,,Secondary malignant neoplasm of kidney
+3598,4,,
+7185,4,,
+h609,4,,
+7556,4,,
+m418,4,,
+1916,4,,Malignant neoplasm of cerebellum nos
+4613,4,,Acute sphenoidal sinusitis
+1488,4,,Malignant neoplasm of other specified sites of hypopharynx
+1619,4,,"Malignant neoplasm of larynx, unspecified"
+e091,4,,
+o218,4,,
+g434,4,,
+c775,4,,
+l038,4,,
+e833,4,,
+j453,4,,
+7143,4,,
+9582,4,,Secondary and recurrent hemorrhage
+t184,4,,
+k316,4,,
+4931,4,,
+1722,4,,Malignant melanoma of skin of ear and external auditory canal
+k839,4,,
+m059,4,,
+s061,4,,
+461,4,,
+c060,4,,
+4918,4,,Other chronic bronchitis
+4416,4,,"Thoracoabdominal aneurysm, ruptured"
+v586,4,,
+6209,4,,"Unspecified noninflammatory disorder of ovary, fallopian tube, and broad ligament"
+2397,4,,Neoplasm of unspecified nature of endocrine glands and other parts of nervous system
+k130,4,,
+7892,4,,Splenomegaly
+o134,4,,
+2441,4,,Other postablative hypothyroidism
+6565,4,,
+s810,4,,
+1966,4,,Secondary and unspecified malignant neoplasm of intrapelvic lymph nodes
+7188,4,,
+5316,4,,
+3530,4,,Brachial plexus lesions
+3518,4,,Other facial nerve disorders
+d431,4,,
+f609,4,,
+3319,4,,"Cerebral degeneration, unspecified"
+v540,4,,
+g430,4,,
+o368,4,,
+2808,4,,Other specified iron deficiency anemias
+d733,4,,
+d898,4,,
+m660,4,,
+e136,4,,
+3440,4,,
+f508,4,,
+n400,4,,
+3549,4,,"Mononeuritis of upper limb, unspecified"
+3392,4,,
+7062,4,,Sebaceous cyst
+5512,4,,
+b974,4,,
+4512,4,,"Phlebitis and thrombophlebitis of lower extremities, unspecified"
+1884,4,,Malignant neoplasm of posterior wall of urinary bladder
+c090,4,,
+6926,4,,Contact dermatitis and other eczema due to plants [except food]
+n412,4,,
+734,4,,Flat foot
+546,4,,
+400,4,,
+7219,4,,
+v715,4,,
+g470,4,,
+t66x,4,,
+e888,4,,
+f169,4,,
+4289,4,,"Heart failure, unspecified"
+k833,4,,
+n119,4,,
+s068,4,,
+m463,4,,
+5692,4,,Stenosis of rectum and anus
+9231,4,,
+2885,4,,
+9858,4,,Toxic effect of other specified metals
+6640,4,,
+o868,4,,
+5642,4,,Postgastric surgery syndromes
+8125,4,,
+8360,4,,"Tear of medial cartilage or meniscus of knee, current"
+8160,4,,
+r209,4,,
+3057,4,,
+3684,4,,
+5309,4,,Unspecified disorder of esophagus
+s934,4,,
+1940,4,,Malignant neoplasm of adrenal gland
+8633,4,,
+1521,4,,Malignant neoplasm of jejunum
+6948,4,,Other specified bullous dermatoses
+3208,4,,
+n857,4,,
+1638,4,,Malignant neoplasm of other specified sites of pleura
+2532,4,,Panhypopituitarism
+r300,4,,
+c92a,4,,
+4371,4,,Other generalized ischemic cerebrovascular disease
+d125,4,,
+1330,4,,Scabies
+q822,4,,
+d783,4,,
+h810,4,,
+3411,4,,Schilder's disease
+g729,4,,
+3201,4,,Pneumococcal meningitis
+7930,4,,Nonspecific (abnormal) findings on radiological and other examination of skull and head
+2440,4,,Postsurgical hypothyroidism
+n139,4,,
+r630,4,,
+c495,4,,
+j391,4,,
+s278,4,,
+i409,4,,
+41,4,,
+a048,4,,
+6928,4,,
+g400,4,,
+t443,4,,
+8931,4,,"Open wound of toe(s), complicated"
+8340,4,,
+c269,4,,
+8151,4,,
+i318,4,,
+j954,4,,
+8830,4,,"Open wound of finger(s), without mention of complication"
+n289,4,,
+4958,4,,Other specified allergic alveolitis and pneumonitis
+7149,4,,Unspecified inflammatory polyarthropathy
+c153,4,,
+j432,4,,
+t836,4,,
+k029,4,,
+z09,4,,
+z048,4,,
+j14,4,,
+1968,4,,Secondary and unspecified malignant neoplasm of lymph nodes of multiple sites
+c649,4,,
+s098,4,,
+5238,4,,Other specified periodontal diseases
+6186,4,,"Vaginal enterocele, congenital or acquired"
+3526,4,,Multiple cranial nerve palsies
+5760,4,,Postcholecystectomy syndrome
+9839,4,,"Toxic effect of caustic, unspecified"
+i636,4,,
+49,4,,
+g251,4,,
+t568,4,,
+6592,4,,
+2394,4,,Neoplasm of unspecified nature of bladder
+8239,4,,
+r61,4,,
+9330,4,,Foreign body in pharynx
+1953,4,,Malignant neoplasm of pelvis
+2132,4,,"Benign neoplasm of vertebral column, excluding sacrum and coccyx"
+8350,4,,
+g250,4,,
+k593,4,,
+j154,4,,
+8738,4,,Other and unspecified open wound of head without mention of complication
+5734,4,,Hepatic infarction
+9695,4,,Poisoning by other tranquilizers
+9898,4,,
+3140,4,,
+d574,4,,
+2999,4,,
+31,4,,
+t543,4,,
+s760,4,,
+c717,4,,
+r933,4,,
+9556,4,,"Injury to digital nerve, upper limb"
+i119,4,,
+8601,4,,Traumatic pneumothorax with open wound into thorax
+r938,4,,
+2126,4,,Benign neoplasm of thymus
+a548,4,,
+3621,4,,
+7371,4,,
+3600,4,,
+3918,4,,Other acute rheumatic heart disease
+2911,4,,Alcohol-induced persisting amnestic disorder
+5282,4,,Oral aphthae
+a427,4,,
+6039,4,,"Hydrocele, unspecified"
+i738,4,,
+4640,4,,
+9553,4,,Injury to radial nerve
+6339,4,,
+s015,4,,
+7920,4,,Nonspecific abnormal findings in cerebrospinal fluid
+r330,4,,
+j040,4,,
+s615,4,,
+n948,4,,
+r609,4,,
+2864,4,,Von Willebrand's disease
+a088,4,,
+r761,4,,
+3839,4,,Unspecified mastoiditis
+o223,4,,
+i730,4,,
+9957,4,,"Other adverse food reactions, not elsewhere classified"
+f149,4,,
+c443,4,,
+9995,4,,"Other serum reaction, not elsewhere classified"
+3012,4,,
+n029,4,,
+r931,4,,
+9912,4,,Frostbite of foot
+3220,4,,Nonpyogenic meningitis
+9809,4,,Toxic effect of unspecified alcohol
+2451,4,,Subacute thyroiditis
+2080,4,,
+m843,4,,
+s868,4,,
+t629,4,,
+8523,4,,
+i219,4,,
+l984,4,,
+3493,4,,
+g450,4,,
+a199,4,,
+5518,4,,"Hernia of other specified sites, with gangrene"
+2912,4,,Alcohol-induced persisting dementia
+c166,4,,
+7826,4,,
+5321,4,,
+2498,4,,
+j013,4,,
+6715,4,,
+2961,4,,
+n482,4,,
+c210,4,,
+l040,4,,
+k228,4,,
+e094,4,,
+1640,4,,Malignant neoplasm of thymus
+c577,4,,
+6918,4,,Other atopic dermatitis and related conditions
+980,4,,
+3492,4,,"Disorders of meninges, not elsewhere classified"
+3368,4,,Other myelopathy
+3360,4,,Syringomyelia and syringobulbia
+7932,4,,Nonspecific (abnormal) findings on radiological and other examination of other intrathoracic organs
+5799,4,,Unspecified intestinal malabsorption
+f502,4,,
+g513,4,,
+v712,4,,
+g904,4,,
+5809,4,,Acute glomerulonephritis with unspecified pathological lesion in kidney
+9664,4,,Poisoning by anti-Parkinsonism drugs
+5269,4,,Unspecified disease of the jaws
+8131,4,,
+j986,4,,
+7880,4,,Renal colic
+f341,4,,
+1528,4,,Malignant neoplasm of other specified sites of small intestine
+2309,4,,Carcinoma in situ of other and unspecified digestive organs
+2810,4,,Pernicious anemia
+m300,4,,
+7228,4,,
+t502,4,,
+8922,4,,"Open wound of foot except toe(s) alone, with tendon involvement"
+v457,4,,
+c185,4,,
+i780,4,,
+7363,4,,
+s366,4,,
+l405,4,,
+f429,4,,
+7884,4,,
+1419,4,,"Malignant neoplasm of tongue, unspecified"
+i808,4,,
+d444,4,,
+3689,4,,Unspecified visual disturbance
+t406,4,,
+6121,4,,Disproportion of reconstructed breast
+2537,4,,Iatrogenic pituitary disorders
+h024,4,,
+l52,4,,
+7827,4,,Spontaneous ecchymoses
+c447,4,,
+a059,4,,
+2143,4,,Lipoma of intra-abdominal organs
+s250,4,,
+i800,4,,
+m315,4,,
+r440,4,,
+3625,4,,
+t68x,4,,
+3891,4,,
+m358,4,,
+a280,4,,
+e103,4,,
+i722,4,,
+7368,4,,
+i241,4,,
+c673,4,,
+f201,4,,
+l298,4,,
+7179,4,,Unspecified internal derangement of knee
+5258,3,,Other specified disorders of the teeth and supporting structures
+4150,3,,Acute cor pulmonale
+m301,3,,
+k911,3,,
+8850,3,,"Traumatic amputation of thumb (complete)(partial), without mention of complication"
+d34,3,,
+f919,3,,
+4264,3,,Right bundle branch block
+5317,3,,
+s651,3,,
+t505,3,,
+c820,3,,
+a072,3,,
+s099,3,,
+b999,3,,
+i692,3,,
+1750,3,,Malignant neoplasm of nipple and areola of male breast
+r011,3,,
+8088,3,,Closed unspecified fracture of pelvis
+n808,3,,
+g528,3,,
+2452,3,,Chronic lymphocytic thyroiditis
+b449,3,,
+d593,3,,
+d172,3,,
+s831,3,,
+n364,3,,
+6009,3,,
+3668,3,,Other cataract
+6927,3,,
+n762,3,,
+l299,3,,
+c414,3,,
+c661,3,,
+3788,3,,
+7936,3,,"Nonspecific (abnormal) findings on radiological and other examination of abdominal area, including retroperitoneum"
+5583,3,,Allergic gastroenteritis and colitis
+4553,3,,External hemorrhoids without mention of complication
+4272,3,,"Paroxysmal tachycardia, unspecified"
+1368,3,,Other specified infectious and parasitic diseases
+n130,3,,
+6568,3,,
+1516,3,,"Malignant neoplasm of greater curvature of stomach, unspecified"
+m258,3,,
+1272,3,,Strongyloidiasis
+n041,3,,
+3553,3,,Lesion of lateral popliteal nerve
+j957,3,,
+3044,3,,
+2496,3,,
+j014,3,,
+2369,3,,
+3698,3,,"Unqualified visual loss, one eye"
+4480,3,,Hereditary hemorrhagic telangiectasia
+m352,3,,
+3394,3,,
+7871,3,,Heartburn
+j118,3,,
+f608,3,,
+1718,3,,Malignant neoplasm of other specified sites of connective and other soft tissue
+c579,3,,
+k522,3,,
+2559,3,,Unspecified disorder of adrenal glands
+3652,3,,
+k287,3,,
+6293,3,,
+k639,3,,
+a542,3,,
+k253,3,,
+n840,3,,
+d782,3,,
+g312,3,,
+r479,3,,
+7109,3,,Unspecified diffuse connective tissue disease
+k274,3,,
+a812,3,,
+a412,3,,
+9895,3,,Toxic effect of venom
+v568,3,,
+i468,3,,
+s832,3,,
+8750,3,,"Open wound of chest (wall), without mention of complication"
+8735,3,,
+k700,3,,
+9135,3,,"Insect bite, nonvenomous, of elbow, forearm, and wrist, infected"
+2210,3,,Benign neoplasm of fallopian tube and uterine ligaments
+e032,3,,
+n839,3,,
+b100,3,,
+q433,3,,
+h353,3,,
+2755,3,,Hungry bone syndrome
+8612,3,,
+r066,3,,
+k82a,3,,
+7532,3,,
+b001,3,,
+3661,3,,
+g571,3,,
+m173,3,,
+1490,3,,"Malignant neoplasm of pharynx, unspecified"
+2751,3,,Disorders of copper metabolism
+m872,3,,
+1986,3,,Secondary malignant neoplasm of ovary
+3470,3,,
+s400,3,,
+r404,3,,
+n760,3,,
+v652,3,,
+9880,3,,Toxic effect of fish and shellfish eaten as food
+l539,3,,
+2253,3,,Benign neoplasm of spinal cord
+6400,3,,
+k120,3,,
+b021,3,,
+6988,3,,Other specified pruritic conditions
+5561,3,,Ulcerative (chronic) ileocolitis
+9941,3,,Drowning and nonfatal submersion
+a392,3,,
+l500,3,,
+e781,3,,
+6657,3,,
+h571,3,,
+m332,3,,
+m793,3,,
+7515,3,,Other anomalies of intestine
+k200,3,,
+l509,3,,
+3794,3,,
+6641,3,,
+s562,3,,
+k717,3,,
+4784,3,,Polyp of vocal cord or larynx
+t464,3,,
+8211,3,,
+t844,3,,
+5187,3,,Transfusion related acute lung injury (TRALI)
+5199,3,,Unspecified disease of respiratory system
+c931,3,,
+2535,3,,Diabetes insipidus
+4561,3,,Esophageal varices without mention of bleeding
+2156,3,,Other benign neoplasm of connective and other soft tissue of pelvis
+c800,3,,
+6481,3,,
+9022,3,,
+1881,3,,Malignant neoplasm of dome of urinary bladder
+i314,3,,
+1736,3,,"Other malignant neoplasm of skin of upper limb, including shoulder"
+5804,3,,Acute glomerulonephritis with lesion of rapidly progressive glomerulonephritis
+q046,3,,
+1921,3,,Malignant neoplasm of cerebral meninges
+n529,3,,
+z436,3,,
+c675,3,,
+q858,3,,
+5811,3,,Nephrotic syndrome with lesion of membranous glomerulonephritis
+r008,3,,
+7933,3,,Nonspecific (abnormal) findings on radiological and other examination of biliary tract
+v638,3,,
+c491,3,,
+8442,3,,Sprain of cruciate ligament of knee
+8017,3,,
+t174,3,,
+n185,3,,
+l401,3,,
+b690,3,,
+s620,3,,
+3334,3,,Huntington's chorea
+e079,3,,
+s451,3,,
+k621,3,,
+o432,3,,
+9528,3,,Multiple sites of spinal cord injury without evidence of spinal bone injury
+f258,3,,
+d590,3,,
+6072,3,,Other inflammatory disorders of penis
+4599,3,,Unspecified circulatory system disorder
+n61,3,,
+9212,3,,Contusion of orbital tissues
+1418,3,,Malignant neoplasm of other sites of tongue
+o009,3,,
+6273,3,,Postmenopausal atrophic vaginitis
+6175,3,,Endometriosis of intestine
+g301,3,,
+i491,3,,
+3463,3,,
+5800,3,,Acute glomerulonephritis with lesion of proliferative glomerulonephritis
+l249,3,,
+e212,3,,
+i715,3,,
+5275,3,,Sialolithiasis
+a544,3,,
+r072,3,,
+r259,3,,
+9219,3,,Unspecified contusion of eye
+d67,3,,
+2462,3,,Cyst of thyroid
+b338,3,,
+9552,3,,Injury to ulnar nerve
+t387,3,,
+f308,3,,
+s355,3,,
+4299,3,,"Heart disease, unspecified"
+6944,3,,Pemphigus
+8521,3,,
+t149,3,,
+8822,3,,"Open wound of hand except finger(s) alone, with tendon involvement"
+501,3,,Asbestosis
+360,3,,
+4732,3,,Chronic ethmoidal sinusitis
+9232,3,,
+7937,3,,Nonspecific (abnormal) findings on radiological and other examination of musculoskeletal system
+a46,3,,
+5813,3,,Nephrotic syndrome with lesion of minimal change glomerulonephritis
+3577,3,,Polyneuropathy due to other toxic agents
+3592,3,,
+3013,3,,Explosive personality disorder
+s053,3,,
+o365,3,,
+c412,3,,
+h534,3,,
+s052,3,,
+1990,3,,Disseminated malignant neoplasm without specification of site
+i499,3,,
+n738,3,,
+4266,3,,Other heart block
+e041,3,,
+8710,3,,Ocular laceration without prolapse of intraocular tissue
+i870,3,,
+z454,3,,
+7092,3,,Scar conditions and fibrosis of skin
+3446,3,,
+n110,3,,
+h818,3,,
+i339,3,,
+4387,3,,"Late effects of cerebrovascular disease, disturbances of vision"
+1729,3,,"Melanoma of skin, site unspecified"
+f330,3,,
+c318,3,,
+1529,3,,"Malignant neoplasm of small intestine, unspecified site"
+2153,3,,"Other benign neoplasm of connective and other soft tissue of lower limb, including hip"
+o244,3,,
+5730,3,,Chronic passive congestion of liver
+5259,3,,Unspecified disorder of the teeth and supporting structures
+5340,3,,
+l942,3,,
+3054,3,,
+1958,3,,Malignant neoplasm of other specified sites
+3373,3,,Autonomic dysreflexia
+s013,3,,
+c07,3,,
+g822,3,,
+c680,3,,
+r233,3,,
+2998,3,,
+g572,3,,
+f152,3,,
+j853,3,,
+2539,3,,Unspecified disorder of the pituitary gland and its hypothalamic control
+j210,3,,
+t797,3,,
+j012,3,,
+5966,3,,"Rupture of bladder, nontraumatic"
+1732,3,,Other malignant neoplasm of skin of ear and external auditory canal
+c494,3,,
+2398,3,,"Neoplasm nos, site nec"
+t860,3,,
+o911,3,,
+4255,3,,Alcoholic cardiomyopathy
+k630,3,,
+n042,3,,
+k761,3,,
+2551,3,,
+i690,3,,
+a514,3,,
+h349,3,,
+c248,3,,
+t801,3,,
+579,3,,
+6151,3,,"Chronic inflammatory diseases of uterus, except cervix"
+j383,3,,
+k431,3,,
+7212,3,,Thoracic spondylosis without myelopathy
+7944,3,,Nonspecific abnormal results of function study of kidney
+s241,3,,
+f639,3,,
+o912,3,,
+5246,3,,
+i401,3,,
+m753,3,,
+s729,3,,
+h468,3,,
+5326,3,,
+5323,3,,
+1478,3,,Malignant neoplasm of other specified sites of nasopharynx
+8075,3,,Closed fracture of larynx and trachea
+6663,3,,
+e278,3,,
+r601,3,,
+n650,3,,
+b582,3,,
+t670,3,,
+s640,3,,
+n831,3,,
+c109,3,,
+6526,3,,
+9599,3,,Unspecified site injury
+k715,3,,
+2409,3,,"Goiter, unspecified"
+c865,3,,
+8031,3,,
+3203,3,,Staphylococcal meningitis
+3761,3,,
+m217,3,,
+5257,3,,
+f450,3,,
+i600,3,,
+5647,3,,"Megacolon, other than Hirschsprung's"
+c574,3,,
+7222,3,,"Displacement of intervertebral disc, site unspecified, without myelopathy"
+4379,3,,Unspecified cerebrovascular disease
+5710,3,,Alcoholic fatty liver
+7822,3,,"Localized superficial swelling, mass, or lump"
+8901,3,,"Open wound of hip and thigh, complicated"
+8484,3,,
+7269,3,,
+c652,3,,
+j910,3,,
+993,3,,
+d446,3,,
+g950,3,,
+d472,3,,
+6031,3,,Infected hydrocele
+1800,3,,Malignant neoplasm of endocervix
+2863,3,,Congenital deficiency of other clotting factors
+9592,3,,Shoulder and upper arm injury
+z458,3,,
+c179,3,,
+4380,3,,"Late effects of cerebrovascular disease, cognitive deficits"
+d734,3,,
+3802,3,,
+j679,3,,
+6671,3,,
+r141,3,,
+k514,3,,
+n320,3,,
+s331,3,,
+h531,3,,
+c925,3,,
+b86,3,,
+i772,3,,
+n838,3,,
+f89,3,,
+b199,3,,
+j010,3,,
+3100,3,,Frontal lobe syndrome
+3941,3,,Rheumatic mitral insufficiency
+o9a1,3,,
+j955,3,,
+5932,3,,"Cyst of kidney, acquired"
+1501,3,,Malignant neoplasm of thoracic esophagus
+o871,3,,
+1885,3,,Malignant neoplasm of bladder neck
+2053,3,,
+4612,3,,Acute ethmoidal sinusitis
+1460,3,,Malignant neoplasm of tonsil
+2550,3,,Cushing's syndrome
+6298,3,,
+v539,3,,
+7226,3,,"Degeneration of intervertebral disc, site unspecified"
+937,3,,Foreign body in anus and rectum
+h700,3,,
+2376,3,,Neoplasm of uncertain behavior of meninges
+s311,3,,
+3531,3,,Lumbosacral plexus lesions
+g231,3,,
+d461,3,,
+d589,3,,
+g563,3,,
+l239,3,,
+7514,3,,Anomalies of intestinal fixation
+150,3,,
+o266,3,,
+i221,3,,
+f638,3,,
+c543,3,,
+2983,3,,Acute paranoid reaction
+i447,3,,
+o402,3,,
+l989,3,,
+80,3,,
+9597,3,,"Knee, leg, ankle, and foot injury"
+t549,3,,
+2861,3,,Congenital factor IX disorder
+c7b1,3,,
+3961,3,,Mitral valve stenosis and aortic valve insufficiency
+5829,3,,Chronic glomerulonephritis with unspecified pathological lesion in kidney
+5131,3,,Abscess of mediastinum
+b181,3,,
+c880,3,,
+5644,3,,Other postoperative functional disorders
+6089,3,,Unspecified disorder of male genital organs
+k121,3,,
+3019,3,,Unspecified personality disorder
+8610,3,,
+4320,3,,Nontraumatic extradural hemorrhage
+c916,3,,
+7281,3,,
+t375,3,,
+j168,3,,
+t829,3,,
+d430,3,,
+6702,3,,
+6688,3,,
+r443,3,,
+d495,3,,
+9754,3,,Poisoning by antitussives
+r195,3,,
+z490,3,,
+n997,3,,
+9433,3,,
+i240,3,,
+7566,3,,Anomalies of diaphragm
+m165,3,,
+q320,3,,
+6493,3,,
+8320,3,,
+h409,3,,
+3795,3,,
+318,3,,
+c84a,3,,
+6011,3,,Chronic prostatitis
+3538,3,,Other nerve root and plexus disorders
+d069,3,,
+4386,3,,"Late effects of cerebrovascular disease, alterations of sensations"
+q248,3,,
+e884,3,,
+664,3,,
+o045,3,,
+d378,3,,
+j219,3,,
+h269,3,,
+6584,3,,
+39,3,,
+129,3,,"Intestinal parasitism, unspecified"
+v618,3,,
+i974,3,,
+t412,3,,
+540,3,,
+r571,3,,
+7814,3,,Transient paralysis of limb
+6591,3,,
+3398,3,,
+d215,3,,
+5279,3,,Unspecified disease of the salivary glands
+g570,3,,
+f321,3,,
+8681,3,,
+d060,3,,
+5988,3,,Other specified causes of urethral stricture
+2370,3,,Neoplasm of uncertain behavior of pituitary gland and craniopharyngeal duct
+z452,3,,
+5500,3,,
+3072,3,,
+e249,3,,
+2117,3,,Benign neoplasm of islets of Langerhans
+c720,3,,
+a033,3,,
+k904,3,,
+2048,3,,
+s261,3,,
+s671,3,,
+3820,3,,
+d690,3,,
+b373,3,,
+7846,3,,
+d059,3,,
+5345,3,,
+2031,3,,
+t420,3,,
+4537,3,,
+58,3,,
+h602,3,,
+7102,3,,Sicca syndrome
+1500,3,,Malignant neoplasm of cervical esophagus
+k629,2,,
+6348,2,,
+971,2,,
+9010,2,,Injury to thoracic aorta
+7152,2,,
+6809,2,,Carbuncle and furuncle of unspecified site
+1630,2,,Malignant neoplasm of parietal pleura
+a430,2,,
+o862,2,,
+4489,2,,Other and unspecified capillary diseases
+5193,2,,"Other diseases of mediastinum, not elsewhere classified"
+8744,2,,"Open wound of pharynx, without mention of complication"
+l895,2,,
+2978,2,,Other specified paranoid states
+f602,2,,
+s998,2,,
+a031,2,,
+s318,2,,
+9224,2,,Contusion of genital organs
+n022,2,,
+k400,2,,
+1159,2,,
+q790,2,,
+4472,2,,Rupture of artery
+j205,2,,
+i510,2,,
+130,2,,
+m412,2,,
+9047,2,,Injury to other specified blood vessels of lower extremity
+s372,2,,
+3911,2,,Acute rheumatic endocarditis
+7935,2,,Nonspecific (abnormal) findings on radiological and other examination of genitourinary organs
+2922,2,,Pathological drug intoxication
+e109,2,,
+8801,2,,
+c762,2,,
+c499,2,,
+1719,2,,"Malignant neoplasm of connective and other soft tissue, site unspecified"
+i459,2,,
+d571,2,,
+e65,2,,
+d704,2,,
+3274,2,,
+s751,2,,
+t462,2,,
+t471,2,,
+g708,2,,
+7218,2,,Other allied disorders of spine
+f840,2,,
+3562,2,,Hereditary sensory neuropathy
+g890,2,,
+s143,2,,
+32,2,,
+c254,2,,
+9441,2,,
+d164,2,,
+3564,2,,Idiopathic progressive polyneuropathy
+g002,2,,
+6962,2,,Parapsoriasis
+2448,2,,Other specified acquired hypothyroidism
+a188,2,,
+3380,2,,Central pain syndrome
+g561,2,,
+m705,2,,
+i058,2,,
+8021,2,,Open fracture of nasal bones
+5765,2,,Spasm of sphincter of Oddi
+d410,2,,
+o873,2,,
+781,2,,
+t232,2,,
+8441,2,,Sprain of medial collateral ligament of knee
+i662,2,,
+z867,2,,
+n019,2,,
+t843,2,,
+k256,2,,
+9028,2,,
+2353,2,,Neoplasm of uncertain behavior of liver and biliary passages
+6218,2,,"Other specified disorders of uterus, not elsewhere classified"
+i092,2,,
+4374,2,,Cerebral arteritis
+h594,2,,
+8634,2,,
+s911,2,,
+d351,2,,
+3952,2,,Rheumatic aortic stenosis with insufficiency
+k146,2,,
+e230,2,,
+o723,2,,
+7458,2,,Other bulbus cordis anomalies and anomalies of cardiac septal closure
+6439,2,,
+r048,2,,
+g43d,2,,
+6851,2,,Pilonidal cyst without mention of abscess
+m871,2,,
+6391,2,,Delayed or excessive hemorrhage following abortion or ectopic and molar pregnancies
+d126,2,,
+9101,2,,"Abrasion or friction burn of face, neck, and scalp except eye, infected"
+c050,2,,
+9529,2,,Unspecified site of spinal cord injury without evidence of spinal bone injury
+9238,2,,Contusion of multiple sites of upper limb
+n137,2,,
+r159,2,,
+2763,2,,Alkalosis
+m199,2,,
+4551,2,,Internal thrombosed hemorrhoids
+9160,2,,"Abrasion or friction burn of hip, thigh, leg, and ankle, without mention of infection"
+n879,2,,
+c621,2,,
+7088,2,,Other specified urticaria
+3753,2,,
+k261,2,,
+7565,2,,
+s134,2,,
+q391,2,,
+c411,2,,
+132,2,,
+s711,2,,
+6021,2,,Congestion or hemorrhage of prostate
+i651,2,,
+k624,2,,
+8635,2,,
+d291,2,,
+d893,2,,
+8007,2,,
+g437,2,,
+8058,2,,Closed fracture of unspecified vertebral column without mention of spinal cord injury
+6163,2,,Abscess of Bartholin's gland
+8133,2,,
+7910,2,,Proteinuria
+1429,2,,"Malignant neoplasm of salivary gland, unspecified"
+7886,2,,
+a319,2,,
+m532,2,,
+3046,2,,
+m722,2,,
+8365,2,,
+f04,2,,
+9130,2,,"Abrasion or friction burn of elbow, forearm, and wrist, without mention of infection"
+7350,2,,Hallux valgus (acquired)
+4540,2,,Varicose veins of lower extremities with ulcer
+m899,2,,
+995,2,,
+j341,2,,
+r238,2,,
+b251,2,,
+f488,2,,
+1600,2,,Malignant neoplasm of nasal cavities
+s851,2,,
+411,2,,
+e838,2,,
+4548,2,,Varicose veins of lower extremities with other complications
+n921,2,,
+d839,2,,
+m402,2,,
+a039,2,,
+118,2,,Opportunistic mycoses
+t761,2,,
+t542,2,,
+n312,2,,
+8405,2,,Subscapularis (muscle) sprain
+i455,2,,
+r041,2,,
+h471,2,,
+a561,2,,
+6421,2,,
+n411,2,,
+7247,2,,
+2360,2,,Neoplasm of uncertain behavior of uterus
+3341,2,,Hereditary spastic paraplegia
+9730,2,,Poisoning by antacids and antigastric secretion drugs
+4295,2,,Rupture of chordae tendineae
+d022,2,,
+a563,2,,
+c714,2,,
+2137,2,,Benign neoplasm of long bones of lower limb
+9701,2,,Poisoning by opiate antagonists
+6162,2,,Cyst of Bartholin's gland
+s661,2,,
+s460,2,,
+3249,2,,Intracranial and intraspinal abscess of unspecified site
+k645,2,,
+317,2,,Mild intellectual disabilities
+6931,2,,Dermatitis due to food taken internally
+6983,2,,Lichenification and lichen simplex chronicus
+c506,2,,
+586,2,,"Renal failure, unspecified"
+9423,2,,
+m469,2,,
+h000,2,,
+s978,2,,
+5854,2,,"Chronic kidney disease, Stage IV (severe)"
+4352,2,,Subclavian steal syndrome
+e873,2,,
+o348,2,,
+8241,2,,"Fracture of medial malleolus, open"
+4231,2,,Adhesive pericarditis
+s411,2,,
+d372,2,,
+7330,2,,
+1574,2,,Malignant neoplasm of islets of langerhans
+n924,2,,
+c716,2,,
+d759,2,,
+g568,2,,
+1887,2,,Malignant neoplasm of urachus
+5721,2,,Portal pyemia
+s112,2,,
+s808,2,,
+2940,2,,Amnestic disorder in conditions classified elsewhere
+c740,2,,
+h708,2,,
+3885,2,,Disorders of acoustic nerve
+7998,2,,
+c445,2,,
+n908,2,,
+b780,2,,
+s434,2,,
+s768,2,,
+s130,2,,
+3727,2,,
+m128,2,,
+o9a3,2,,
+2764,2,,Mixed acid-base balance disorder
+m341,2,,
+9595,2,,Finger injury
+a281,2,,
+i832,2,,
+7992,2,,Nervousness
+2443,2,,Other iatrogenic hypothyroidism
+8001,2,,
+h150,2,,
+8678,2,,"Injury to unspecified pelvic organ, without mention of open wound into cavity"
+d332,2,,
+m450,2,,
+7200,2,,Ankylosing spondylitis
+398,2,,
+k088,2,,
+s839,2,,
+7889,2,,Urinary sys symptom nec
+418,2,,
+l982,2,,
+6159,2,,Unspecified inflammatory disease of uterus
+s140,2,,
+i679,2,,
+i288,2,,
+s269,2,,
+h209,2,,
+c488,2,,
+s364,2,,
+g257,2,,
+j320,2,,
+q246,2,,
+s045,2,,
+4233,2,,Cardiac tamponade
+c518,2,,
+859,2,,
+i060,2,,
+7192,2,,
+n898,2,,
+b376,2,,
+o694,2,,
+s463,2,,
+c753,2,,
+s363,2,,
+393,2,,Chronic rheumatic pericarditis
+7548,2,,
+b009,2,,
+l729,2,,
+o679,2,,
+o458,2,,
+6655,2,,
+3656,2,,
+3862,2,,Vertigo of central origin
+n009,2,,
+e209,2,,
+m214,2,,
+i970,2,,
+4281,2,,Left heart failure
+8661,2,,
+3593,2,,Periodic paralysis
+6596,2,,
+k650,2,,
+v127,2,,
+4011,2,,Benign essential hypertension
+8732,2,,
+i668,2,,
+z488,2,,
+7283,2,,Other specific muscle disorders
+r262,2,,
+d611,2,,
+k603,2,,
+m893,2,,
+j342,2,,
+a327,2,,
+k563,2,,
+n731,2,,
+3080,2,,Predominant disturbance of emotions
+t881,2,,
+f918,2,,
+3949,2,,Other and unspecified mitral valve diseases
+o037,2,,
+e279,2,,
+8603,2,,Traumatic hemothorax with open wound into thorax
+i770,2,,
+n805,2,,
+7193,2,,
+i158,2,,
+h040,2,,
+l738,2,,
+o300,2,,
+c676,2,,
+f53,2,,
+3499,2,,Unspecified disorders of nervous system
+z028,2,,
+s510,2,,
+c493,2,,
+2899,2,,Unspecified diseases of blood and blood-forming organs
+s910,2,,
+c573,2,,
+g249,2,,
+g435,2,,
+a90,2,,
+1598,2,,Malignant neoplasm of other sites of digestive system and intra-abdominal organs
+3790,2,,
+5510,2,,
+i312,2,,
+7129,2,,
+h058,2,,
+3443,2,,
+z21,2,,
+4169,2,,"Chronic pulmonary heart disease, unspecified"
+9721,2,,Poisoning by cardiotonic glycosides and drugs of similar action
+t518,2,,
+r402,2,,
+r468,2,,
+b250,2,,
+j018,2,,
+n651,2,,
+1738,2,,Other malignant neoplasm of other specified sites of skin
+7420,2,,Encephalocele
+5081,2,,Chronic and other pulmonary manifestations due to radiation
+z478,2,,
+e160,2,,
+i237,2,,
+3643,2,,Unspecified iridocyclitis
+d685,2,,
+e035,2,,
+3070,2,,Adult onset fluency disorder
+n302,2,,
+8330,2,,
+2078,2,,
+b178,2,,
+3068,2,,Other specified psychophysiological malfunction
+3523,2,,Disorders of pneumogastric [10th] nerve
+i698,2,,
+5313,2,,
+1648,2,,Malignant neoplasm of other parts of mediastinum
+r930,2,,
+c229,2,,
+3502,2,,Atypical face pain
+795,2,,
+j348,2,,
+3751,2,,
+s211,2,,
+9233,2,,Contusion of finger
+r160,2,,
+4779,2,,"Allergic rhinitis, cause unspecified"
+i079,2,,
+912,2,,
+3532,2,,"Cervical root lesions, not elsewhere classified"
+8231,2,,
+74,2,,
+s731,2,,
+b961,2,,
+a044,2,,
+3348,2,,Other spinocerebellar diseases
+d462,2,,
+t837,2,,
+9596,2,,Hip and thigh injury
+i758,2,,
+o992,2,,
+k299,2,,
+7168,2,,
+j157,2,,
+8420,2,,
+1703,2,,"Malignant neoplasm of ribs, sternum, and clavicle"
+i342,2,,
+6408,2,,
+n318,2,,
+2395,2,,Neoplasm of unspecified nature of other genitourinary organs
+d383,2,,
+1599,2,,Malignant neoplasm of ill-defined sites within the digestive organs and peritoneum
+d282,2,,
+1950,2,,"Malignant neoplasm of head, face, and neck"
+h400,2,,
+h493,2,,
+8631,2,,"Injury to stomach, with open wound into cavity"
+4259,2,,"Secondary cardiomyopathy, unspecified"
+470,2,,Deviated nasal septum
+r358,2,,
+c457,2,,
+9747,2,,Poisoning by uric acid metabolism drugs
+5234,2,,
+e049,2,,
+6418,2,,
+9593,2,,"Elbow, forearm, and wrist injury"
+2631,2,,Malnutrition of mild degree
+3061,2,,Respiratory malfunction arising from mental factors
+4581,2,,Chronic hypotension
+g728,2,,
+a483,2,,
+d331,2,,
+n19,2,,
+g43b,2,,
+f119,2,,
+2419,2,,Unspecified nontoxic nodular goiter
+o753,2,,
+j309,2,,
+n700,2,,
+7958,2,,
+8519,2,,
+116,2,,
+2024,2,,
+m430,2,,
+7596,2,,"Other hamartoses, not elsewhere classified"
+7485,2,,"Agenesis, hypoplasia, and dysplasia of lung"
+t809,2,,
+7235,2,,"Torticollis, unspecified"
+t604,2,,
+t380,2,,
+r809,2,,
+j324,2,,
+1746,2,,Malignant neoplasm of axillary tail of female breast
+1603,2,,Malignant neoplasm of ethmoidal sinus
+q049,2,,
+4293,2,,Cardiomegaly
+5752,2,,Obstruction of gallbladder
+2130,2,,Benign neoplasm of bones of skull and face
+m858,2,,
+3763,2,,
+9659,2,,Poisoning by unspecified analgesic and antipyretic
+522,2,,
+s199,2,,
+e236,2,,
+o364,2,,
+2091,2,,
+i973,2,,
+g475,2,,
+t400,2,,
+t448,2,,
+8622,2,,
+t760,2,,
+c439,2,,
+5812,2,,Nephrotic syndrome with lesion of membranoproliferative glomerulonephritis
+i889,2,,
+z006,2,,
+9620,2,,Poisoning by adrenal cortical steroids
+h401,2,,
+o100,2,,
+6802,2,,Carbuncle and furuncle of trunk
+9773,2,,Poisoning by alcohol deterrents
+2392,2,,"Neoplasm of unspecified nature of bone, soft tissue, and skin"
+e878,2,,
+m715,2,,
+k928,2,,
+846,2,,
+3770,2,,
+n135,2,,
+843,2,,
+d329,2,,
+948,2,,
+3597,2,,
+3015,2,,
+m102,2,,
+k388,2,,
+a029,2,,
+2990,2,,
+d128,2,,
+m056,2,,
+l518,2,,
+g711,2,,
+k740,2,,
+i501,2,,
+2840,2,,
+5960,2,,Bladder neck obstruction
+3868,2,,Other disorders of labyrinth
+h570,2,,
+l959,2,,
+d519,2,,
+4149,2,,"Chronic ischemic heart disease, unspecified"
+3448,2,,
+t483,2,,
+k461,2,,
+1917,2,,Malignant neoplasm of brain stem
+o411,2,,
+h402,2,,
+n701,2,,
+l233,2,,
+o480,2,,
+e213,2,,
+2771,2,,Disorders of porphyrin metabolism
+s381,2,,
+2872,2,,Other nonthrombocytopenic purpuras
+s672,2,,
+c662,2,,
+m256,2,,
+1177,2,,Zygomycosis [Phycomycosis or Mucormycosis]
+f681,2,,
+788,2,,
+5327,2,,
+t741,2,,
+4473,2,,Hyperplasia of renal artery
+6712,2,,
+j322,2,,
+f446,2,,
+c444,2,,
+i823,2,,
+q658,2,,
+t449,2,,
+9173,2,,"Blister of foot and toe(s), infected"
+3659,2,,Unspecified glaucoma
+1481,2,,Malignant neoplasm of pyriform sinus
+n471,2,,
+k068,2,,
+1602,2,,Malignant neoplasm of maxillary sinus
+3452,2,,Petit mal status
+3699,2,,Unspecified visual loss
+g838,2,,
+9157,2,,"Superficial foreign body (splinter) of finger(s), without major open wound, infected"
+9172,2,,"Blister of foot and toe(s), without mention of infection"
+d214,2,,
+h603,2,,
+e119,2,,
+i443,2,,
+i881,2,,
+8731,2,,"Open wound of scalp, complicated"
+r180,2,,
+c130,2,,
+9598,2,,"Other specified sites, including multiple injury"
+s118,2,,
+c835,2,,
+6954,2,,Lupus erythematosus
+7474,2,,
+5963,2,,Diverticulum of bladder
+2558,2,,Other specified disorders of adrenal glands
+3082,2,,Predominant psychomotor disturbance
+e785,2,,
+5539,2,,Hernia of unspecified site without mention of obstruction or gangrene
+z768,2,,
+c913,2,,
+1453,2,,Malignant neoplasm of soft palate
+943,2,,
+h526,2,,
+m118,2,,
+h470,2,,
+6570,2,,
+6650,2,,
+3028,2,,
+b968,2,,
+n118,2,,
+5538,2,,Hernia of other specified sites without mention of obstruction or gangrene
+n821,2,,
+m799,2,,
+o120,2,,
+2377,2,,
+c689,2,,
+r942,2,,
+r252,2,,
+s899,2,,
+1872,2,,Malignant neoplasm of glans penis
+3969,2,,"Mitral and aortic valve diseases, unspecified"
+5755,2,,Fistula of gallbladder
+b387,2,,
+8671,2,,"Injury to bladder and urethra, with open wound into cavity"
+c779,2,,
+l983,2,,
+7294,2,,"Fasciitis, unspecified"
+l950,2,,
+7869,2,,Other symptoms involving respiratory system and chest
+2029,2,,
+z411,2,,
+t762,2,,
+7900,2,,
+7995,2,,
+k137,2,,
+6392,2,,Damage to pelvic organs and tissues following abortion or ectopic and molar pregnancies
+d638,2,,
+1943,2,,Malignant neoplasm of pituitary gland and craniopharyngeal duct
+s150,2,,
+f439,2,,
+k404,2,,
+s674,2,,
+d610,2,,
+8720,2,,
+9443,2,,
+7335,2,,Osteitis condensans
+2513,2,,Postsurgical hypoinsulinemia
+8123,2,,
+r401,2,,
+j680,2,,
+d46c,2,,
+1450,2,,Malignant neoplasm of cheek mucosa
+b343,2,,
+587,2,,"Renal sclerosis, unspecified"
+2731,2,,Monoclonal paraproteinemia
+6409,2,,
+o112,2,,
+s001,2,,
+5791,2,,Tropical sprue
+c797,2,,
+g603,2,,
+9220,2,,Contusion of breast
+2638,2,,Other protein-calorie malnutrition
+r17,2,,
+g902,2,,
+b54,2,,
+5970,2,,Urethral abscess
+g118,2,,
+h660,2,,
+3060,2,,Musculoskeletal malfunction arising from mental factors
+n359,2,,
+4542,2,,Varicose veins of lower extremities with ulcer and inflammation
+s862,2,,
+9881,2,,Toxic effect of mushrooms eaten as food
+a529,2,,
+o420,2,,
+7836,2,,Polyphagia
+5853,2,,"Chronic kidney disease, Stage III (moderate)"
+t361,2,,
+d110,2,,
+849,2,,
+d374,2,,
+m458,2,,
+e559,2,,
+6038,2,,Other specified types of hydrocele
+k267,2,,
+s933,2,,
+9472,2,,Burn of esophagus
+d47z,2,,
+l894,2,,
+m419,2,,
+5935,2,,Hydroureter
+3464,2,,
+6660,2,,
+7833,2,,Feeding difficulties and mismanagement
+c823,2,,
+h043,2,,
+7828,2,,Changes in skin texture
+1883,2,,Malignant neoplasm of anterior wall of urinary bladder
+k909,2,,
+8950,2,,"Traumatic amputation of toe(s) (complete) (partial), without mention of complication"
+d175,2,,
+2592,2,,Carcinoid syndrome
+s012,2,,
+t512,2,,
+1479,2,,"Malignant neoplasm of nasopharynx, unspecified site"
+9692,2,,Poisoning by butyrophenone-based tranquilizers
+i773,2,,
+e069,2,,
+6347,2,,
+k591,2,,
+m620,2,,
+b09,2,,
+538,2,,Gastrointestinal mucositis (ulcerative)
+6438,2,,
+6780,2,,
+g600,2,,
+2110,2,,Benign neoplasm of esophagus
+c91z,2,,
+i38,2,,
+f452,2,,
+6160,2,,Cervicitis and endocervicitis
+q341,2,,
+d131,2,,
+t885,2,,
+7178,2,,
+m160,2,,
+844,2,,
+5276,2,,Mucocele of salivary gland
+2006,2,,
+2337,2,,Carcinoma in situ of bladder
+c500,2,,
+n481,2,,
+c140,2,,
+s908,2,,
+i253,2,,
+7939,2,,
+v518,2,,
+1489,2,,"Malignant neoplasm of hypopharynx, unspecified site"
+630,2,,Hydatidiform mole
+n432,2,,
+k718,2,,
+n329,2,,
+c446,2,,
+n802,2,,
+n483,2,,
+d421,2,,
+r278,2,,
+2788,2,,Other hyperalimentation
+i426,2,,
+s091,2,,
+o445,2,,
+5352,2,,
+6469,1,,
+s529,1,,
+5834,1,,"Nephritis and nephropathy, not specified as acute or chronic, with lesion of rapidly progressive glomerulonephritis"
+m401,1,,
+t805,1,,
+d561,1,,
+8468,1,,Sprain of other specified sites of sacroiliac region
+i235,1,,
+7173,1,,Other and unspecified derangement of medial meniscus
+i789,1,,
+d414,1,,
+n903,1,,
+7232,1,,Cervicocranial syndrome
+v840,1,,
+f161,1,,
+q764,1,,
+v600,1,,
+8138,1,,
+t882,1,,
+2902,1,,
+t378,1,,
+3449,1,,"Paralysis, unspecified"
+6245,1,,Hematoma of vulva
+1709,1,,"Malignant neoplasm of bone and articular cartilage, site unspecified"
+b829,1,,
+o269,1,,
+e610,1,,
+8736,1,,
+2379,1,,Neoplasm of uncertain behavior of other and unspecified parts of nervous system
+e064,1,,
+5830,1,,"Nephritis and nephropathy, not specified as acute or chronic, with lesion of proliferative glomerulonephritis"
+l404,1,,
+t172,1,,
+m926,1,,
+r442,1,,
+9894,1,,"Toxic effect of other pesticides, not elsewhere classified"
+c062,1,,
+7010,1,,Circumscribed scleroderma
+h605,1,,
+m349,1,,
+7462,1,,Ebstein's anomaly
+6611,1,,
+r258,1,,
+d441,1,,
+c862,1,,
+g569,1,,
+b967,1,,
+t758,1,,
+c173,1,,
+5206,1,,Disturbances in tooth eruption
+q872,1,,
+7246,1,,Disorders of sacrum
+4269,1,,"Conduction disorder, unspecified"
+c040,1,,
+3579,1,,Unspecified inflammatory and toxic neuropathy
+e320,1,,
+d398,1,,
+c433,1,,
+m489,1,,
+i880,1,,
+6631,1,,
+1269,1,,"Ancylostomiasis and necatoriasis, unspecified"
+b530,1,,
+c821,1,,
+f301,1,,
+o028,1,,
+d367,1,,
+n758,1,,
+m838,1,,
+s541,1,,
+h041,1,,
+8517,1,,
+e201,1,,
+o212,1,,
+2070,1,,
+e031,1,,
+d234,1,,
+c4a3,1,,
+3548,1,,Other mononeuritis of upper limb
+4419,1,,Aortic aneurysm of unspecified site without mention of rupture
+z223,1,,
+8171,1,,Multiple open fractures of hand bones
+m792,1,,
+s398,1,,
+6692,1,,
+460,1,,Acute nasopharyngitis [common cold]
+t792,1,,
+o602,1,,
+569,1,,
+5855,1,,"Chronic kidney disease, Stage V"
+6608,1,,
+q244,1,,
+7960,1,,Nonspecific abnormal toxicological findings
+s402,1,,
+r530,1,,
+z854,1,,
+328,1,,
+k605,1,,
+n836,1,,
+t148,1,,
+z635,1,,
+9270,1,,
+9280,1,,
+g241,1,,
+v643,1,,
+6546,1,,
+2842,1,,Myelophthisis
+m359,1,,
+n23,1,,
+1591,1,,"Malignant neoplasm of spleen, not elsewhere classified"
+v632,1,,
+m331,1,,
+h109,1,,
+m232,1,,
+e60,1,,
+361,1,,
+1849,1,,"Malignant neoplasm of female genital organ, site unspecified"
+c139,1,,
+s499,1,,
+4383,1,,
+g479,1,,
+s335,1,,
+6071,1,,Balanoposthitis
+d330,1,,
+8370,1,,Closed dislocation of ankle
+c442,1,,
+d739,1,,
+a520,1,,
+k588,1,,
+3521,1,,Glossopharyngeal neuralgia
+e786,1,,
+a318,1,,
+e268,1,,
+k669,1,,
+7908,1,,"Viremia, unspecified"
+2152,1,,"Other benign neoplasm of connective and other soft tissue of upper limb, including shoulder"
+7286,1,,Contracture of palmar fascia
+9281,1,,
+3700,1,,
+l719,1,,
+6656,1,,
+915,1,,
+k824,1,,
+8037,1,,
+2454,1,,Iatrogenic thyroiditis
+217,1,,Benign neoplasm of breast
+3858,1,,
+n134,1,,
+s568,1,,
+7423,1,,Congenital hydrocephalus
+k834,1,,
+m624,1,,
+6451,1,,
+m963,1,,
+5859,1,,"Chronic kidney disease, unspecified"
+c922,1,,
+2734,1,,Alpha-1-antitrypsin deficiency
+e211,1,,
+a539,1,,
+e740,1,,
+t476,1,,
+i281,1,,
+t441,1,,
+9131,1,,"Abrasion or friction burn of elbow, forearm, and wrist, infected"
+h729,1,,
+9722,1,,Poisoning by antilipemic and antiarteriosclerotic drugs
+o751,1,,
+9041,1,,Injury to superficial femoral artery
+o321,1,,
+z043,1,,
+v451,1,,
+5969,1,,Unspecified disorder of bladder
+3544,1,,Causalgia of upper limb
+j410,1,,
+c966,1,,
+9732,1,,Poisoning by emollient cathartics
+3830,1,,
+9879,1,,"Toxic effect of unspecified gas, fume, or vapor"
+7957,1,,
+o265,1,,
+t370,1,,
+9038,1,,Injury to other specified blood vessels of upper extremity
+g210,1,,
+c498,1,,
+6829,1,,Cellulitis and abscess of unspecified sites
+c12,1,,
+6228,1,,Other specified noninflammatory disorders of cervix
+m060,1,,
+s608,1,,
+6358,1,,
+s610,1,,
+9914,1,,Immersion foot
+4339,1,,
+d894,1,,
+g712,1,,
+d630,1,,
+8701,1,,"Laceration of eyelid, full-thickness, not involving lacrimal passages"
+3721,1,,
+k115,1,,
+t781,1,,
+d862,1,,
+6079,1,,Unspecified disorder of penis
+g508,1,,
+n491,1,,
+n994,1,,
+i972,1,,
+981,1,,Toxic effect of petroleum products
+3887,1,,
+7993,1,,"Debility, unspecified"
+545,1,,
+c754,1,,
+5335,1,,
+c328,1,,
+9272,1,,
+d689,1,,
+7090,1,,
+2776,1,,Other deficiencies of circulating enzymes
+g900,1,,
+7419,1,,
+d563,1,,
+8361,1,,"Tear of lateral cartilage or meniscus of knee, current"
+n050,1,,
+1841,1,,Malignant neoplasm of labia majora
+c400,1,,
+988,1,,
+4562,1,,
+c410,1,,
+582,1,,
+e840,1,,
+3892,1,,
+a182,1,,
+172,1,,
+4142,1,,Chronic total occlusion of coronary artery
+v702,1,,
+i228,1,,
+l817,1,,
+2010,1,,
+z482,1,,
+316,1,,Psychic factors associated with diseases classified elsewhere
+879,1,,
+m712,1,,
+8066,1,,
+k148,1,,
+n730,1,,
+s630,1,,
+s144,1,,
+s922,1,,
+6108,1,,Other specified benign mammary dysplasias
+m166,1,,
+m652,1,,
+m340,1,,
+c542,1,,
+h547,1,,
+9954,1,,"Shock due to anesthesia, not elsewhere classified"
+4431,1,,Thromboangiitis obliterans [Buerger's disease]
+s240,1,,
+6610,1,,
+q205,1,,
+9745,1,,"Poisoning by electrolytic, caloric, and water-balance agents"
+9114,1,,"Insect bite, nonvenomous of trunk, without mention of infection"
+l560,1,,
+n027,1,,
+d491,1,,
+d494,1,,
+g831,1,,
+c510,1,,
+6362,1,,
+m729,1,,
+z022,1,,
+c108,1,,
+7015,1,,Other abnormal granulation tissue
+v700,1,,
+6563,1,,
+s687,1,,
+t730,1,,
+r488,1,,
+7454,1,,Ventricular septal defect
+d680,1,,
+g042,1,,
+m621,1,,
+8451,1,,
+m879,1,,
+1340,1,,Myiasis
+c866,1,,
+o9a4,1,,
+g378,1,,
+2339,1,,Carcinoma in situ of other and unspecified urinary organs
+820,1,,
+3491,1,,Nervous system complications from surgically implanted device
+2650,1,,Beriberi
+29,1,,
+4718,1,,Other polyp of sinus
+g589,1,,
+s212,1,,
+e328,1,,
+6804,1,,Carbuncle and furuncle of hand
+r203,1,,
+k709,1,,
+t388,1,,
+l304,1,,
+1642,1,,Malignant neoplasm of anterior mediastinum
+7472,1,,
+s968,1,,
+7290,1,,"Rheumatism, unspecified and fibrositis"
+k744,1,,
+1951,1,,Malignant neoplasm of thorax
+z66,1,,
+b271,1,,
+7030,1,,Ingrowing nail
+7934,1,,Nonspecific (abnormal) findings on radiological and other examination of gastrointestinal tract
+6566,1,,
+m083,1,,
+1300,1,,Meningoencephalitis due to toxoplasmosis
+g478,1,,
+1828,1,,Malignant neoplasm of other specified sites of body of uterus
+v594,1,,
+g214,1,,
+g970,1,,
+6698,1,,
+t438,1,,
+8300,1,,Closed dislocation of jaw
+2860,1,,Congenital factor VIII disorder
+s274,1,,
+c000,1,,
+m719,1,,
+2892,1,,Nonspecific mesenteric lymphadenitis
+c021,1,,
+7568,1,,
+h600,1,,
+s309,1,,
+3644,1,,
+6487,1,,
+c103,1,,
+k437,1,,
+l238,1,,
+q278,1,,
+7517,1,,Anomalies of pancreas
+e092,1,,
+a078,1,,
+4050,1,,
+d137,1,,
+o471,1,,
+g573,1,,
+7429,1,,"Unspecified congenital anomaly of brain, spinal cord, and nervous system"
+2140,1,,Lipoma of skin and subcutaneous tissue of face
+n251,1,,
+2799,1,,Unspecified disorder of immune mechanism
+o152,1,,
+s276,1,,
+1411,1,,Malignant neoplasm of dorsal surface of tongue
+5357,1,,
+j708,1,,
+1308,1,,Multisystemic disseminated toxoplasmosis
+9213,1,,Contusion of eyeball
+z466,1,,
+h059,1,,
+4375,1,,Moyamoya disease
+a70,1,,
+m759,1,,
+h501,1,,
+g527,1,,
+5088,1,,Respiratory conditions due to other specified external agents
+h001,1,,
+d384,1,,
+t519,1,,
+o150,1,,
+6924,1,,Contact dermatitis and other eczema due to other chemical products
+9431,1,,
+z524,1,,
+9031,1,,Injury to brachial blood vessels
+6227,1,,Mucous polyp of cervix
+6266,1,,Metrorrhagia
+3589,1,,"Myoneural disorders, unspecified"
+n493,1,,
+s500,1,,
+r845,1,,
+n488,1,,
+a849,1,,
+l248,1,,
+g40a,1,,
+r142,1,,
+e830,1,,
+d241,1,,
+l84,1,,
+7929,1,,Other nonspecific abnormal findings in body substances
+b998,1,,
+9685,1,,Surface (topical) and infiltration anesthetics
+9521,1,,
+7385,1,,Other acquired deformity of back or spine
+q268,1,,
+5818,1,,
+d392,1,,
+3529,1,,Unspecified disorder of cranial nerves
+9050,1,,Late effect of fracture of skull and face bones
+s469,1,,
+f139,1,,
+a543,1,,
+f061,1,,
+d067,1,,
+v078,1,,
+7444,1,,
+3109,1,,Unspecified nonpsychotic mental disorder following organic brain damage
+6310,1,,Inappropriate change in quantitative human chorionic gonadotropin (hCG) in early pregnancy
+a227,1,,
+e669,1,,
+f068,1,,
+n421,1,,
+9648,1,,Poisoning by other specified agents affecting blood constituents
+6352,1,,
+k560,1,,
+2741,1,,
+h042,1,,
+2901,1,,
+q180,1,,
+o655,1,,
+s108,1,,
+l598,1,,
+l568,1,,
+7861,1,,Stridor
+4171,1,,Aneurysm of pulmonary artery
+7506,1,,Congenital hiatus hernia
+9181,1,,Superficial injury of cornea
+r223,1,,
+j431,1,,
+m610,1,,
+2950,1,,
+7896,1,,
+j956,1,,
+1421,1,,Malignant neoplasm of submandibular gland
+i492,1,,
+9150,1,,"Abrasion or friction burn of finger(s), without mention of infection"
+s930,1,,
+s929,1,,
+913,1,,
+7201,1,,Spinal enthesopathy
+m456,1,,
+b538,1,,
+8721,1,,
+c749,1,,
+3951,1,,Rheumatic aortic insufficiency
+k753,1,,
+1409,1,,"Malignant neoplasm of lip, unspecified, vermilion border"
+v252,1,,
+1431,1,,Malignant neoplasm of lower gum
+8751,1,,"Open wound of chest (wall), complicated"
+i891,1,,
+1839,1,,"Malignant neoplasm of uterine adnexa, unspecified site"
+m773,1,,
+7061,1,,Other acne
+b465,1,,
+a082,1,,
+c824,1,,
+h509,1,,
+1119,1,,"Dermatomycosis, unspecified"
+g130,1,,
+s058,1,,
+d375,1,,
+2141,1,,Lipoma of other skin and subcutaneous tissue
+m215,1,,
+4479,1,,Unspecified disorders of arteries and arterioles
+8632,1,,
+o440,1,,
+4919,1,,Unspecified chronic bronchitis
+2827,1,,Other hemoglobinopathies
+k689,1,,
+c962,1,,
+g041,1,,
+3062,1,,Cardiovascular malfunction arising from mental factors
+78,1,,
+578,1,,
+k380,1,,
+218,1,,
+6806,1,,"Carbuncle and furuncle of leg, except foot"
+a878,1,,
+3683,1,,
+s802,1,,
+t494,1,,
+1701,1,,Malignant neoplasm of mandible
+c261,1,,
+d127,1,,
+t511,1,,
+o901,1,,
+a438,1,,
+272,1,,
+279,1,,
+i517,1,,
+i453,1,,
+t600,1,,
+v541,1,,
+p271,1,,
+a810,1,,
+7949,1,,Nonspecific abnormal results of other specified function study
+g003,1,,
+d613,1,,
+779,1,,
+g443,1,,
+j323,1,,
+o85,1,,
+3007,1,,Hypochondriasis
+g713,1,,
+k434,1,,
+t367,1,,
+9760,1,,Poisoning by local anti-infectives and anti-inflammatory drugs
+l723,1,,
+m175,1,,
+3108,1,,Other specified nonpsychotic mental disorders following organic brain damage
+a260,1,,
+1769,1,,"Kaposi's sarcoma, unspecified site"
+8251,1,,"Fracture of calcaneus, open"
+830,1,,
+520,1,,
+9044,1,,
+c4a7,1,,
+k280,1,,
+9244,1,,Contusion of multiple sites of lower limb
+h433,1,,
+k270,1,,
+m674,1,,
+h610,1,,
+2104,1,,Benign neoplasm of other and unspecified parts of mouth
+2072,1,,
+9586,1,,Volkmann's ischemic contracture
+o231,1,,
+138,1,,Late effects of acute poliomyelitis
+h473,1,,
+z005,1,,
+6549,1,,
+d300,1,,
+i661,1,,
+m779,1,,
+2333,1,,
+s119,1,,
+m847,1,,
+b018,1,,
+o878,1,,
+3091,1,,Prolonged depressive reaction
+h358,1,,
+2682,1,,"Osteomalacia, unspecified"
+c838,1,,
+3798,1,,Other specified disorders of eye and adnexa
+s109,1,,
+t506,1,,
+2120,1,,"Benign neoplasm of nasal cavities, middle ear, and accessory sinuses"
+m001,1,,
+5312,1,,
+3744,1,,
+s334,1,,
+2168,1,,Benign neoplasm of other specified sites of skin
+8203,1,,
+m052,1,,
+l739,1,,
+1459,1,,"Malignant neoplasm of mouth, unspecified"
+2692,1,,Unspecified vitamin deficiency
+l905,1,,
+t213,1,,
+l100,1,,
+b000,1,,
+e164,1,,
+s936,1,,
+t852,1,,
+8973,1,,"Traumatic amputation of leg(s) (complete) (partial), unilateral, at or above knee, complicated"
+d474,1,,
+m342,1,,
+a35,1,,
+m053,1,,
+d788,1,,
+2281,1,,"Lymphangioma, any site"
+919,1,,
+r250,1,,
+2890,1,,"Polycythemia, secondary"
+e291,1,,
+4477,1,,
+8861,1,,"Traumatic amputation of other finger(s) (complete) (partial), complicated"
+b342,1,,
+r944,1,,
+t800,1,,
+s925,1,,
+d001,1,,
+7332,1,,
+3824,1,,Unspecified suppurative otitis media
+7372,1,,
+6492,1,,
+7543,1,,
+v102,1,,
+9211,1,,Contusion of eyelids and periocular area
+e713,1,,
+e231,1,,
+l302,1,,
+b956,1,,
+a043,1,,
+1886,1,,Malignant neoplasm of ureteric orifice
+f142,1,,
+l538,1,,
+9242,1,,
+5322,1,,
+6525,1,,
+a799,1,,
+5992,1,,Urethral diverticulum
+7028,1,,Other specified dermatoses
+v426,1,,
+3583,1,,
+o038,1,,
+s462,1,,
+5838,1,,
+c049,1,,
+h440,1,,
+2081,1,,
+9911,1,,Frostbite of hand
+o987,1,,
+c434,1,,
+q313,1,,
+5511,1,,Umbilical hernia with gangrene
+9733,1,,"Poisoning by other cathartics, including intestinal atonia"
+t551,1,,
+k229,1,,
+1706,1,,"Malignant neoplasm of pelvic bones, sacrum, and coccyx"
+5122,1,,Postoperative air leak
+m795,1,,
+z728,1,,
+v524,1,,
+774,1,,
+o074,1,,
+2981,1,,Excitative type psychosis
+8792,1,,"Open wound of abdominal wall, anterior, without mention of complication"
+l108,1,,
+r390,1,,
+7360,1,,
+c490,1,,
+k574,1,,
+m159,1,,
+n904,1,,
+t348,1,,
+9052,1,,Late effect of fracture of upper extremities
+6028,1,,Other specified disorders of prostate
+k294,1,,
+2218,1,,Benign neoplasm of other specified sites of female genital organs
+n261,1,,
+o132,1,,
+8690,1,,Internal injury to unspecified or ill-defined organs without mention of open wound into cavity
+h491,1,,
+l280,1,,
+5347,1,,
+9625,1,,Poisoning by posterior pituitary hormones
+9309,1,,Foreign body in unspecified site on external eye
+b354,1,,
+9110,1,,"Abrasion or friction burn of trunk, without mention of infection"
+c413,1,,
+8629,1,,"Injury to multiple and unspecified intrathoracic organs, with open wound into cavity"
+s531,1,,
+a010,1,,
+e099,1,,
+v158,1,,
+c383,1,,
+m246,1,,
+c323,1,,
+s642,1,,
+3910,1,,Acute rheumatic pericarditis
+n189,1,,
+t503,1,,
+i604,1,,
+8083,1,,Open fracture of pubis
+1610,1,,Malignant neoplasm of glottis
+f649,1,,
+2938,1,,
+i803,1,,
+r062,1,,
+r391,1,,
+k441,1,,
+7091,1,,Vascular disorders of skin
+a210,1,,
+s029,1,,
+q874,1,,
+c024,1,,
+3051,1,,Tobacco use disorder
+3859,1,,Unspecified disorder of middle ear and mastoid
+o366,1,,
+m650,1,,
+m991,1,,
+1869,1,,Malignant neoplasm of other and unspecified testis
+7364,1,,
+e752,1,,
+c119,1,,
+329,1,,
+b368,1,,
+391,1,,
+g375,1,,
+s378,1,,
+6720,1,,
+i010,1,,
+n820,1,,
+c329,1,,
+s352,1,,
+v428,1,,
+9753,1,,Poisoning by other and unspecified drugs acting on muscles
+o468,1,,
+h010,1,,
+r631,1,,
+s622,1,,
+8403,1,,Infraspinatus (muscle) (tendon) sprain
+3733,1,,
+4733,1,,Chronic sphenoidal sinusitis
+1649,1,,"Malignant neoplasm of mediastinum, part unspecified"
+t366,1,,
+983,1,,
+9145,1,,"Insect bite, nonvenomous, of hand(s) except finger(s) alone, infected"
+m971,1,,
+s680,1,,
+s740,1,,
+z911,1,,
+s891,1,,
+s432,1,,
+8243,1,,"Fracture of lateral malleolus, open"
+k118,1,,
+8793,1,,"Open wound of abdominal wall, anterior, complicated"
+3768,1,,
+i358,1,,
+2125,1,,Benign neoplasm of mediastinum
+180,1,,
+h279,1,,
+b269,1,,
+o115,1,,
+i070,1,,
+o479,1,,
+c942,1,,
+8409,1,,Sprains and strains of unspecified site of shoulder and upper arm
+8623,1,,
+l231,1,,
+3748,1,,
+8253,1,,
+5278,1,,Other specified diseases of the salivary glands
+o997,1,,
+3048,1,,
+q859,1,,
+m710,1,,
+2303,1,,Carcinoma in situ of colon
+t851,1,,
+a183,1,,
+s005,1,,
+s152,1,,
+c028,1,,
+8749,1,,"Open wound of other and unspecified parts of neck, complicated"
+8961,1,,"Traumatic amputation of foot (complete) (partial), unilateral, complicated"
+2724,1,,Other and unspecified hyperlipidemia
+g973,1,,
+e038,1,,
+h511,1,,
+6145,1,,"Acute or unspecified pelvic peritonitis, female"
+m235,1,,
+8728,1,,"Open wound of ear, part unspecified, without mention of complication"
+9871,1,,Toxic effect of other hydrocarbon gas
+1228,1,,"Echinococcosis, unspecified, of liver"
+g587,1,,
+8676,1,,"Injury to other specified pelvic organs, without mention of open wound into cavity"
+c810,1,,
+z683,1,,
+i731,1,,
+t467,1,,
+5881,1,,Nephrogenic diabetes insipidus
+6483,1,,
+1700,1,,"Malignant neoplasm of bones of skull and face, except mandible"
+d170,1,,
+9106,1,,"Superficial foreign body (splinter) of face, neck, and scalp except eye, without major open wound and without mention of infection"
+6964,1,,Pityriasis rubra pilaris
+5832,1,,"Nephritis and nephropathy, not specified as acute or chronic, with lesion of membranoproliferative glomerulonephritis"
+b005,1,,
+5645,1,,Functional diarrhea
+t434,1,,
+6658,1,,
+s901,1,,
+e720,1,,
+i749,1,,
+c609,1,,
+2367,1,,Neoplasm of uncertain behavior of bladder
+b356,1,,
+6984,1,,Dermatitis factitia [artefacta]
+1717,1,,"Malignant neoplasm of connective and other soft tissue of trunk, unspecified"
+c098,1,,
+v154,1,,
+6714,1,,
+2850,1,,Sideroblastic anemia
+n815,1,,
+t634,1,,
+h441,1,,
+n323,1,,
+z472,1,,
+6330,1,,
+j381,1,,
+6622,1,,
+k643,1,,
+6742,1,,
+4740,1,,
+9168,1,,"Other and unspecified superficial injury of hip, thigh, leg, and ankle, without mention of infection"
+488,1,,Flu d/t avian flu virus
+6254,1,,Premenstrual tension syndromes
+4350,1,,Basilar artery syndrome
+1452,1,,Malignant neoplasm of hard palate
+k251,1,,
+f440,1,,
+9610,1,,Poisoning by sulfonamides
+c701,1,,
+3883,1,,
+e095,1,,
+3535,1,,Neuralgic amyotrophy
+o235,1,,
+j941,1,,
+n501,1,,
+2822,1,,Anemias due to disorders of glutathione metabolism
+t794,1,,
+7901,1,,Elevated sedimentation rate
+m216,1,,
+f131,1,,
+t883,1,,
+7150,1,,
+q332,1,,
+m889,1,,
+r855,1,,
+s162,1,,
+r895,1,,
+v221,1,,
+t382,1,,
+t410,1,,
+j218,1,,
+z493,1,,
+c822,1,,
+7014,1,,Keloid scar
+v604,1,,
+b084,1,,
+5847,1,,Acute kidney failure with lesion of renal medullary [papillary] necrosis
+d133,1,,
+e882,1,,
+i310,1,,
+7488,1,,Other specified anomalies of respiratory system
+s762,1,,
+a050,1,,
+4130,1,,Angina decubitus
+9283,1,,Crushing injury of toe(s)
+d479,1,,
+1202,1,,Schistosomiasis due to schistosoma japonicum
+7835,1,,Polydipsia
+f062,1,,
+5831,1,,"Nephritis and nephropathy, not specified as acute or chronic, with lesion of membranous glomerulonephritis"
+d376,1,,
+k281,1,,
+6941,1,,Subcorneal pustular dermatosis
+i479,1,,
+3640,1,,
+f424,1,,
+d731,1,,
+9471,1,,"Burn of larynx, trachea, and lung"
+3720,1,,
+o870,1,,
+i150,1,,
+q430,1,,
+z451,1,,
+n452,1,,
+f401,1,,
+h431,1,,
+c531,1,,
+r940,1,,
+n057,1,,
+r068,1,,
+9271,1,,
+i673,1,,
+l138,1,,
+9032,1,,Injury to radial blood vessels
+r52,1,,
+m878,1,,
+9430,1,,
+h114,1,,
+d483,1,,
+n644,1,,
+d595,1,,
+c320,1,,
+3814,1,,"Nonsuppurative otitis media, not specified as acute or chronic"
+g111,1,,
+m508,1,,
+t803,1,,
+k045,1,,
+r230,1,,
+o209,1,,
+2305,1,,Carcinoma in situ of anal canal
+h654,1,,
+r894,1,,
+9175,1,,"Insect bite, nonvenomous, of foot and toe(s), infected"
+l039,1,,
+s904,1,,
+k117,1,,
+l128,1,,
+1740,1,,Malignant neoplasm of nipple and areola of female breast
+s178,1,,
+e832,1,,
+c841,1,,
+b191,1,,
+b379,1,,
+n172,1,,
+s644,1,,
+o122,1,,
+c459,1,,
+7864,1,,Abnormal sputum
+l080,1,,
+700,1,,Corns and callosities
+3441,1,,Paraplegia
+o690,1,,
+q423,1,,
+l929,1,,
+c384,1,,
+d212,1,,
+2720,1,,Pure hypercholesterolemia
+7081,1,,Idiopathic urticaria
+m220,1,,
+6214,1,,Hematometra
+n429,1,,
+h494,1,,
+m266,1,,
+4572,1,,Lymphangitis
+g718,1,,
+50,1,,
+b461,1,,
+i220,1,,
+c840,1,,
+v701,1,,
+k835,1,,
+7969,1,,Other nonspecific abnormal findings
+s251,1,,
+s359,1,,
+s605,1,,
+s699,1,,
+4591,1,,
+m661,1,,
+j628,1,,
+1702,1,,"Malignant neoplasm of vertebral column, excluding sacrum and coccyx"
+h598,1,,
+c470,1,,
+3519,1,,"Facial nerve disorder, unspecified"
+g008,1,,
+s200,1,,
+1430,1,,Malignant neoplasm of upper gum
+a159,1,,
+3561,1,,Peroneal muscular atrophy
+9840,1,,Toxic effect of inorganic lead compounds
+d644,1,,
+5227,1,,Periapical abscess with sinus
+2812,1,,Folate-deficiency anemia
+c388,1,,
+9530,1,,Injury to cervical nerve root
+i00,1,,
+m707,1,,
+7555,1,,
+b965,1,,
+7885,1,,Oliguria and anuria
+a420,1,,
+b007,1,,
+9991,1,,"Air embolism as a complication of medical care, not elsewhere classified"
+1140,1,,Primary coccidioidomycosis (pulmonary)
+i827,1,,
+4808,1,,Pneumonia due to other virus not elsewhere classified
+1923,1,,Malignant neoplasm of spinal meninges
+r454,1,,
+g988,1,,
+3690,1,,
+c670,1,,
+267,1,,Ascorbic acid deficiency
+j120,1,,
+v710,1,,
+9534,1,,Injury to brachial plexus
+c812,1,,
+t880,1,,
+c760,1,,
+1463,1,,Malignant neoplasm of vallecula epiglottica
+8912,1,,"Open wound of knee, leg [except thigh], and ankle, with tendon involvement"
+o410,1,,
+m966,1,,
+2351,1,,"Neoplasm of uncertain behavior of lip, oral cavity, and pharynx"
+2941,1,,
+8101,1,,
+5277,1,,Disturbance of salivary secretion
+a590,1,,
+n341,1,,
+t368,1,,
+a848,1,,
+c902,1,,
+c969,1,,
+2955,1,,
+i059,1,,
+b011,1,,
+g578,1,,
+2689,1,,Unspecified vitamin D deficiency
+r064,1,,
+5756,1,,Cholesterolosis of gallbladder
+8512,1,,
+9571,1,,Injury to other specified nerve(s)
+1944,1,,Malignant neoplasm of pineal gland
+m457,1,,
+3789,1,,Unspecified disorder of eye movements
+s051,1,,
+5529,1,,"Hernia of unspecified site, with obstruction"
+z150,1,,
+7536,1,,Atresia and stenosis of urethra and bladder neck
+s898,1,,
+e891,1,,
+o731,1,,
+o098,1,,
+d71,1,,
+8014,1,,
+2713,1,,Intestinal disaccharidase deficiencies and disaccharide malabsorption
+8620,1,,"Injury to diaphragm, without mention of open wound into cavity"
+7199,1,,
+t751,1,,
+f428,1,,
+2931,1,,Subacute delirium
+j438,1,,
+b341,1,,
+9051,1,,Late effect of fracture of spine and trunk without mention of spinal cord lesion
+c020,1,,
+7282,1,,"Muscular wasting and disuse atrophy, not elsewhere classified"
+8727,1,,
+3525,1,,Disorders of hypoglossal [12th] nerve
+2531,1,,Other and unspecified anterior pituitary hyperfunction
+g259,1,,
+8920,1,,"Open wound of foot except toe(s) alone, without mention of complication"
+7811,1,,Disturbances of sensation of smell and taste
+t270,1,,
+l930,1,,
+m253,1,,
+a080,1,,
+3611,1,,
+c382,1,,
+7899,1,,Other symptoms involving abdomen and pelvis
+841,1,,
+o745,1,,
+25,1,,
+3317,1,,Cerebral degeneration in diseases classified elsewhere
+3840,1,,
+t252,1,,
+a071,1,,
+s310,1,,
+t399,1,,
+j61,1,,
+2442,1,,Iodine hypothyroidism
+1945,1,,Malignant neoplasm of carotid body
+s890,1,,
+c311,1,,
+m436,1,,
+9588,1,,Other early complications of trauma
+q898,1,,
+d181,1,,
+s526,1,,
+4772,1,,Allergic rhinitis due to animal (cat) (dog) hair and dander
+f348,1,,
+d763,1,,
+s769,1,,
+3636,1,,
+m204,1,,
+4611,1,,Acute frontal sinusitis
+i511,1,,
+790,1,,
+t610,1,,
+8940,1,,"Multiple and unspecified open wound of lower limb, without mention of complication"
+9511,1,,Injury to trochlear nerve
+2564,1,,Polycystic ovaries
+g119,1,,
+7950,1,,
+z000,1,,
+b371,1,,
+1101,1,,Dermatophytosis of nail
+i621,1,,
+h021,1,,
+c069,1,,
+t463,1,,
+b303,1,,
+d219,1,,
+2421,1,,
+o163,1,,
+m454,1,,
+1129,1,,Candidiasis of unspecified site
+5903,1,,Pyeloureteritis cystica
+l508,1,,
+6635,1,,
+n736,1,,
+l050,1,,
+d058,1,,
+7177,1,,Chondromalacia of patella
+7174,1,,
+5296,1,,Glossodynia
+r680,1,,
+6441,1,,
+q321,1,,
+o071,1,,
+8771,1,,"Open wound of buttock, complicated"
+3704,1,,
+7051,1,,Prickly heat
+m538,1,,
+9033,1,,Injury to ulnar blood vessels
+1920,1,,Malignant neoplasm of cranial nerves
+e790,1,,
+s663,1,,
+m484,1,,
+6018,1,,Other specified inflammatory diseases of prostate
+n710,1,,
+c171,1,,
+k604,1,,
+g000,1,,
+1708,1,,Malignant neoplasm of short bones of lower limb
+j703,1,,
+9300,1,,Corneal foreign body
+y838,1,,
+l059,1,,
+o228,1,,
+5513,1,,Diaphragmatic hernia with gangrene
+r835,1,,
+q453,1,,
+c080,1,,
+8794,1,,"Open wound of abdominal wall, lateral, without mention of complication"
+e312,1,,
+4296,1,,Rupture of papillary muscle
+h200,1,,
+d487,1,,
+d015,1,,
+e260,1,,
+a546,1,,
+a038,1,,
+a170,1,,
+362,1,,
+r299,1,,
+q644,1,,
+k414,1,,
+r143,1,,
+n184,1,,
+c669,1,,
+e208,1,,
+5360,1,,Achlorhydria
+t243,1,,
+v694,1,,
+3010,1,,Paranoid personality disorder
+2014,1,,
+c864,1,,
+2123,1,,Benign neoplasm of bronchus and lung
+z435,1,,
+3465,1,,
+q225,1,,
+c901,1,,
+s376,1,,
+b372,1,,
+9025,1,,
+9001,1,,Injury to internal jugular vein
+r635,1,,
+a770,1,,
+3221,1,,Eosinophilic meningitis
+1906,1,,Malignant neoplasm of choroid
+8708,1,,Other specified open wounds of ocular adnexa
+f940,1,,
+7083,1,,Dermatographic urticaria
+1220,1,,Echinococcus granulosus infection of liver
+i705,1,,
+4539,1,,Other venous embolism and thrombosis of unspecified site
+c540,1,,
+t791,1,,
+654,1,,
+9994,1,,Anaphylactic shock due to serum
+9070,1,,Late effect of intracranial injury without mention of skull fracture
+t474,1,,
+v536,1,,
+8419,1,,Sprains and strains of unspecified site of elbow and forearm
+9450,1,,
+n824,1,,
+q623,1,,
+5331,1,,
+g031,1,,
+i709,1,,
+e243,1,,
+j153,1,,
+m123,1,,
+q892,1,,
+3428,1,,
+a549,1,,
+g546,1,,
+c138,1,,
+3772,1,,
+a312,1,,
+c914,1,,
+s358,1,,
+2049,1,,
+n952,1,,
+m200,1,,
+g001,1,,
+9282,1,,
+i378,1,,
+1952,1,,Malignant neoplasm of abdomen
+i427,1,,
+q330,1,,
+2774,1,,Disorders of bilirubin excretion
+g808,1,,
+2358,1,,"Neoplasm of uncertain behavior of pleura, thymus, and mediastinum"
+q040,1,,
+986,1,,Toxic effect of carbon monoxide
+7991,1,,Respiratory arrest
+t806,1,,
+h512,1,,
+b353,1,,
+9177,1,,"Superficial foreign body (splinter) of foot and toe(s), without major open wound, infected"
+4384,1,,
+z597,1,,
+6192,1,,"Genital tract-skin fistula, female"
+e282,1,,
+9116,1,,"Superficial foreign body (splinter) of trunk, without major open wound and without mention of infection"
+467,1,,
+g709,1,,
+l237,1,,
+s014,1,,
+6249,1,,Unspecified noninflammatory disorder of vulva and perineum
+a771,1,,
+e728,1,,
+o165,1,,
+8406,1,,Supraspinatus (muscle) (tendon) sprain
+8407,1,,Superior glenoid labrum lesion
+q079,1,,
+d780,1,,
+n058,1,,
+i232,1,,
+a156,1,,
+n751,1,,
+4467,1,,Takayasu's disease
+7466,1,,Congenital mitral insufficiency
+v458,1,,
+m082,1,,
+339,1,,
+c068,1,,
+6694,1,,
+7859,1,,Other symptoms involving cardiovascular system
+s025,1,,
+c172,1,,
+8421,1,,
+3588,1,,Other specified myoneural disorders
+2354,1,,Neoplasm of uncertain behavior of retroperitoneum and peritoneum
+7471,1,,
+4458,1,,
+l440,1,,
+2122,1,,Benign neoplasm of trachea
+7176,1,,Loose body in knee
+140,1,,
+148,1,,
+1760,1,,"Kaposi's sarcoma, skin"
+h108,1,,
+b450,1,,
+j705,1,,
+s050,1,,
+5769,1,,Unspecified disorder of biliary tract
+1471,1,,Malignant neoplasm of posterior wall of nasopharynx
+t628,1,,
+v641,1,,
+k908,1,,
+n023,1,,
+4475,1,,Necrosis of artery
+e061,1,,
+d261,1,,
+z682,1,,
+t282,1,,
+g545,1,,
+2862,1,,Congenital factor XI deficiency
+k760,1,,
+7831,1,,Abnormal weight gain
+8003,1,,
+2495,1,,
+h578,1,,
+m763,1,,
+m1a3,1,,
+9120,1,,"Abrasion or friction burn of shoulder and upper arm, without mention of infection"
+h93a,1,,
+r64,1,,
+s730,1,,
+h472,1,,
+m850,1,,
+g371,1,,
+6413,1,,
+b957,1,,
+d751,1,,
+6963,1,,Pityriasis rosea
+j380,1,,
+9161,1,,"Abrasion or friction burn of hip, thigh, leg, and ankle, infected"
+9115,1,,"Insect bite, nonvenomous of trunk, infected"
+m990,1,,
+m314,1,,
+b962,1,,
+s429,1,,
+9882,1,,Toxic effect of berries and other plants eaten as food
+s431,1,,
+3509,1,,"Trigeminal nerve disorder, unspecified"
+c023,1,,
+c700,1,,
+q632,1,,
+9190,1,,"Abrasion or friction burn of other, multiple, and unspecified sites, without mention of infection"
+t633,1,,
+8019,1,,
+588,1,,
+7072,1,,
+n368,1,,
+3006,1,,Depersonalization disorder
+9928,1,,Other specified heat effects
+q018,1,,
+3456,1,,
+9030,1,,
+a499,1,,
+7068,1,,Other specified diseases of sebaceous glands
+n017,1,,
+6682,1,,
+9594,1,,"Hand, except finger injury"
+d569,1,,
+d390,1,,
+s316,1,,
+k469,1,,
+2823,1,,Other hemolytic anemias due to enzyme deficiency
+d552,1,,
+r161,1,,
+m1a0,1,,
+7425,1,,
+g519,1,,
+c031,1,,
+9249,1,,Contusion of unspecified site
+8719,1,,Unspecified open wound of eyeball
+326,1,,Late effects of intracranial abscess or pyogenic infection
+s239,1,,
+6318,1,,Other abnormal products of conception
+181,1,,Malignant neoplasm of placenta
+j840,1,,
+d171,1,,
+t369,1,,
+2468,1,,Other specified disorders of thyroid
+9140,1,,"Abrasion or friction burn of hand(s) except finger(s) alone, without mention of infection"
+k132,1,,
+5343,1,,
+g913,1,,
+t815,1,,
+s198,1,,
+t650,1,,
+8712,1,,Rupture of eye with partial loss of intraocular tissue
+6465,1,,
+7540,1,,"Congenital musculoskeletal deformities of skull, face, and jaw"
+7119,1,,
+c029,1,,
+s660,1,,
+7817,1,,Tetany
+h558,1,,
+d165,1,,
+r935,1,,
+a480,1,,
+a328,1,,
+l219,1,,
+e849,1,,
+9557,1,,Injury to other specified nerve(s) of shoulder girdle and upper limb
+d201,1,,
+r232,1,,
+r070,1,,
+m350,1,,
+b463,1,,
+8085,1,,
+6600,1,,
+i519,1,,
+m488,1,,
+q068,1,,
+m076,1,,
+6803,1,,Carbuncle and furuncle of upper arm and forearm
+o904,1,,
+1160,1,,Blastomycosis
+6216,1,,Malposition of uterus
+q322,1,,
+2373,1,,Neoplasm of uncertain behavior of paraganglia
+1310,1,,
+6267,1,,Postcoital bleeding
+8121,1,,
+8795,1,,"Open wound of abdominal wall, lateral, complicated"
+6861,1,,Pyogenic granuloma of skin and subcutaneous tissue
+k257,1,,
+6013,1,,Prostatocystitis
+d166,1,,
+c846,1,,
+b108,1,,
+h709,1,,
+a872,1,,
+m319,1,,
+b851,1,,
+9565,1,,Injury to other specified nerve(s) of pelvic girdle and lower limb
+7537,1,,Anomalies of urachus
+q444,1,,
+c048,1,,
+8005,1,,
+q893,1,,
+v125,1,,
+2380,1,,Neoplasm of uncertain behavior of bone and articular cartilage
+q676,1,,
+n899,1,,
+j430,1,,
+96,1,,
+s003,1,,
+559,1,,
+1641,1,,Malignant neoplasm of heart
+h330,1,,
+n946,1,,
+t598,1,,
+j698,1,,
+z208,1,,
+9009,1,,Injury to unspecified blood vessel of head and neck
+t833,1,,
+100,1,,
+h408,1,,
+t484,1,,
+2700,1,,Disturbances of amino-acid transport
+a279,1,,
+5991,1,,Urethral fistula
+2199,1,,"Benign neoplasm of uterus, part unspecified"
+i802,1,,
+t408,1,,
+d531,1,,
+3342,1,,Primary cerebellar degeneration
+7249,1,,Other unspecified back disorders
+z751,1,,
+5330,1,,
+7296,1,,Residual foreign body in soft tissue
+g609,1,,
+8489,1,,Unspecified site of sprain and strain
+j385,1,,
+m058,1,,
+4789,1,,Other and unspecified diseases of upper respiratory tract
+i408,1,,
+2492,1,,
+1307,1,,Toxoplasmosis of other specified sites
+r32,1,,
+n996,1,,
+9522,1,,Lumbar spinal cord injury without evidence of spinal bone injury
+k641,1,,
+s314,1,,
+6522,1,,
+7271,1,,Bunion
+i348,1,,
+5962,1,,"Vesical fistula, not elsewhere classified"
+o002,1,,
+9899,1,,"Toxic effect of unspecified substance, chiefly nonmedicinal as to source"
+m839,1,,
+7284,1,,Laxity of ligament
+h920,1,,
+3971,1,,Rheumatic diseases of pulmonary valve
+s878,1,,
+2459,1,,"Thyroiditis, unspecified"
+8025,1,,Open fracture of malar and maxillary bones
+6169,1,,"Unspecified inflammatory disease of cervix, vagina, and vulva"
+3775,1,,
+c715,1,,
+2580,1,,
+k056,1,,
+n431,1,,
+a180,1,,
+f652,1,,
+s602,1,,
+d106,1,,
+v498,1,,
+t446,1,,
+g372,1,,
+a689,1,,
+b340,1,,
+4219,1,,"Acute endocarditis, unspecified"
+2726,1,,Lipodystrophy
+g219,1,,
+r932,1,,
+7180,1,,
+5341,1,,
+a157,1,,
+9563,1,,Injury to peroneal nerve
+9554,1,,Injury to musculocutaneous nerve

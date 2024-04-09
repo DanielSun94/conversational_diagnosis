@@ -1,0 +1,690 @@
+﻿symptom,factor_group,factor
+Abdominal pain,Pain is,Burning
+Abdominal pain,Pain is,Crampy
+Abdominal pain,Pain is,Dull
+Abdominal pain,Pain is,Gnawing
+Abdominal pain,Pain is,Intense
+Abdominal pain,Pain is,Intermittent or episodic
+Abdominal pain,Pain is,Ongoing (chronic)
+Abdominal pain,Pain is,Sharp
+Abdominal pain,Pain is,Steady
+Abdominal pain,Pain is,Sudden (acute)
+Abdominal pain,Pain is,Worsening or progressing
+Abdominal pain,Pain located in,Abdomen but radiates to other parts of the body
+Abdominal pain,Pain located in,Lower abdomen
+Abdominal pain,Pain located in,Middle abdomen
+Abdominal pain,Pain located in,One or both sides
+Abdominal pain,Pain located in,Upper abdomen
+Abdominal pain,Triggered or worsened by,Coughing or other jarring movements
+Abdominal pain,Triggered or worsened by,Drinking alcohol
+Abdominal pain,Triggered or worsened by,Eating certain foods
+Abdominal pain,Triggered or worsened by,Menstrual cycle
+Abdominal pain,Triggered or worsened by,Stress
+Abdominal pain,Relieved by,Antacids
+Abdominal pain,Relieved by,Avoiding certain foods
+Abdominal pain,Relieved by,Changing position
+Abdominal pain,Relieved by,Drinking more water
+Abdominal pain,Relieved by,Eating certain foods
+Abdominal pain,Relieved by,Eating more fiber
+Abdominal pain,Accompanied by,Abdominal swelling
+Abdominal pain,Accompanied by,Black or bloody stools
+Abdominal pain,Accompanied by,Constipation
+Abdominal pain,Accompanied by,Diarrhea
+Abdominal pain,Accompanied by,Fever
+Abdominal pain,Accompanied by,Inability to move bowels in spite of urge
+Abdominal pain,Accompanied by,"Loose, watery stools"
+Abdominal pain,Accompanied by,Nausea or vomiting
+Abdominal pain,Accompanied by,Passing gas
+Abdominal pain,Accompanied by,Pulsing sensation near the navel
+Abdominal pain,Accompanied by,Rash
+Abdominal pain,Accompanied by,Stomach growling or rumbling
+Abdominal pain,Accompanied by,Unintended weight loss
+Abdominal pain,Accompanied by,Urgent need to have a bowel movement
+Blood in stool,Blood appears,In or on the stool
+Blood in stool,Blood appears,In toilet bowl or on toilet tissue
+Blood in stool,Triggered or worsened by,Drinking alcohol or caffeine
+Blood in stool,Triggered or worsened by,Eating certain foods
+Blood in stool,Triggered or worsened by,Straining during bowel movements
+Blood in stool,Relieved by,Drinking more water
+Blood in stool,Relieved by,Eating certain foods
+Blood in stool,Relieved by,Eating more fiber
+Blood in stool,Accompanied by,Abdominal pain or cramping
+Blood in stool,Accompanied by,Anal itching
+Blood in stool,Accompanied by,Change in bowel habits that lasts longer than four weeks
+Blood in stool,Accompanied by,Change in your bowel habits
+Blood in stool,Accompanied by,Constipation
+Blood in stool,Accompanied by,Diarrhea
+Blood in stool,Accompanied by,Fatigue or weakness
+Blood in stool,Accompanied by,Fever
+Blood in stool,Accompanied by,Frequent urge to have bowel movement
+Blood in stool,Accompanied by,Narrow stools
+Blood in stool,Accompanied by,Nausea or vomiting
+Blood in stool,Accompanied by,Painful bowel movements
+Blood in stool,Accompanied by,"Persistent abdominal discomfort, such as cramps, gas or pain"
+Blood in stool,Accompanied by,Rectal pain
+Blood in stool,Accompanied by,Unintended weight loss
+Chest pain,Pain best described as,Achy or gnawing
+Chest pain,Pain best described as,Burning
+Chest pain,Pain best described as,Severe
+Chest pain,Pain best described as,Sharp
+Chest pain,Pain best described as,Squeezing or pressure
+Chest pain,Pain best described as,Sudden
+Chest pain,Pain best described as,Tight
+Chest pain,Problem is,Ongoing or recurrent
+Chest pain,Problem is,Preceded by upper respiratory illness
+Chest pain,Triggered or worsened by,Allergens or irritants
+Chest pain,Triggered or worsened by,Eating or drinking
+Chest pain,Triggered or worsened by,Exertion
+Chest pain,Triggered or worsened by,Exposure to cold air
+Chest pain,Triggered or worsened by,Lying down for a long period
+Chest pain,Triggered or worsened by,Mild to moderate exertion
+Chest pain,Triggered or worsened by,Pressing on chest wall
+Chest pain,Triggered or worsened by,Smoking
+Chest pain,Triggered or worsened by,Stress
+Chest pain,Triggered or worsened by,Taking a deep breath
+Chest pain,Relieved by,Antacids
+Chest pain,Relieved by,Bending forward
+Chest pain,Relieved by,Rest
+Chest pain,Accompanied by,Anxiety
+Chest pain,Accompanied by,Belching
+Chest pain,Accompanied by,Cough with blood or phlegm
+Chest pain,Accompanied by,Difficult or painful swallowing
+Chest pain,Accompanied by,Dry cough
+Chest pain,Accompanied by,Fainting or dizziness
+Chest pain,Accompanied by,Fever
+Chest pain,Accompanied by,Headache
+Chest pain,Accompanied by,Nausea or vomiting
+Chest pain,Accompanied by,"Pain in neck, jaw, arms, shoulders or back"
+Chest pain,Accompanied by,Rapid or irregular heartbeat
+Chest pain,Accompanied by,Shortness of breath
+Chest pain,Accompanied by,Sweating
+Chest pain,Accompanied by,Unexplained fatigue
+Chest pain,Accompanied by,Wheezing
+Constipation,Blood appears,In or on the stool
+Constipation,Problem is,Ongoing or recurrent
+Constipation,Problem is,Recent
+Constipation,Problem is,Worsening or progressing
+Constipation,Accompanied by,Abdominal pain
+Constipation,Accompanied by,Anal or rectal pain
+Constipation,Accompanied by,Bloody stools
+Constipation,Accompanied by,Change in bowel habits that lasts longer than four weeks
+Constipation,Accompanied by,Constipation
+Constipation,Accompanied by,Cramping
+Constipation,Accompanied by,Diarrhea
+Constipation,Accompanied by,Fatigue or weakness
+Constipation,Accompanied by,Fever
+Constipation,Accompanied by,Gas
+Constipation,Accompanied by,Increased sensitivity to cold
+Constipation,Accompanied by,Mucus in stools
+Constipation,Accompanied by,Muscle or joint aches
+Constipation,Accompanied by,Muscle weakness
+Constipation,Accompanied by,Narrow stools
+Constipation,Accompanied by,Nausea or vomiting
+Constipation,Accompanied by,Painful bowel movements
+Constipation,Accompanied by,"Pale, dry skin"
+Constipation,Accompanied by,"Persistent abdominal discomfort, such as cramps, gas or pain"
+Constipation,Accompanied by,Unexplained fatigue
+Constipation,Accompanied by,Unintended weight gain
+Constipation,Accompanied by,Unintended weight loss
+Cough,Cough is,Dry
+Cough,Cough is,Producing phlegm or sputum
+Cough,Problem is,New or recent
+Cough,Problem is,Ongoing or recurrent
+Cough,Problem is,Worsening or progressing
+Cough,Triggered or worsened by,Allergens or irritants
+Cough,Accompanied by,Chest pain or tightness
+Cough,Accompanied by,Chills or sweating
+Cough,Accompanied by,Difficult or painful swallowing
+Cough,Accompanied by,Fatigue
+Cough,Accompanied by,Fever
+Cough,Accompanied by,Headache or facial pain
+Cough,Accompanied by,Hoarse voice
+Cough,Accompanied by,Loss of appetite
+Cough,Accompanied by,Muscle aches
+Cough,Accompanied by,Runny or stuffy nose
+Cough,Accompanied by,Shortness of breath
+Cough,Accompanied by,Sneezing
+Cough,Accompanied by,Sore throat
+Cough,Accompanied by,Watery or itchy eyes
+Cough,Accompanied by,Wheezing
+Diarrhea,Problem is,Ongoing or recurrent (weeks to years)
+Diarrhea,Problem is,Recent (days to weeks)
+Diarrhea,Problem is,Sudden (hours to days)
+Diarrhea,Preceded by,Eating suspect food
+Diarrhea,Preceded by,Recent antibiotic use
+Diarrhea,Triggered or worsened by,Eating certain foods
+Diarrhea,Relieved by,Avoiding certain foods
+Diarrhea,Accompanied by,Abdominal pain or cramping
+Diarrhea,Accompanied by,Bloating or abdominal swelling
+Diarrhea,Accompanied by,Bloody stools
+Diarrhea,Accompanied by,Constipation
+Diarrhea,Accompanied by,Fever
+Diarrhea,Accompanied by,Mucus in stools
+Diarrhea,Accompanied by,Muscle or joint aches
+Diarrhea,Accompanied by,Nausea or vomiting
+Diarrhea,Accompanied by,Passing gas
+Diarrhea,Accompanied by,Unintended weight loss
+Diarrhea,Accompanied by,Urgency to have a bowel movement
+Difficulty swallowing,Swallowing,Hurts
+Difficulty swallowing,Swallowing,Takes effort
+Difficulty swallowing,Triggered or worsened by,Eating certain foods
+Difficulty swallowing,Accompanied by,Bad breath
+Difficulty swallowing,Accompanied by,Cough
+Difficulty swallowing,Accompanied by,Difficulty breathing
+Difficulty swallowing,Accompanied by,Dry mouth
+Difficulty swallowing,Accompanied by,Earache
+Difficulty swallowing,Accompanied by,Feeling of something stuck in your throat
+Difficulty swallowing,Accompanied by,Heartburn
+Difficulty swallowing,Accompanied by,Hoarse voice or difficulty speaking
+Difficulty swallowing,Accompanied by,Jaw pain or stiffness
+Difficulty swallowing,Accompanied by,Loose teeth or poorly fitting dentures
+Difficulty swallowing,Accompanied by,Lump in front of neck
+Difficulty swallowing,Accompanied by,"Mouth sores, lumps or pain"
+Difficulty swallowing,Accompanied by,Pain in chest or back
+Difficulty swallowing,Accompanied by,Regurgitation of food or sour liquid
+Difficulty swallowing,Accompanied by,Sore throat
+Difficulty swallowing,Accompanied by,Thick saliva
+Difficulty swallowing,Accompanied by,Unintended weight loss
+Dizziness,You feel,A spinning sensation
+Dizziness,You feel,Lightheaded or faint
+Dizziness,You feel,Unsteady
+Dizziness,Symptoms are,New or sudden
+Dizziness,Symptoms are,Recurrent or ongoing
+Dizziness,Triggered or worsened by,Change in head or body position
+Dizziness,Accompanied by,Anxiety
+Dizziness,Accompanied by,Blurred or double vision
+Dizziness,Accompanied by,Buzzing or ringing in ear
+Dizziness,Accompanied by,Buzzing or ringing (tinnitus) in only one ear
+Dizziness,Accompanied by,Chest pain or tightness
+Dizziness,Accompanied by,Confusion
+Dizziness,Accompanied by,Ear pain or pressure
+Dizziness,Accompanied by,Fever
+Dizziness,Accompanied by,Hearing loss
+Dizziness,Accompanied by,Nausea or vomiting
+Dizziness,Accompanied by,Numbness or weakness on one side of body
+Dizziness,Accompanied by,"Pain in neck, jaw, arms, shoulders or back"
+Dizziness,Accompanied by,Rapid or irregular heartbeat
+Dizziness,Accompanied by,Severe headache
+Dizziness,Accompanied by,Shortness of breath
+Dizziness,Accompanied by,Slurred speech
+Dizziness,Accompanied by,Sweating
+Eye discomfort and redness,Eye discomfort best described as,Achy
+Eye discomfort and redness,Eye discomfort best described as,Dry or itchy
+Eye discomfort and redness,Eye discomfort best described as,Gritty sensation
+Eye discomfort and redness,Eye discomfort best described as,Redness without actual discomfort
+Eye discomfort and redness,Eye discomfort best described as,Sensitivity to light
+Eye discomfort and redness,Eye discomfort best described as,Severe pain
+Eye discomfort and redness,Eye discomfort best described as,Stinging or burning sensation
+Eye discomfort and redness,Appearance of eye includes,Bleeding on the surface of the white of the eye
+Eye discomfort and redness,Appearance of eye includes,Crusted eyelashes after sleeping
+Eye discomfort and redness,Appearance of eye includes,Excessive tearing
+Eye discomfort and redness,Appearance of eye includes,"Red, painful lump on the eyelid"
+Eye discomfort and redness,Appearance of eye includes,Redness
+Eye discomfort and redness,Appearance of eye includes,Stringy mucus in or around the eye
+Eye discomfort and redness,Appearance of eye includes,Swelling around the eye
+Eye discomfort and redness,Vision problem includes,Blurred vision
+Eye discomfort and redness,Vision problem includes,"Dark, floating spots in vision"
+Eye discomfort and redness,Vision problem includes,Vision loss
+Eye discomfort and redness,Triggered by,Allergens or other irritants
+Eye discomfort and redness,Triggered by,Injury or trauma
+Eye discomfort and redness,Worsened by,"Dry, warm air"
+Eye discomfort and redness,Worsened by,Eye movement
+Eye discomfort and redness,Accompanied by,Runny or stuffy nose
+Eye problems,Problem is,Blurry distant objects
+Eye problems,Problem is,Blurry nearby objects
+Eye problems,Problem is,Blurry or blind spot in center of vision
+Eye problems,Problem is,Blurry vision at all distances
+Eye problems,Problem is,Bright zigzag lines
+Eye problems,Problem is,"Clouded, hazy or dim vision"
+Eye problems,Problem is,Double vision
+Eye problems,Problem is,Fading of colors
+Eye problems,Problem is,Flashes of light
+Eye problems,Problem is,Glare with bright lights
+Eye problems,Problem is,Halos around lights
+Eye problems,Problem is,Inability to distinguish certain shades of color
+Eye problems,Problem is,Loss of side vision
+Eye problems,Problem is,Objects appear crooked or distorted
+Eye problems,Problem is,Poor night vision
+Eye problems,Problem is,Progressive expansion of shadow or curtain over visual field
+Eye problems,Problem is,"Seeing nonexistent things, or hallucinating"
+Eye problems,Problem is,Sensitivity to light
+Eye problems,Problem is,Shimmering spots or stars
+Eye problems,Problem is,Spots or strings floating in field of vision
+Eye problems,Problem is,Tunnel vision
+Eye problems,Problem is,"Vision loss, partial or total"
+Eye problems,Problem affects,Both eyes
+Eye problems,Problem affects,One eye
+Eye problems,Vision improves somewhat with,Holding objects away from face
+Eye problems,Vision improves somewhat with,Holding objects close to face
+Eye problems,Vision improves somewhat with,Squinting
+Eye problems,Vision improves somewhat with,Use of bright lighting
+Eye problems,Onset is,Gradual or progressive
+Eye problems,Onset is,Recent (hours to days)
+Eye problems,Onset is,Sudden (seconds to minutes)
+Eye problems,Duration is,A few minutes
+Eye problems,Duration is,Usually no longer than 30 minutes
+Eye problems,Accompanied by,Confusion or trouble talking
+Eye problems,Accompanied by,Dizziness or difficulty walking
+Eye problems,Accompanied by,Eye pain or discomfort
+Eye problems,Accompanied by,Eye redness
+Eye problems,Accompanied by,Eyestrain
+Eye problems,Accompanied by,Headache
+Eye problems,Accompanied by,Numbness or weakness on one side of the body
+Eye problems,Accompanied by,Other sensory disturbances
+Eye problems,Accompanied by,Swelling around the eye
+Foot pain or ankle pain,Located in,Ankle
+Foot pain or ankle pain,Located in,Area along edge of toenail
+Foot pain or ankle pain,Located in,Back of ankle
+Foot pain or ankle pain,Located in,Bottom of foot
+Foot pain or ankle pain,Located in,Heel
+Foot pain or ankle pain,Located in,Middle part of foot
+Foot pain or ankle pain,Located in,Toe or front part of foot
+Foot pain or ankle pain,Located in,Whole foot
+Foot pain or ankle pain,Triggered or worsened by,Activity or overuse
+Foot pain or ankle pain,Triggered or worsened by,Ill-fitting shoes
+Foot pain or ankle pain,Triggered or worsened by,Injury
+Foot pain or ankle pain,Triggered or worsened by,Long periods of rest
+Foot pain or ankle pain,Accompanied by,Black-and-blue mark
+Foot pain or ankle pain,Accompanied by,Burning
+Foot pain or ankle pain,Accompanied by,Difficulty pushing off with toes
+Foot pain or ankle pain,Accompanied by,Feeling of instability
+Foot pain or ankle pain,Accompanied by,Flattened arch
+Foot pain or ankle pain,Accompanied by,Inability to bear weight
+Foot pain or ankle pain,Accompanied by,Joint deformity
+Foot pain or ankle pain,Accompanied by,Numbness or tingling
+Foot pain or ankle pain,Accompanied by,Redness
+Foot pain or ankle pain,Accompanied by,Stiffness
+Foot pain or ankle pain,Accompanied by,Swelling
+Foot pain or ankle pain,Accompanied by,Thickened or rough skin
+Foot pain or ankle pain,Accompanied by,Weakness
+Foot swelling or leg swelling,Pain best described as,Dull or achy
+Foot swelling or leg swelling,Pain best described as,Gradually worsening
+Foot swelling or leg swelling,Swelling occurs,Along whole limb
+Foot swelling or leg swelling,Swelling occurs,Around ankle or foot
+Foot swelling or leg swelling,Swelling occurs,Around knee
+Foot swelling or leg swelling,Swelling occurs,In both limbs
+Foot swelling or leg swelling,Swelling occurs,In one limb
+Foot swelling or leg swelling,Triggered or worsened by,Activity or overuse
+Foot swelling or leg swelling,Triggered or worsened by,Everyday activities
+Foot swelling or leg swelling,Triggered or worsened by,Injury
+Foot swelling or leg swelling,Triggered or worsened by,Movement
+Foot swelling or leg swelling,Preceded by,Inactivity or long periods of rest
+Foot swelling or leg swelling,Preceded by,Sitting or standing still for long periods
+Foot swelling or leg swelling,Relieved by,Walking
+Foot swelling or leg swelling,Accompanied by,Enlarged or purplish vein in affected leg
+Foot swelling or leg swelling,Accompanied by,Entire leg or calf being pale and cool
+Foot swelling or leg swelling,Accompanied by,Fatigue
+Foot swelling or leg swelling,Accompanied by,Hardening of skin in affected area
+Foot swelling or leg swelling,Accompanied by,Heaviness in affected limb
+Foot swelling or leg swelling,Accompanied by,Loss of appetite
+Foot swelling or leg swelling,Accompanied by,Nausea
+Foot swelling or leg swelling,Accompanied by,"Pain, tenderness or aching in affected area"
+Foot swelling or leg swelling,Accompanied by,Persistent cough
+Foot swelling or leg swelling,Accompanied by,Rapid or irregular heartbeat
+Foot swelling or leg swelling,Accompanied by,Redness and warmth in affected area
+Foot swelling or leg swelling,Accompanied by,Shortness of breath that may prevent sleep unless propped up
+Foot swelling or leg swelling,Accompanied by,Stiffness
+Foot swelling or leg swelling,Accompanied by,Stiffness or limited movement
+Foot swelling or leg swelling,Accompanied by,Swelling
+Foot swelling or leg swelling,Accompanied by,Swelling in abdomen or other parts of body
+Headaches,Pain is,Extreme
+Headaches,Pain is,Mild to moderate
+Headaches,Pain is,Moderate to severe
+Headaches,Pain is,Pressure or squeezing sensation
+Headaches,Pain is,Stabbing or burning
+Headaches,Pain is,Throbbing
+Headaches,Pain located,Around one eye or radiates from one eye
+Headaches,Pain located,Around your temples
+Headaches,Pain located,On both sides of your head
+Headaches,Pain located,On one side of your head
+Headaches,Onset is,Gradual
+Headaches,Onset is,Preceded by a head injury or fall
+Headaches,Onset is,Preceded by frequent use of pain medication
+Headaches,Onset is,Preceded by visual or other sensory disturbances
+Headaches,Onset is,Sudden
+Headaches,Duration of headache is,A few hours to days
+Headaches,Duration of headache is,A few minutes to hours
+Headaches,Recurrence of headache,Gradually becomes more frequent
+Headaches,Recurrence of headache,Is daily
+Headaches,Recurrence of headache,Is often the same time every day
+Headaches,Triggered or worsened by,Change in sleep patterns
+Headaches,Triggered or worsened by,Chewing
+Headaches,Triggered or worsened by,Clenching or grinding teeth
+Headaches,Triggered or worsened by,Everyday activities
+Headaches,Triggered or worsened by,Hormonal changes
+Headaches,Triggered or worsened by,Orgasm
+Headaches,Triggered or worsened by,Poor posture
+Headaches,Triggered or worsened by,Stress
+Headaches,Relieved by,Lying down in the dark
+Headaches,Relieved by,Over-the-counter pain medication
+Headaches,Relieved by,Rest
+Headaches,Accompanied by,"Change in personality, behaviors or mental status"
+Headaches,Accompanied by,Confusion
+Headaches,Accompanied by,Difficulty speaking
+Headaches,Accompanied by,Dizziness
+Headaches,Accompanied by,Fever
+Headaches,Accompanied by,Jaw pain
+Headaches,Accompanied by,Memory loss or forgetfulness
+Headaches,Accompanied by,Muscle or joint aches
+Headaches,Accompanied by,Nausea or vomiting
+Headaches,Accompanied by,Persistent weakness or numbness
+Headaches,Accompanied by,Restlessness or agitation
+Headaches,Accompanied by,Runny or stuffy nose
+Headaches,Accompanied by,Seizures
+Headaches,Accompanied by,Sensitivity to light or noise
+Headaches,Accompanied by,Stiff neck
+Headaches,Accompanied by,Tender scalp
+Headaches,Accompanied by,Vision problems
+Heart palpitations,Palpitations often occur when,You're anxious or stressed
+Heart palpitations,Palpitations often occur when,You're exerting yourself
+Heart palpitations,Palpitations often occur when,You're resting or going to bed
+Heart palpitations,Heart rate is,Faster than normal
+Heart palpitations,Heart rate is,Irregular or not steady
+Heart palpitations,Heart rate is,Slower than normal
+Heart palpitations,Preceded by use of,Caffeine or alcohol
+Heart palpitations,Preceded by use of,Cigarettes or recreational drugs
+Heart palpitations,Preceded by use of,Medications or herbal supplements
+Heart palpitations,Accompanied by,Chest pain or tightness
+Heart palpitations,Accompanied by,Dizziness or lightheadedness
+Heart palpitations,Accompanied by,Fainting
+Heart palpitations,Accompanied by,Headache
+Heart palpitations,Accompanied by,Nausea
+Heart palpitations,Accompanied by,Nervousness
+Heart palpitations,Accompanied by,Shortness of breath
+Heart palpitations,Accompanied by,Sudden weight loss
+Heart palpitations,Accompanied by,Sweating
+Heart palpitations,Accompanied by,Tremors
+Heart palpitations,Accompanied by,Trouble sleeping
+Heart palpitations,Accompanied by,Unexplained fatigue or weakness
+Hip pain,Pain is,Dull or achy
+Hip pain,Pain is,Located in the groin
+Hip pain,Pain is,Located on the outside of the hip (greater trochanter)
+Hip pain,Pain is,Sudden and intense
+Hip pain,Triggered or worsened by,Activity or overuse
+Hip pain,Triggered or worsened by,Applying pressure or trying to bear weight
+Hip pain,Triggered or worsened by,Injury
+Hip pain,Triggered or worsened by,Long periods of rest
+Hip pain,Triggered or worsened by,Movement
+Hip pain,Triggered or worsened by,Overuse
+Hip pain,Accompanied by,Decreased range of motion
+Hip pain,Accompanied by,Decreased range of motion such as difficulty rolling the hip or thigh outward
+Hip pain,Accompanied by,Locking or catching
+Hip pain,Accompanied by,Stiffness
+Hip pain,Accompanied by,Swelling
+Knee pain,Pain best described as,Dull or achy
+Knee pain,Pain best described as,Gradually worsening
+Knee pain,Pain best described as,Persistent
+Knee pain,Pain best described as,Sharp or severe
+Knee pain,Pain best described as,Sudden
+Knee pain,Located,Along one or both sides of the knee
+Knee pain,Located,Around the kneecap
+Knee pain,Located,Behind the knee
+Knee pain,Located,In the knee joint
+Knee pain,Triggered by,Everyday activities
+Knee pain,Triggered by,Injury
+Knee pain,Triggered by,Overuse
+Knee pain,Worsened by,Movement
+Knee pain,Worsened by,Prolonged sitting or standing
+Knee pain,Worsened by,Rest or inactivity
+Knee pain,Accompanied by,Bruising or discoloring
+Knee pain,Accompanied by,Decreased range of motion
+Knee pain,Accompanied by,Feeling of instability
+Knee pain,Accompanied by,Grating sensation
+Knee pain,Accompanied by,Inability to bear weight
+Knee pain,Accompanied by,Joint weakness
+Knee pain,Accompanied by,Locking or catching
+Knee pain,Accompanied by,Popping or snapping
+Knee pain,Accompanied by,Skin redness
+Knee pain,Accompanied by,Stiffness
+Knee pain,Accompanied by,Swelling
+Knee pain,Accompanied by,Warmth to touch
+Low back pain,Pain,Began suddenly
+Low back pain,Pain,Gradually worsens
+Low back pain,Pain,Started gradually
+Low back pain,Triggered by,Everyday activities
+Low back pain,Triggered by,Injury
+Low back pain,Triggered by,Overuse
+Low back pain,Worsened by,Movement
+Low back pain,Worsened by,Prolonged rest or inactivity
+Low back pain,Worsened by,Prolonged sitting or standing
+Low back pain,Accompanied by,Decreased range of motion or stiffness in neck
+Low back pain,Accompanied by,Knot or tight spot in back muscle
+Low back pain,Accompanied by,Loss of balance or coordination
+Low back pain,Accompanied by,Loss of bowel or bladder control
+Low back pain,Accompanied by,Muscle weakness
+Low back pain,Accompanied by,"Numbness or tingling in limbs, most often on both sides of the body (bilateral)"
+Low back pain,Accompanied by,"Numbness or tingling in limbs, most often on one side of the body (unilateral)"
+Low back pain,Accompanied by,"Shoulder, arm or chest pain"
+Low back pain,Accompanied by,Stiffness in lower back
+Low back pain,Accompanied by,Swelling
+Low back pain,Accompanied by,"Weakness, numbness or tingling in leg or foot"
+Nasal congestion,Nasal congestion is,New or recent
+Nasal congestion,Nasal congestion is,Ongoing or persistent
+Nasal congestion,Nasal discharge is,Clear or watery
+Nasal congestion,Nasal discharge is,Yellow or greenish
+Nasal congestion,Accompanied by,Bad breath
+Nasal congestion,Accompanied by,Cough
+Nasal congestion,Accompanied by,Ear pain
+Nasal congestion,Accompanied by,Fatigue
+Nasal congestion,Accompanied by,Fever
+Nasal congestion,Accompanied by,Headache or facial pain
+Nasal congestion,Accompanied by,"Itchy eyes, nose, mouth or throat"
+Nasal congestion,Accompanied by,Mild body aches
+Nasal congestion,Accompanied by,Nosebleeds
+Nasal congestion,Accompanied by,Reduced sense of smell or taste
+Nasal congestion,Accompanied by,Runny nose
+Nasal congestion,Accompanied by,Sneezing
+Nasal congestion,Accompanied by,Snoring
+Nasal congestion,Accompanied by,Sore throat
+Nasal congestion,Accompanied by,Upper jaw or tooth pain
+Nasal congestion,Accompanied by,Watery eyes
+Nausea or vomiting,Triggered or worsened by,Drinking alcohol
+Nausea or vomiting,Triggered or worsened by,Eating certain foods
+Nausea or vomiting,Triggered or worsened by,Stress
+Nausea or vomiting,Triggered or worsened by,Travel or motion
+Nausea or vomiting,Onset is,Intermittent or episodic
+Nausea or vomiting,Onset is,Recent (few hours)
+Nausea or vomiting,Onset is,Recent (hours to days)
+Nausea or vomiting,Onset is,Sudden (minutes to hours)
+Nausea or vomiting,Accompanied by,Abdominal bloating or swelling
+Nausea or vomiting,Accompanied by,"Abdominal pain, discomfort or cramps"
+Nausea or vomiting,Accompanied by,Anxiety
+Nausea or vomiting,Accompanied by,Black or bloody stools
+Nausea or vomiting,Accompanied by,Chest pain or tightness
+Nausea or vomiting,Accompanied by,Constipation
+Nausea or vomiting,Accompanied by,Diarrhea
+Nausea or vomiting,Accompanied by,Difficulty breathing
+Nausea or vomiting,Accompanied by,Dizziness or fainting
+Nausea or vomiting,Accompanied by,Feeling of fullness after eating small amounts of food
+Nausea or vomiting,Accompanied by,Fever
+Nausea or vomiting,Accompanied by,Headache
+Nausea or vomiting,Accompanied by,Heartburn
+Nausea or vomiting,Accompanied by,Irregular or rapid heartbeat
+Nausea or vomiting,Accompanied by,Sweating
+Nausea or vomiting,Accompanied by,Unintended weight loss
+Neck pain,Pain started,Gradually
+Neck pain,Pain started,Suddenly
+Neck pain,Triggered or worsened by,Injury
+Neck pain,Triggered or worsened by,Physical exertion
+Neck pain,Triggered or worsened by,Poor posture
+Neck pain,Triggered or worsened by,Stress
+Neck pain,Accompanied by,Decreased range of motion or stiffness in neck
+Neck pain,Accompanied by,Headache
+Neck pain,Accompanied by,Loss of balance or coordination
+Neck pain,Accompanied by,Loss of bowel or bladder control
+Neck pain,Accompanied by,Muscle weakness
+Neck pain,Accompanied by,Numbness or tingling in limbs
+Neck pain,Accompanied by,"Shoulder, arm or chest pain"
+Numbness or tingling in hands,Numbness or tingling,Affects your fingers or hand
+Numbness or tingling in hands,Numbness or tingling,Is intermittent
+Numbness or tingling in hands,Numbness or tingling,Started gradually
+Numbness or tingling in hands,Numbness or tingling,Wakes you up at night
+Numbness or tingling in hands,Triggered by,Being in one position for a long time
+Numbness or tingling in hands,Triggered by,Repetitive use
+Numbness or tingling in hands,Relieved by,Rest
+Numbness or tingling in hands,Worsened by,Sleep
+Numbness or tingling in hands,Accompanied by,Arm or hand pain
+Numbness or tingling in hands,Accompanied by,Arm or hand weakness
+Numbness or tingling in hands,Accompanied by,Burning pain
+Numbness or tingling in hands,Accompanied by,Extreme sensitivity to touch
+Numbness or tingling in hands,Accompanied by,"Frequent feeling that a foot or hand has ""fallen asleep"""
+Numbness or tingling in hands,Accompanied by,"Gradual onset of numbness, prickling or tingling in your feet or hands, which can spread upward into your legs and arms"
+Numbness or tingling in hands,Accompanied by,Lack of coordination and falling
+Numbness or tingling in hands,Accompanied by,Muscle weakness in the affected area
+Numbness or tingling in hands,Accompanied by,Muscle weakness or paralysis
+Numbness or tingling in hands,Accompanied by,Numbness or decreased sensation in the area supplied by the nerve
+Numbness or tingling in hands,Accompanied by,"Sharp, aching or burning pain, which may radiate outward"
+Numbness or tingling in hands,Accompanied by,"Sharp, jabbing, throbbing, freezing or burning pain"
+Numbness or tingling in hands,Accompanied by,"Tingling, pins and needles sensations (paresthesia)"
+Pelvic pain in adult females,Pain best described as,Beginning suddenly
+Pelvic pain in adult females,Pain best described as,Cyclical or recurrent
+Pelvic pain in adult females,Pain best described as,Different from usual menstrual cramps
+Pelvic pain in adult females,Pain best described as,Dull or achy
+Pelvic pain in adult females,Pain best described as,"Itching or burning around genitals, buttocks or inner thighs"
+Pelvic pain in adult females,Pain best described as,Ongoing
+Pelvic pain in adult females,Pain best described as,Sharp or crampy
+Pelvic pain in adult females,Worsened by,Lifting or straining
+Pelvic pain in adult females,Worsened by,Menstrual cycle
+Pelvic pain in adult females,Worsened by,Movement or physical activity
+Pelvic pain in adult females,Worsened by,Stress
+Pelvic pain in adult females,Accompanied by,Abnormal vaginal bleeding
+Pelvic pain in adult females,Accompanied by,Black or bloody stools
+Pelvic pain in adult females,Accompanied by,"Bloating, constipation or diarrhea"
+Pelvic pain in adult females,Accompanied by,"Bumps, blisters or open sores"
+Pelvic pain in adult females,Accompanied by,Change in vaginal discharge
+Pelvic pain in adult females,Accompanied by,Excessive menstrual bleeding
+Pelvic pain in adult females,Accompanied by,Fever
+Pelvic pain in adult females,Accompanied by,Frequent urination or urge to urinate
+Pelvic pain in adult females,Accompanied by,Increased waist size
+Pelvic pain in adult females,Accompanied by,Irregular periods
+Pelvic pain in adult females,Accompanied by,Lightheadedness or fainting
+Pelvic pain in adult females,Accompanied by,Low back pain
+Pelvic pain in adult females,Accompanied by,Mood swings
+Pelvic pain in adult females,Accompanied by,Nausea or vomiting
+Pelvic pain in adult females,Accompanied by,Painful bowel movements
+Pelvic pain in adult females,Accompanied by,Painful or difficult urination
+Pelvic pain in adult females,Accompanied by,Painful sexual intercourse
+Pelvic pain in adult females,Accompanied by,Skin rash
+Pelvic pain in adult females,Accompanied by,Unintended weight loss
+Pelvic pain in adult females,Accompanied by,Weight gain
+Pelvic pain in adult males,Pain best described as,"Discomfort, pressure or pain in lower abdomen or groin"
+Pelvic pain in adult males,Pain best described as,"Itching or burning around genitals, buttocks or inner thighs"
+Pelvic pain in adult males,Pain best described as,Pain or discomfort in the penis
+Pelvic pain in adult males,Pain best described as,Painful intercourse or ejaculation
+Pelvic pain in adult males,Pain best described as,Painful urination
+Pelvic pain in adult males,Pain best described as,Testicle pain
+Pelvic pain in adult males,Accompanied by,Blood in semen
+Pelvic pain in adult males,Accompanied by,Blood in urine
+Pelvic pain in adult males,Accompanied by,"Bumps, blisters or open sores"
+Pelvic pain in adult males,Accompanied by,Clear discharge from penis
+Pelvic pain in adult males,Accompanied by,Difficulty urinating or emptying bladder completely
+Pelvic pain in adult males,Accompanied by,Discharge from the penis
+Pelvic pain in adult males,Accompanied by,Fever
+Pelvic pain in adult males,Accompanied by,Frequent urination or urge to urinate
+Pelvic pain in adult males,Accompanied by,Lump or swelling in scrotum
+Pelvic pain in adult males,Accompanied by,Nausea or vomiting
+Pelvic pain in adult males,Accompanied by,Pus-filled discharge from penis
+Shortness of breath,Problem is,New or recent
+Shortness of breath,Problem is,Ongoing or recurrent
+Shortness of breath,Preceded by,Trauma or injury
+Shortness of breath,Preceded by,Upper respiratory illness
+Shortness of breath,Triggered or worsened by,Allergens or irritants
+Shortness of breath,Triggered or worsened by,Anxiety or stress
+Shortness of breath,Triggered or worsened by,"Coughing, sneezing or deep breathing"
+Shortness of breath,Triggered or worsened by,Exposure to cold air
+Shortness of breath,Triggered or worsened by,Mild to moderate exertion
+Shortness of breath,Triggered or worsened by,Smoking
+Shortness of breath,Accompanied by,Chest pain or tightness
+Shortness of breath,Accompanied by,Cough that produces blood
+Shortness of breath,Accompanied by,Cough that produces sputum
+Shortness of breath,Accompanied by,Dizziness or fainting
+Shortness of breath,Accompanied by,Dry cough
+Shortness of breath,Accompanied by,Fatigue or weakness
+Shortness of breath,Accompanied by,Fever or chills
+Shortness of breath,Accompanied by,Headache
+Shortness of breath,Accompanied by,Irregular or rapid heartbeat
+Shortness of breath,Accompanied by,Nausea
+Shortness of breath,Accompanied by,Pale or bluish skin
+Shortness of breath,Accompanied by,Rapid weight gain
+Shortness of breath,Accompanied by,Sweating
+Shortness of breath,Accompanied by,"Swelling of legs, ankles and feet"
+Shortness of breath,Accompanied by,Trembling
+Shortness of breath,Accompanied by,Wheezing
+Shoulder pain,Pain is,Dull or achy
+Shoulder pain,Pain is,Sharp or severe
+Shoulder pain,Onset is,Gradual
+Shoulder pain,Onset is,Sudden
+Shoulder pain,Triggered or worsened by,Everyday activities
+Shoulder pain,Triggered or worsened by,Injury
+Shoulder pain,Triggered or worsened by,Overuse or exertion
+Shoulder pain,Triggered or worsened by,Rest or inactivity
+Shoulder pain,Accompanied by,Inability to move shoulder
+Shoulder pain,Accompanied by,Muscle spasm
+Shoulder pain,Accompanied by,Numbness or tingling
+Shoulder pain,Accompanied by,Shoulder or arm weakness
+Shoulder pain,Accompanied by,Shoulder stiffness
+Shoulder pain,Accompanied by,Swelling
+Shoulder pain,Accompanied by,Visible deformity
+Sore throat,Accompanied by,Blue-colored skin or lips
+Sore throat,Accompanied by,Chills or sweating
+Sore throat,Accompanied by,Cough
+Sore throat,Accompanied by,Difficult or painful swallowing
+Sore throat,Accompanied by,Difficult or raspy breathing
+Sore throat,Accompanied by,"Enlarged, tender lymph nodes in neck"
+Sore throat,Accompanied by,Fever
+Sore throat,Accompanied by,Headache or facial pain
+Sore throat,Accompanied by,Heartburn
+Sore throat,Accompanied by,Hoarse or muffled voice
+Sore throat,Accompanied by,Muscle aches
+Sore throat,Accompanied by,"Red, swollen tonsils"
+Sore throat,Accompanied by,Runny or stuffy nose
+Sore throat,Accompanied by,Skin rash
+Sore throat,Accompanied by,Sneezing
+Sore throat,Accompanied by,Watery eyes
+Sore throat,Accompanied by,White patches or pus on tonsils
+Sore throat,Accompanied by,Yellow or greenish phlegm or discharge from your nose
+Urinary problems,Problem is,Awaking two or more times in the night to urinate
+Urinary problems,Problem is,Blood in urine
+Urinary problems,Problem is,Change in urine color
+Urinary problems,Problem is,Cloudy urine
+Urinary problems,Problem is,Difficulty emptying bladder or weak urine stream
+Urinary problems,Problem is,Difficulty starting urination
+Urinary problems,Problem is,Frequent urination
+Urinary problems,Problem is,Involuntary loss of urine
+Urinary problems,Problem is,Pain or burning when urinating
+Urinary problems,Problem is,"Strong, persistent urge to urinate"
+Urinary problems,Related pain involves,"Itching or burning around genitals, buttocks or inner thighs"
+Urinary problems,Related pain involves,Pain in back or side
+Urinary problems,Related pain involves,Pain in lower abdomen or groin
+Urinary problems,Related pain involves,Painful ejaculation
+Urinary problems,Related pain involves,Painful sexual intercourse
+Urinary problems,Worsened by,Menstrual cycle
+Urinary problems,Worsened by,Stress
+Urinary problems,Accompanied by,Blurred vision
+Urinary problems,Accompanied by,"Bumps, blisters or open sores around genitals"
+Urinary problems,Accompanied by,Change in vaginal discharge
+Urinary problems,Accompanied by,Clear discharge from penis
+Urinary problems,Accompanied by,Extreme thirst or hunger
+Urinary problems,Accompanied by,Fatigue
+Urinary problems,Accompanied by,Fever
+Urinary problems,Accompanied by,Nausea or vomiting
+Urinary problems,Accompanied by,Pus-filled discharge from penis
+Urinary problems,Accompanied by,Unintended weight loss
+Urinary problems,Accompanied by,Vaginal odor
+Wheezing,Wheezing is,New or recent
+Wheezing,Wheezing is,Ongoing or recurrent
+Wheezing,Preceded by,Upper respiratory illness
+Wheezing,Triggered or worsened by,Allergens or irritants
+Wheezing,Triggered or worsened by,Exposure to cold air
+Wheezing,Triggered or worsened by,Mild to moderate exertion
+Wheezing,Triggered or worsened by,Smoking
+Wheezing,Accompanied by,Blue-colored skin or lips
+Wheezing,Accompanied by,Chest pain or tightness
+Wheezing,Accompanied by,Cough that produces sputum
+Wheezing,Accompanied by,Difficult or painful swallowing
+Wheezing,Accompanied by,Dry cough
+Wheezing,Accompanied by,Fatigue or weakness
+Wheezing,Accompanied by,Fever
+Wheezing,Accompanied by,Hoarse or muffled voice
+Wheezing,Accompanied by,Shortness of breath
+Wheezing,Accompanied by,Sore throat
