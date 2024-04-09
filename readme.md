@@ -4,7 +4,7 @@ This project contains all the relevant code to reproduce our work: [Conversation
 
 We assume that users have the right to access MIMIC-IV Version 2.2. If not, please complete the necessary certification on PhysioNet to obtain access.
 
-We also assume that users can access Microsoft Azure OpenAI.
+We also assume that users can access Microsoft Azure OpenAI as using the native OpenAI service may violate the data usage agreement of MIMIC-IV.
 
 This repository was formed by merging two independent projects. Although we have conducted checks, there might be issues with the paths some scripts use to read files. If you encounter such issues, please contact us by sending an email to sunzj@zhejianglab.com or submitting a new issue in the repository.
 
