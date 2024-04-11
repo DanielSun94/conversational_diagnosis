@@ -6,7 +6,8 @@ from patient_simulator import PatientSimulator
 from self_reflection import get_data, evaluate_performance, GetNextBatch
 from doctor_simulator import (PureGPTDoctorSimulator, TextKnowledgeGPTDoctorSimulator, DoctorSimulator, read_text)
 from environment import Environment
-from config import logger, differential_result_folder, knowledge_origin_text_path, diagnosis_procedure_template_path
+from config import differential_result_folder, knowledge_origin_text_path, diagnosis_procedure_template_path
+from logger import logger
 
 
 def main():

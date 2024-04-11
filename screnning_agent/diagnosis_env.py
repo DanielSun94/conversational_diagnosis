@@ -39,11 +39,9 @@ class PatientEnvironment(Env):
         else:
             self.action_space = Discrete(self.symptom_num + self.diagnosis_num)
         if self.use_text_embedding:
-            assert embedding_size is not None
             self.observation_space = Box(low=-10000, high=10000, shape=[self.symptom_num * 3 + 1 + embedding_size])
         else:
-            assert embedding_size is None
-            self.observation_space = MultiBinary(self.symptom_num * 3 + 1)
+            self.observation_space = Box(low=-10000, high=10000, shape=[self.symptom_num * 3 + 1 + embedding_size])
 
         self.current_key = None
         self.current_oracle_symptom = None
@@ -154,7 +152,7 @@ class PatientEnvironment(Env):
         if self.use_text_embedding:
             return_obs = np.concatenate([new_observation, self.current_oracle_embedding])
         else:
-            return_obs = new_observation
+            return_obs = np.concatenate([new_observation, np.zeros([self.embedding_size])])
         # if reward != 1 and reward!=0:
         #     raise ValueError('')
         return return_obs, reward, terminate, truncate, {}
@@ -179,7 +177,6 @@ class PatientEnvironment(Env):
         if self.use_text_embedding:
             self.current_oracle_embedding = next_sample[3]
         else:
-            # 1024 is the embedding size
             self.current_oracle_embedding = np.zeros([self.embedding_size])
 
         # 随机给定一个症状作为initial症状
@@ -211,7 +208,7 @@ class PatientEnvironment(Env):
             embedding = np.array(self.current_oracle_embedding)
             return_obs = np.concatenate([next_observation, embedding])
         else:
-            return_obs = next_observation
+            return_obs = np.concatenate([next_observation, np.zeros([self.embedding_size])])
         return return_obs, {}
 
     def render(self):

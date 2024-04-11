@@ -2,7 +2,7 @@ import os
 import logging
 from pathlib import Path
 
-root_path = Path(str(os.path.join(os.path.abspath(os.path.dirname(__file__))))).parent.absolute()
+root_path = Path(str(os.path.join(os.path.abspath(os.path.dirname(__file__))))).absolute()
 log_folder = os.path.join(root_path, 'resource', 'log')
 if not os.path.exists(log_folder):
     os.makedirs(log_folder)

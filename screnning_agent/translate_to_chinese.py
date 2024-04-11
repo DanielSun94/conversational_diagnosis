@@ -1,6 +1,6 @@
 import csv
 from itertools import islice
-from util import call_open_ai
+from llm_util import call_open_ai
 import os
 import time
 import threading

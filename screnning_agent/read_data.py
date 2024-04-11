@@ -3,7 +3,7 @@ import math
 import os
 import pickle
 import random
-from config import (structured_data_folder, prepared_data_pkl_path, reserved_note_path, embedding_folder,
+from screnning_agent.config import (structured_data_folder, prepared_data_pkl_path, reserved_note_path, embedding_folder,
                     translation_path, data_fraction_path_template)
 from logger import logger
 from itertools import islice

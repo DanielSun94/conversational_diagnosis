@@ -41,24 +41,3 @@ diagnosis_procedure_template_path = os.path.join(differential_folder, 'heart_fai
 discharge_note_path = "F:\\MIMIC-IV\\note\\discharge.csv"
 radiology_note_path = 'F:\\MIMIC-IV\\note\\radiology.csv'
 diagnosis_path = 'F:\\MIMIC-IV\\hosp\\diagnoses_icd.csv'
-
-
-log_folder = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'resource', 'log')
-if not os.path.exists(log_folder):
-    os.makedirs(log_folder)
-
-log_file_name = os.path.join(log_folder, '{}_{}.txt'.format('log', datetime.now().strftime("%Y%m%d%H%M%S'")))
-format_ = "%(asctime)s %(process)d %(module)s %(lineno)d %(message)s"
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-
-# Create a file handler to write logs to a file
-file_handler = logging.FileHandler(log_file_name)
-file_handler.setFormatter(logging.Formatter(format_))
-logger.addHandler(file_handler)
-
-# Create a stream handler for console output and set its level to INFO
-console_logger = logging.StreamHandler(stream=sys.stdout)
-console_logger.setLevel(logging.INFO)  # Setting the StreamHandler level to INFO
-console_logger.setFormatter(logging.Formatter(format_))
-logger.addHandler(console_logger)

@@ -2,9 +2,10 @@ import os.path
 import csv
 from llm_util import call_open_ai
 import json
-from config import logger, hf_differential_sample_path
+from config import hf_differential_sample_path
 import random
 from patient_simulator_util import process_full_info_data
+from logger import logger
 
 
 def heart_failure_confirm_by_icd(diagnosis):

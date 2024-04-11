@@ -1,4 +1,4 @@
-from config import logger
+from logger import logger
 
 
 class Environment(object):

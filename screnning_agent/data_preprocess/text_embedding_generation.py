@@ -1,7 +1,7 @@
 import csv
 import pickle
-from screnning_agent.config import (reserved_note_path, embedding_transformed_id_list_file_path, history_folder,
-                                    open_ai_embedding_folder)
+from screnning_agent.config import (reserved_note_path, embedding_transformed_id_list_file_path, history_folder)
+from screnning_agent.config import embedding_folder as open_ai_embedding_folder
 from itertools import islice
 import os
 import threading

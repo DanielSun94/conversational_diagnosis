@@ -23,12 +23,12 @@ parser.add_argument('--learning_rate', help='', default=default_learning_rate, t
 parser.add_argument('--value_weight', help='', default=default_value_weight, type=float)
 parser.add_argument('--entropy_weight', help='', default=default_entropy_weight, type=float)
 parser.add_argument('--n_envs', help='', default=default_n_envs, type=int)
-parser.add_argument('--episode_max_len', help='', default=default_episode_max_len, type=int)
+parser.add_argument('--episode_max_len', help='', default=10, type=int)
 parser.add_argument('--update_per_step', help='', default=default_update_per_step, type=int)
 parser.add_argument('--symptom_num', help='', default=default_symptom_num, type=int)
 parser.add_argument('--device', help='', default=default_device, type=str)
 parser.add_argument('--mode', help='', default=default_mode, type=str)
-parser.add_argument('--use_text_embedding', help='', default=default_use_text_embedding , type=bool)
+parser.add_argument('--use_text_embedding', help='', default=True , type=bool)
 parser.add_argument('--value_net_length', help='', default=default_value_net_length , type=int)
 args = vars(parser.parse_args())
 for key in args:
@@ -52,7 +52,7 @@ def main():
     if use_text_embedding:
         embedding_size = 3072
     else:
-        embedding_size = None
+        embedding_size = 3072
     train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
         read_data(structured_data_folder, minimum_symptom=1, mode=language, read_from_cache=True)
     symptom_dim = len(train_dataset.symptom[0]) // 3

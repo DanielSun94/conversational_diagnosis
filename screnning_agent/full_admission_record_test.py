@@ -3,9 +3,9 @@ import math
 from itertools import islice
 from read_data import get_structured_diagnosis
 from config import (reserved_note_path, open_ai_full_admission_embedding_folder)
-from logger import logger
 import random
 from datetime import datetime
+from logger import logger
 import threading
 import numpy as np
 import os
@@ -81,7 +81,7 @@ def generate_embedding(data_dict):
     success_id_set = set()
     while count_id < len(id_seq_list):
         start_time = datetime.now()
-        unified_ids = get_next_batch_id(data_dict, success_id_set, id_dict, 400)
+        unified_ids = get_next_batch_id(data_dict, success_id_set, id_dict, THREAD_NUM)
         if count_id >= MAX_NUM or len(unified_ids) == 0:
             break
 
@@ -116,9 +116,13 @@ def read_embedding(embedding_folder):
 
 
 def main():
+    logger.info('read origin data')
     origin_data = read_reserved_note(reserved_note_path)
+    logger.info('get embedding')
     generate_embedding(origin_data)
+    logger.info('get diagnosis')
     diagnosis_structured_dict, diagnosis_group_dict, group_index_dict = get_structured_diagnosis(reserved_note_path)
+    logger.info('read embedding')
     embedding_dict = read_embedding(open_ai_full_admission_embedding_folder)
 
     data_dict = dict()

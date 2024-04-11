@@ -1,7 +1,7 @@
 import csv
 import os
 from itertools import islice
-from util import read_valid_emr_id
+from data_preprocess.get_admission_emr import read_valid_emr_id
 
 
 def main():

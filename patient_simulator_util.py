@@ -1,5 +1,6 @@
 from config import radiology_note_path, discharge_note_path, reserve_key_path, cache_folder, patient_full_info_path, \
-    patient_info_folder, diagnosis_path, logger
+    patient_info_folder, diagnosis_path
+from logger import logger
 from itertools import islice
 import csv
 import json

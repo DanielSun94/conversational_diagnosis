@@ -8,6 +8,7 @@ from sklearn.neural_network import MLPClassifier
 from config import structured_data_folder
 from logger import logger
 import random
+from screnning_agent.config import resource_folder
 
 
 def data_transform(dataset, fraction, use_data_type):
@@ -48,19 +49,19 @@ def data_transform(dataset, fraction, use_data_type):
 
 
 def main():
-    data_path = os.path.join(root_folder, 'mlp_test_result.csv')
+    data_path = os.path.join(resource_folder, 'mlp_test_result.csv')
     hidden_layer_sizes = [64, 32]
-    max_iter = 350
-    faction_list = [1.0, ]
+    max_iter = 500
+    faction_list = [1.0, 0.75, 0.5, 0.25]
 
     model_list = ['MLP', ]
     data_to_write = [['repeat', 'model', 'fraction', 'max_iter', 'top_k', 'train_hit', 'test_hit']]
-    for repeat in range(5):
+    for repeat in range(1):
         for use_data in 0, 1, 2:
             for model in model_list:
                 for fraction in faction_list:
                     train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
-                        read_data(structured_data_folder, minimum_symptom=1, read_from_cache=True)
+                        read_data(structured_data_folder, minimum_symptom=1, read_from_cache=True, mode='english')
                     logger.info('train size: {}, test size: {}, valid size: {}'.format(
                         len(train_dataset), len(test_dataset), len(valid_dataset)))
                     symptom_num = len(train_dataset.symptom[0]) // 3
@@ -81,9 +82,11 @@ def main():
                         batch_size=len(train_input) // 50,
                         learning_rate='adaptive'
                     )
+                    logger.info('start training')
+                    logger.info('use data type: {}, repeat: {}, model: {}'.format(use_data, repeat, model))
                     for i in range(max_iter):
                         clf.partial_fit(train_input, train_diagnosis, classes=np.unique(train_diagnosis))
-                        if (i+1) % 50 == 0 or i == max_iter -1:
+                        if (i+1) % 50 == 0 or i == max_iter - 1:
                             train_diagnosis_prob = clf.predict_proba(train_input)
                             test_diagnosis_prob = clf.predict_proba(test_input)
                             for top_k in [1, 3, 5, 10, 20, 30, 50]:
@@ -98,7 +101,7 @@ def main():
                                                     top_k, train_top_k_hit, top_k,
                                                     test_top_k_hit))
                             logger.info('\n')
-
+                    logger.info('training complete')
                     with open(data_path, 'w', encoding='utf-8-sig', newline='') as f:
                         csv.writer(f).writerows(data_to_write)
 

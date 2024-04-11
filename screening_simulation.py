@@ -7,7 +7,8 @@ import json
 import pickle
 from llm_util import call_llm
 from config import code_mapping_path, patient_info_folder, patient_info_group_path, screen_folder, reserve_note_file, \
-    embedding_folder, screening_planner_path_dict, logger, standard_question_path
+    embedding_folder, screening_planner_path_dict, standard_question_path
+from logger import logger
 from gymnasium.spaces import Box, Discrete
 from screnning_agent.config import prepared_data_pkl_path, structured_data_folder, data_fraction_path_template
 from environment import Environment
@@ -17,19 +18,36 @@ import re
 import numpy as np
 from screnning_agent.util import LinearSchedule
 import threading
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--eval_mode', help='', default=0, type=int)
+parser.add_argument('--init_idx', help='', default=0, type=int)
+parser.add_argument('--data_size', help='', default=300, type=int)
+parser.add_argument('--split_num', help='', default=10, type=int)
+
+parser.add_argument('--max_round', help='', default=10, type=int)
+parser.add_argument('--mode', help='', default='dialogue', type=str)
+parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=str)
+parser.add_argument('--doctor_llm_name', help='', default='gpt_4_turbo', type=str)
+parser.add_argument('--doctor_type', help='', default='ppo', type=str)
+args = vars(parser.parse_args())
+for key in args:
+    logger.info('{}: {}'.format(key, args[key]))
 
 
 def main():
-    eval_mode = False
-    init_idx = 0
-    data_size = 300
-    split_num = 4
+    assert args['eval_mode'] == 1 or args['eval_mode'] == 0
+    eval_mode = True if args['eval_mode'] == 1 else False
+    init_idx = args['init_idx']
+    data_size = args['data_size']
+    split_num = args['split_num']
 
-    max_round = 20
-    mode = 'dialogue'
-    patient_llm_name = 'gpt_4_turbo'
-    doctor_llm_name = 'llama2-70b'  # gpt_4_turbo llama2-70b gpt_35_turbo
-    doctor_type = 'ppo'  # gpt, ppo
+    max_round = args['max_round']
+    mode = args['mode']
+    patient_llm_name = args['patient_llm_name']
+    doctor_llm_name = args['doctor_llm_name']  # gpt_4_turbo llama2-70b gpt_35_turbo
+    doctor_type = args['doctor_type']  # gpt, ppo
 
     logger.info('init index: {}'.format(init_idx))
     logger.info('thread num (split num): {}'.format(split_num))
@@ -42,7 +60,10 @@ def main():
 
     path = data_fraction_path_template.format(715, 0.7, 0.05, 0.25)
     assert os.path.exists(path)
-    train_id_set = set(pickle.load(open(path, 'rb'))['train_key_list'])
+    id_dict = pickle.load(open(path, 'rb'))
+    train_ids, valid_ids, test_ids = id_dict['train_key_list'], id_dict['valid_key_list'], id_dict['test_key_list']
+    full_id_set = set(train_ids+valid_ids+test_ids)
+    train_id_set = set(train_ids)
 
     group_icd_code_dict, icd_code_group_dict = get_icd_mapping_code(code_mapping_path)
     data_dict = read_data(reserve_note_file, patient_info_folder, icd_code_group_dict, patient_info_group_path)
@@ -58,11 +79,16 @@ def main():
     random.Random(715).shuffle(key_list)
     target_key_list = []
     for key in key_list:
-        if key not in train_id_set:
+        true_key = '-'.join(key.strip().split('-')[1:])
+        if true_key not in full_id_set:
+            continue
+        if true_key not in train_id_set:
             target_key_list.append(key)
         if len(target_key_list) >= data_size+init_idx:
             break
 
+    logger.info('target key list size: {}'.format(len(target_key_list)))
+    logger.info('data load complete')
     if not eval_mode:
         screen_planner_path = screening_planner_path_dict[max_round]['planner']
         screen_classifier_path = screening_planner_path_dict[max_round]['classifier']
@@ -92,7 +118,7 @@ def main():
                                   target_key_list)
         else:
             assert mode == 'review'
-            parse_review_result(os.path.join(screen_folder, doctor_llm_name), target_key_list)
+            parse_review_result(os.path.join(screen_folder, doctor_llm_name, 'review'), target_key_list)
 
 
 def get_translation_dict(path, index_name_dict, language):
@@ -233,7 +259,8 @@ def parse_review_result(folder, target_key_list):
     top_3 = np.sum(np.array(rank_list) < 3) / len(rank_list)
     top_5 = np.sum(np.array(rank_list) < 5) / len(rank_list)
     top_10 = np.sum(np.array(rank_list) < 10) / len(rank_list)
-    logger.info('top 1: {}\ntop 3: {}\ntop 5: {}\ntop 10: {}\n'.format(top_1, top_3, top_5, top_10))
+    logger.info('data size: {}'.format(len(rank_list)))
+    logger.info('\ntop 1: {}\ntop 3: {}\ntop 5: {}\ntop 10: {}\n'.format(top_1, top_3, top_5, top_10))
 
 
 def parse_dialogue_result(folder, target_key_list):
@@ -285,7 +312,9 @@ def parse_dialogue_result(folder, target_key_list):
 
 def review_mode(index, target_key_list, data_dict, doctor_llm_name, group_icd_code_dict):
     key = target_key_list[index]
-    path = os.path.join(screen_folder, doctor_llm_name, f'{key}_review.json')
+    folder = os.path.join(screen_folder, doctor_llm_name, 'review')
+    os.makedirs(folder, exist_ok=True)
+    path = os.path.join(str(folder), f'{key}_review.json')
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8-sig') as file:
             data_result = json.load(file)
