@@ -1,5 +1,5 @@
 import os.path
-from screnning_agent.read_data import read_data
+from screen_agent.read_data import read_data
 import numpy as np
 from config import screen_folder
 import json

@@ -10,13 +10,13 @@ from config import code_mapping_path, patient_info_folder, patient_info_group_pa
     embedding_folder, screening_planner_path_dict, standard_question_path
 from logger import logger
 from gymnasium.spaces import Box, Discrete
-from screnning_agent.config import prepared_data_pkl_path, structured_data_folder, data_fraction_path_template
+from screen_agent.screen_config import prepared_data_pkl_path, structured_data_folder, data_fraction_path_template
 from environment import Environment
 from patient_simulator import PatientSimulator
-from screnning_agent.policy_model import SymptomInquireActorCriticPolicy
+from screen_agent.policy_model import SymptomInquireActorCriticPolicy
 import re
 import numpy as np
-from screnning_agent.util import LinearSchedule
+from screen_agent.util import LinearSchedule
 import threading
 import argparse
 
@@ -32,8 +32,8 @@ parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=s
 parser.add_argument('--doctor_llm_name', help='', default='gpt_4_turbo', type=str)
 parser.add_argument('--doctor_type', help='', default='ppo', type=str)
 args = vars(parser.parse_args())
-for key in args:
-    logger.info('{}: {}'.format(key, args[key]))
+for arg in args:
+    logger.info('{}: {}'.format(arg, args[arg]))
 
 
 def main():

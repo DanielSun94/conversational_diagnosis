@@ -1,14 +1,15 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import csv
 import math
-import os.path
 import numpy as np
 from read_data import read_data
 from eval import top_calculate
 from sklearn.neural_network import MLPClassifier
-from config import structured_data_folder
+from screen_config import structured_data_folder, resource_folder
 from logger import logger
 import random
-from screnning_agent.config import resource_folder
 
 
 def data_transform(dataset, fraction, use_data_type):
@@ -50,13 +51,14 @@ def data_transform(dataset, fraction, use_data_type):
 
 def main():
     data_path = os.path.join(resource_folder, 'mlp_test_result.csv')
+    logger.info('save data path: {}'.format(data_path))
     hidden_layer_sizes = [64, 32]
-    max_iter = 500
+    max_iter = 300
     faction_list = [1.0, 0.75, 0.5, 0.25]
 
     model_list = ['MLP', ]
     data_to_write = [['repeat', 'model', 'fraction', 'max_iter', 'top_k', 'train_hit', 'test_hit']]
-    for repeat in range(1):
+    for repeat in range(5):
         for use_data in 0, 1, 2:
             for model in model_list:
                 for fraction in faction_list:

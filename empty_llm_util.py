@@ -1,5 +1,5 @@
 import os
-from config import logger
+from logger import logger
 import json
 import requests
 from openai import AzureOpenAI

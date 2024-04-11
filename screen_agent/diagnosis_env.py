@@ -3,8 +3,8 @@ import random
 import numpy as np
 from numpy import int64
 from read_data import read_data
-from config import structured_data_folder
-from gymnasium.spaces import Box, MultiBinary, Discrete
+from screen_config import structured_data_folder
+from gymnasium.spaces import Box, Discrete
 from gymnasium import Env
 
 

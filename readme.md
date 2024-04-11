@@ -8,12 +8,14 @@ We also assume that users can access Microsoft Azure OpenAI as using the native 
 
 This repository was formed by merging two independent projects. Although we have conducted checks, there might be issues with the paths some scripts use to read files. If you encounter such issues, please contact us by sending an email to sunzj@zhejianglab.com or submitting a new issue in the repository.
 
-## Step 1 Prepare API Key
+## Step 1 Prepare API Key and Environment
 Please add your own API key to empty_llm_util.py.
 
 Then, please rename 'empty_llm_util.py' to 'llm_util.py'.
 
 In this study, we default to using Azure OpenAI to call OpenAI models and the Baidu Qianfan platform to call Llama2.
+
+Please run the project via python 3.12. Please install dependencies via requirements.txt
 
 ## Step 2 Preprocessing Dataset
 You need to download the diagnoses_icd.csv and d_icd_diagnoses.csv files from MIMIC-IV, and discharge.csv and radiology.csv from MIMIC-IV-Note. Then, you need to place them in "./resource/mimic_iv/".

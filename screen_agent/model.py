@@ -4,7 +4,7 @@ import numpy as np
 import torch.nn.functional
 from numpy import int64
 from read_data import read_data
-from config import structured_data_folder
+from screen_config import structured_data_folder
 from torch import nn
 import torch.nn.functional as func
 from torch import LongTensor

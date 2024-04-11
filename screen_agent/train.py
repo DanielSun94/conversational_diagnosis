@@ -1,6 +1,10 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from diagnosis_env import PatientEnvironment
 from read_data import read_data
-from config import structured_data_folder, model_save_folder, default_mode, default_device, default_model_id, \
+from screen_config import structured_data_folder, model_save_folder, default_mode, default_device, default_model_id, \
     default_model_name, default_n_envs, default_action_num, default_symptom_num, default_first_level, \
     default_value_weight, default_entropy_weight, default_value_net_length, default_learning_rate,\
     default_episode_max_len, default_update_per_step, default_use_text_embedding
@@ -28,7 +32,7 @@ parser.add_argument('--update_per_step', help='', default=default_update_per_ste
 parser.add_argument('--symptom_num', help='', default=default_symptom_num, type=int)
 parser.add_argument('--device', help='', default=default_device, type=str)
 parser.add_argument('--mode', help='', default=default_mode, type=str)
-parser.add_argument('--use_text_embedding', help='', default=True , type=bool)
+parser.add_argument('--use_text_embedding', help='' , default=1, type=int)
 parser.add_argument('--value_net_length', help='', default=default_value_net_length , type=int)
 args = vars(parser.parse_args())
 for key in args:
@@ -43,12 +47,13 @@ def main():
     mode = args['mode']
     device = args['device']
     update_per_step = args['update_per_step']
-    use_text_embedding = args['use_text_embedding']
+    use_text_embedding = True if args['use_text_embedding'] == 1 else False
     value_weight = args['value_weight']
     entropy_weight = args['entropy_weight']
     value_net_length = args['value_net_length']
     language = args['language']
     assert language == 'chinese' or language == 'english'
+    assert args['use_text_embedding'] == 1 or args['use_text_embedding'] == 0
     if use_text_embedding:
         embedding_size = 3072
     else:

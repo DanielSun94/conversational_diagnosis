@@ -10,8 +10,9 @@ from doctor_simulator import (DoctorSimulator, parse_questions, read_text)
 from llm_util import call_open_ai
 from environment import Environment
 from datetime import datetime
-from config import logger, self_reflection_folder, diagnosis_procedure_template_path
+from config import self_reflection_folder, diagnosis_procedure_template_path
 import threading
+from logger import logger
 
 
 class GetNextBatch(object):

@@ -1,14 +1,17 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import csv
 import math
 from itertools import islice
 from read_data import get_structured_diagnosis
-from config import (reserved_note_path, open_ai_full_admission_embedding_folder)
+from screen_config import (reserved_note_path, open_ai_full_admission_embedding_folder)
 import random
 from datetime import datetime
 from logger import logger
 import threading
 import numpy as np
-import os
 from llm_util import call_open_ai_embedding
 import pickle
 from sklearn.neural_network import MLPClassifier
@@ -36,11 +39,12 @@ def get_save_embedding(data_dict, unified_id, success_id_set, id_dict):
             pickle.load(open(path, 'rb'))
             success_flag = True
         if not success_flag:
+            logger.info('start get embedding key: {}'.format(unified_id))
             english = data_dict[unified_id]
             english_embedding = call_open_ai_embedding(english)
             pickle.dump(english_embedding, open(path, 'wb'))
+            logger.info('key: {} success'.format(unified_id))
         success_id_set.add(unified_id)
-        logger.info('key: {} success'.format(unified_id))
     finally:
         # Release the semaphore when the task is done
         thread_limiter.release()
