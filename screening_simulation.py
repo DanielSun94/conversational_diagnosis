@@ -20,17 +20,18 @@ from screen_agent.util import LinearSchedule
 import threading
 import argparse
 
+
 parser = argparse.ArgumentParser()
-parser.add_argument('--eval_mode', help='', default=0, type=int)
+parser.add_argument('--eval_mode', help='', default=1, type=int)
 parser.add_argument('--init_idx', help='', default=0, type=int)
-parser.add_argument('--data_size', help='', default=300, type=int)
-parser.add_argument('--split_num', help='', default=10, type=int)
+parser.add_argument('--data_size', help='', default=1000, type=int)
+parser.add_argument('--split_num', help='', default=1, type=int)
 
 parser.add_argument('--max_round', help='', default=10, type=int)
 parser.add_argument('--mode', help='', default='dialogue', type=str)
 parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=str)
-parser.add_argument('--doctor_llm_name', help='', default='gpt_4_turbo', type=str)
-parser.add_argument('--doctor_type', help='', default='ppo', type=str)
+parser.add_argument('--doctor_llm_name', help='', default='llama2-70b', type=str)
+parser.add_argument('--doctor_type', help='', default='gpt', type=str)
 args = vars(parser.parse_args())
 for arg in args:
     logger.info('{}: {}'.format(arg, args[arg]))
@@ -38,6 +39,8 @@ for arg in args:
 
 def main():
     assert args['eval_mode'] == 1 or args['eval_mode'] == 0
+    assert args['doctor_llm_name'] in {'gpt_4_turbo', 'gpt_35_turbo', 'llama2-70b', 'llama3-70b'}
+
     eval_mode = True if args['eval_mode'] == 1 else False
     init_idx = args['init_idx']
     data_size = args['data_size']
@@ -225,7 +228,7 @@ def read_embedding_path(general_folder):
     return embedding_path_dict
 
 
-def parse_review_result(folder, target_key_list):
+def parse_review_result(folder, target_key_list=None):
     file_list = os.listdir(folder)
     rank_list = []
     for file in file_list:
@@ -234,7 +237,7 @@ def parse_review_result(folder, target_key_list):
             continue
 
         result_json = json.load(open(path, 'r', encoding='utf-8-sig'))
-        true_diagnosis = result_json['diagnosis_label']
+        true_diagnosis = result_json['diagnosis_label'].replace('\xa0', ' ').strip()
         diagnosis_prediction_list = result_json['response']
         diagnosis_id_list = result_json['diagnosis_id_list'].strip().split('\n')
         disease_id_dict = dict()
@@ -277,9 +280,9 @@ def parse_dialogue_result(folder, target_key_list):
         if 'dialogue' not in path:
             continue
         result_json = json.load(open(path, 'r', encoding='utf-8-sig'))
-        true_diagnosis = result_json['diagnosis_label']
+        true_diagnosis = result_json['diagnosis_label'].replace('\xa0', ' ').strip()
         diagnosis_prediction_list = result_json['dialogue'][-1]['question']
-        diagnosis_id_list = result_json['diagnosis_id_list'].strip().split('\n')
+        diagnosis_id_list = result_json['diagnosis_id_list'].replace('\xa0', ' ').strip().split('\n')
         disease_id_dict = dict()
         if true_diagnosis not in diagnosis_count_dict:
             diagnosis_count_dict[true_diagnosis] = 0
@@ -492,6 +495,8 @@ class ScreeningExternalPlannerDoctorSimulator(object):
 
     def update_state(self, history):
         last_action = self.last_action
+        assert self.current_observation[last_action * 3] == 1
+
         question, response = history[-1]['question'], history[-1]['response']
         prompt = (
             "Please presume you are a doctor. You are in a diagnostic conversation. You have asked a question "
@@ -506,13 +511,12 @@ class ScreeningExternalPlannerDoctorSimulator(object):
         failure_time = 0
         while not success_flag:
             try:
-                if failure_time < 5:
+                if failure_time < 10:
                     response = call_llm(self.llm_name, prompt)
                     assert ((('#NO#' not in response) and '#YES#' in response) or
                             ('#NO#' in response and ('#YES#' not in response)))
                 else:
                     response = '#NO#'
-                assert self.current_observation[last_action * 3] == 1
                 if '#YES#' in response:
                     self.current_observation[last_action * 3 + 2] = 1
                     self.current_observation[last_action * 3] = 0
@@ -530,6 +534,7 @@ class ScreeningExternalPlannerDoctorSimulator(object):
 
         if self.current_round < self.max_round:
             action, action_str = self.run_policy_model()
+            self.last_action = action
             prompt = (
                 "Please presume you are a doctor. You are in a diagnostic conversation. "
                 "You need to ask a question about the patient's symptoms. "
@@ -539,7 +544,6 @@ class ScreeningExternalPlannerDoctorSimulator(object):
             ).format(action_str).strip()
             self.terminate = False
             response = call_llm(self.llm_name, prompt)
-            self.last_action = action
         else:
             diagnosis_list, diagnosis_str = self.run_classifier_model()
             response = diagnosis_str
@@ -561,6 +565,11 @@ class ScreenPureLLMDoctorSimulator(object):
         self.current_observation = ['not_valid']
         self.disease_list_str = self.generate_disease_ranking_list()
 
+        self.max_input_length = 128000
+        if 'llama' in self.llm_name:
+            self.max_input_length = 8000
+            logger.info('Doctor Simulator Max Length is 8000')
+
     def reset(self):
         self.terminate = False
         self.conclusion = None
@@ -576,19 +585,8 @@ class ScreenPureLLMDoctorSimulator(object):
         return disease_list_str
 
     def step(self, history):
-        if len(history) == 0:
-            history_str = ''
-        else:
-            data_list = []
-            for i, item in enumerate(history):
-                question, response = item['question'], item['response']
-                utt = 'ROUND: {}, DOCTOR ASK: {}, PATIENT RESPONSE: {}'.format(i, question, response)
-                data_list.append(utt)
-            history_str = '\n'.join(data_list)
-
-        if self.current_round < self.max_round:
-            prompt = (
-                "Please presume you are a doctor. You are in a diagnosis conversation. You need to ask a series of "
+        prompt_1_template = (
+            "Please presume you are a doctor. You are in a diagnosis conversation. You need to ask a series of "
                 "questions (one question in one turn) to determine the disease of a patient. \n"
                 "Previous dialogue history is:\n {}\n\n"
                 "The previous medical history and surgical history is (if applicable) {}\n\n"
@@ -597,10 +595,8 @@ class ScreenPureLLMDoctorSimulator(object):
                 "This turn is the {} turn, the dialogue will end in next {} turns.\n"
                 "When the dialogue is completed, you will need to give a high-risk disease list.\n"
                 "Please ask questions as effective as possible.\n"
-            ).format(history_str, self.data, self.current_round, self.max_round - self.current_round).strip()
-            self.terminate = False
-        else:
-            prompt = (
+        )
+        prompt_2_template = (
                 "Please presume you are a doctor. You are in a diagnosis conversation. You have complete the dialogue, "
                 "and the dialogue history is:\n {}\n\n. Patients' previous medical history and surgical history is "
                 "(if applicable) {}\n\nNow, based on this text, you are required to create a list of "
@@ -624,7 +620,37 @@ class ScreenPureLLMDoctorSimulator(object):
                 "if you think the disease #3# has the highest risk and #9# is the second highest risk disease, "
                 "and so on.\n"
                 "..."
-            ).format(history_str, self.data, self.disease_list_str).strip()
+            )
+        data_list = []
+        for i, item in enumerate(history):
+            question, response = item['question'], item['response']
+            utt = 'ROUND: {}\n DOCTOR ASK: {}\n PATIENT RESPONSE: {}\n'.format(i, question, response)
+            data_list.append(utt)
+
+        history_str = ''
+
+        # 200是预留的输出空位
+        dialogue_remain_length = self.max_input_length - 200 - len(prompt_1_template) - len(self.data)
+        final_remain_length = (self.max_input_length - 200 - len(prompt_2_template) - len(self.data) -
+                               len(self.disease_list_str))
+        if self.current_round < self.max_round:
+            for i in range(len(data_list), 0, -1):
+                utt = data_list[i-1]
+                if len(utt) + len(history_str) <= dialogue_remain_length:
+                    history_str = utt + '\n' + history_str
+                else:
+                    break
+            prompt = prompt_1_template.format(history_str, self.data, self.current_round,
+                                              self.max_round - self.current_round).strip()
+            self.terminate = False
+        else:
+            for i in range(len(data_list), 0, 1):
+                utt = data_list[i-1]
+                if len(utt) + len(history_str) <= final_remain_length:
+                    history_str = utt + '\n' + history_str
+                else:
+                    break
+            prompt = prompt_2_template.format(history_str, self.data, self.disease_list_str).strip()
             self.terminate = True
         response = call_llm(self.llm_name, prompt)
         self.current_round += 1

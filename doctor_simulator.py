@@ -113,7 +113,6 @@ class TextKnowledgeGPTDoctorSimulator(object):
                    "Otherwise, please formulate the next question you need to ask based on the "
                    "following diagnostic knowledge:\n {}\n\n\n")
                   .format(self.disease_full_name, self.disease_full_name, history_str, self.knowledge))
-
         response = call_llm(self.llm_name, prompt)
         if "#CONFIRM#" in response:
             terminate = True

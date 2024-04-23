@@ -95,8 +95,8 @@ def main():
                                 test_top_k_hit = top_calculate(test_diagnosis, test_diagnosis_prob, top_k, disease_num)
                                 train_top_k_hit = top_calculate(train_diagnosis, train_diagnosis_prob, top_k,
                                                                 disease_num)
-                                data_to_write.append([repeat, model,
-                                                      fraction, max_iter, top_k, train_top_k_hit, test_top_k_hit])
+                                data_to_write.append([repeat, use_data, model,
+                                                      fraction, i, top_k, train_top_k_hit, test_top_k_hit])
                                 logger.info('repeat: {:2d}, model: {:8s}, faction: {:3f}, iter {:6d}, use data: {},'
                                             ' train top {:2d} hit: {:5f}, test top {:2d} hit: {:5f}'
                                             .format(repeat, model, fraction, i+1, use_data,

@@ -91,7 +91,7 @@ def generate_translation(data_dict, unified_id, results, index):
     content = data_dict[unified_id]
     init_prompt = "Please translate the following content into Chinese, please only response Chinese:\n\n"
     prompt = init_prompt + content
-    chinese_translation = call_open_ai_embedding(prompt, model_name='gpt-3.5')
+    chinese_translation = (prompt)
     results[index] = chinese_translation, content, '', '', unified_id
     print('unified_id: {}\n english: {}\n\n chinese: {}\n\n'.format(unified_id, content, chinese_translation))
     return

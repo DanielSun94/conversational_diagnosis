@@ -12,7 +12,7 @@ Start
 
 #QUESTION #3#: Is the ECG abnormal (e.g., AF, Q waves, LV hypertrophy, widened QRS complex)?
   - Yes: #PROCEED TO QUESTION #4#
-  - No: #PROCEED TO QUESTION #4#
+  - No: YOU DON'T HAVE heart failure
 
 #QUESTION #4#: Are NT-proBNP levels elevated (≥ 125 pg/mL) or BNP levels elevated (≥ 35 pg/mL)?
   - Yes: #PROCEED TO QUESTION #6#

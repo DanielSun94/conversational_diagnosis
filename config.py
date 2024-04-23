@@ -14,6 +14,10 @@ hf_differential_sample_path = os.path.abspath('./resource/heart_failure_differen
 code_mapping_path = os.path.abspath("./resource/disease_reserve_human_annotated.csv")
 standard_question_path = os.path.abspath("./resource/standard_question.csv")
 
+gpt_4_result_folder = os.path.abspath('./resource/screen_result/gpt_4_turbo/')
+supplementary_ablation_folder = os.path.abspath('./resource/supplementary_experiment/dialogue_embedding')
+supplementary_cross_diagnosis = os.path.abspath('./resource/supplementary_experiment/cross_diagnosis')
+
 # screening only
 planner_folder = os.path.abspath('./resource/screening_model_ckpt/')
 embedding_folder = os.path.abspath('./resource/mimic_iv/open_ai_admission_embedding')
