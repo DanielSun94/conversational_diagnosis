@@ -22,16 +22,16 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--eval_mode', help='', default=1, type=int)
+parser.add_argument('--eval_mode', help='', default=0, type=int)
 parser.add_argument('--init_idx', help='', default=0, type=int)
-parser.add_argument('--data_size', help='', default=1000, type=int)
+parser.add_argument('--data_size', help='', default=300, type=int)
 parser.add_argument('--split_num', help='', default=1, type=int)
 
 parser.add_argument('--max_round', help='', default=10, type=int)
 parser.add_argument('--mode', help='', default='dialogue', type=str)
 parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=str)
-parser.add_argument('--doctor_llm_name', help='', default='llama2-70b', type=str)
-parser.add_argument('--doctor_type', help='', default='gpt', type=str)
+parser.add_argument('--doctor_llm_name', help='', default='llama3-70b', type=str)
+parser.add_argument('--doctor_type', help='', default='ppo', type=str)
 args = vars(parser.parse_args())
 for arg in args:
     logger.info('{}: {}'.format(arg, args[arg]))
@@ -644,7 +644,7 @@ class ScreenPureLLMDoctorSimulator(object):
                                               self.max_round - self.current_round).strip()
             self.terminate = False
         else:
-            for i in range(len(data_list), 0, 1):
+            for i in range(len(data_list), 0, -1):
                 utt = data_list[i-1]
                 if len(utt) + len(history_str) <= final_remain_length:
                     history_str = utt + '\n' + history_str

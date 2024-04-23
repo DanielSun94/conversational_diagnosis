@@ -12,9 +12,9 @@ from logger import logger
 
 def main():
     disease = "hf"
-    doctor_llm_name = 'llama2-70b'   # 'gpt_35_turbo', 'llama2-70b':
+    doctor_llm_name = 'gpt_4_turbo'   # 'gpt_35_turbo', 'llama2-70b':
     model_type = 'text_knowledge_gpt'  # 'text_knowledge_gpt', 'ka_gpt'
-    eval_mode = True
+    eval_mode = False
 
     if not eval_mode:
         # sample_num = None
@@ -23,7 +23,7 @@ def main():
         full_negative_num = 160
         train_portion = 0.375
         valid_portion = 0
-        version_index = 3
+        version_index = 0
         with open(knowledge_origin_text_path, 'r', encoding='utf-8-sig') as f:
             diagnosis_text = '\n'.join(f.readlines())
 
