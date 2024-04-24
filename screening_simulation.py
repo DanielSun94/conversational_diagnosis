@@ -22,16 +22,16 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--eval_mode', help='', default=0, type=int)
+parser.add_argument('--eval_mode', help='', default=1, type=int)
 parser.add_argument('--init_idx', help='', default=0, type=int)
 parser.add_argument('--data_size', help='', default=300, type=int)
 parser.add_argument('--split_num', help='', default=1, type=int)
 
-parser.add_argument('--max_round', help='', default=10, type=int)
+parser.add_argument('--max_round', help='', default=20, type=int)
 parser.add_argument('--mode', help='', default='dialogue', type=str)
 parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=str)
 parser.add_argument('--doctor_llm_name', help='', default='llama3-70b', type=str)
-parser.add_argument('--doctor_type', help='', default='ppo', type=str)
+parser.add_argument('--doctor_type', help='', default='gpt', type=str)
 args = vars(parser.parse_args())
 for arg in args:
     logger.info('{}: {}'.format(arg, args[arg]))
@@ -626,7 +626,6 @@ class ScreenPureLLMDoctorSimulator(object):
             question, response = item['question'], item['response']
             utt = 'ROUND: {}\n DOCTOR ASK: {}\n PATIENT RESPONSE: {}\n'.format(i, question, response)
             data_list.append(utt)
-
         history_str = ''
 
         # 200是预留的输出空位

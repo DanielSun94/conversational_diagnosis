@@ -3,18 +3,37 @@ import json
 import random
 import threading
 from patient_simulator import PatientSimulator
-from self_reflection import get_data, evaluate_performance, GetNextBatch
+from differential_util import evaluate_performance, get_data, GetNextBatch
 from doctor_simulator import (PureGPTDoctorSimulator, TextKnowledgeGPTDoctorSimulator, DoctorSimulator, read_text)
 from environment import Environment
 from config import differential_result_folder, knowledge_origin_text_path, diagnosis_procedure_template_path
 from logger import logger
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--disease', help='', default='hf', type=str)
+parser.add_argument('--doctor_llm_name', help='gpt_4_turbo, llama3-70b',
+                    default='llama3-70b', type=str)
+parser.add_argument('--model_type', help='text_knowledge_gpt, ka_gpt, pure_gpt',
+                    default='text_knowledge_gpt', type=str)
+parser.add_argument('--eval_mode', help='', default=1, type=int)
+parser.add_argument('--version_index', help='', default=3, type=int)
+parser.add_argument('--thread_num', help='', default=1, type=int)
+args = vars(parser.parse_args())
+for arg in args:
+    logger.info('{}: {}'.format(arg, args[arg]))
 
 
 def main():
-    disease = "hf"
-    doctor_llm_name = 'gpt_4_turbo'   # 'gpt_35_turbo', 'llama2-70b':
-    model_type = 'text_knowledge_gpt'  # 'text_knowledge_gpt', 'ka_gpt'
-    eval_mode = False
+    disease = args['disease']
+    doctor_llm_name = args['doctor_llm_name']
+    model_type = args['model_type']
+    eval_mode = args['eval_mode']
+    version_index = args['version_index']
+    thread_num = args['thread_num']
+    assert eval_mode == 0 or eval_mode == 1
+    eval_mode = True if eval_mode == 1 else False
+    assert isinstance(version_index, int)
 
     if not eval_mode:
         # sample_num = None
@@ -23,7 +42,6 @@ def main():
         full_negative_num = 160
         train_portion = 0.375
         valid_portion = 0
-        version_index = 0
         with open(knowledge_origin_text_path, 'r', encoding='utf-8-sig') as f:
             diagnosis_text = '\n'.join(f.readlines())
 
@@ -60,7 +78,7 @@ def main():
         setting_list = list(setting_dict.keys())
         random.Random().shuffle(setting_list)
 
-        id_batch = GetNextBatch(setting_list, 3)
+        id_batch = GetNextBatch(setting_list, thread_num)
         terminate = False
         while not terminate:
             threads = []

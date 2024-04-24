@@ -1,5 +1,6 @@
 import re
 from llm_util import call_llm
+from logger import logger
 
 
 def read_text(path):
@@ -81,6 +82,11 @@ class TextKnowledgeGPTDoctorSimulator(object):
         self.knowledge = knowledge
         self.conclusion = None
         self.llm_name = llm_name
+        if 'llama3' in self.llm_name:
+            self.max_length = 8000
+        else:
+            self.max_length = 32000
+        logger.info('max_length: {}'.format(self.max_length))
 
         if self.disease == 'hf':
             self.disease_full_name = 'heart failure'
@@ -92,27 +98,35 @@ class TextKnowledgeGPTDoctorSimulator(object):
         self.conclusion = None
 
     def step(self, history):
-        if len(history) == 0:
-            history_str = ''
-        else:
-            data_list = []
-            for i, item in enumerate(history):
-                question = item['question']
-                response = item['response']
-                utt = 'ROUND: {}, DOCTOR ASK: {}, PATIENT RESPONSE: {}'.format(i, question, response)
-                data_list.append(utt)
-            history_str = '\n'.join(data_list)
-        prompt = (("Please assume you are a doctor specializing in cardiovascular diseases. "
-                   "You are engaged in a {} diagnosis conversation. Your task is to ask a series of questions "
-                   "(one question per turn) to ascertain whether the patient has {}. The previous dialogue "
-                   "history is as follows:\n {}\n\n "
-                   "Note: You may inquire about any patient information, including laboratory test results "
-                   "and medical examination findings.\n"
-                   "You should return #CONFIRM# if you believe the patient has the disease, "
-                   "or #EXCLUDE# if you believe the patient does not have the disease.\n"
-                   "Otherwise, please formulate the next question you need to ask based on the "
-                   "following diagnostic knowledge:\n {}\n\n\n")
-                  .format(self.disease_full_name, self.disease_full_name, history_str, self.knowledge))
+        data_list = []
+        for i, item in enumerate(history):
+            question = item['question']
+            response = item['response']
+            utt = 'ROUND: {}, DOCTOR ASK: {}, PATIENT RESPONSE: {}'.format(i, question, response)
+            data_list.append(utt)
+
+        prompt_template = \
+            (
+                "Please assume you are a doctor specializing in cardiovascular diseases. "
+                "You are engaged in a {} diagnosis conversation. Your task is to ask a series of questions "
+                "(one question per turn) to ascertain whether the patient has {}. The previous dialogue "
+               "history is as follows:\n {}\n\n "
+               "Note: You may inquire about any patient information, including laboratory test results "
+               "and medical examination findings.\n"
+               "You should return #CONFIRM# if you believe the patient has the disease, "
+                "or #EXCLUDE# if you believe the patient does not have the disease.\n"
+               "Otherwise, please formulate the next question you need to ask based on the "
+               "following diagnostic knowledge:\n {}\n\n\n"
+            )
+        remain_length = self.max_length - 200 - len(prompt_template) - len(self.knowledge)
+        history_str = ''
+        for i in range(len(data_list), 0, -1):
+            utt = data_list[i - 1]
+            if len(utt) + len(history_str) <= remain_length:
+                history_str = utt + '\n' + history_str
+            else:
+                break
+        prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str, self.knowledge)
         response = call_llm(self.llm_name, prompt)
         if "#CONFIRM#" in response:
             terminate = True
