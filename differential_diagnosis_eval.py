@@ -17,7 +17,7 @@ parser.add_argument('--doctor_llm_name', help='gpt_4_turbo, llama3-70b',
 parser.add_argument('--model_type', help='text_knowledge_gpt, ka_gpt, pure_gpt',
                     default='text_knowledge_gpt', type=str)
 parser.add_argument('--eval_mode', help='', default=1, type=int)
-parser.add_argument('--version_index', help='', default=3, type=int)
+parser.add_argument('--version_index', help='', default=0, type=int)
 parser.add_argument('--thread_num', help='', default=1, type=int)
 args = vars(parser.parse_args())
 for arg in args:
@@ -35,19 +35,19 @@ def main():
     eval_mode = True if eval_mode == 1 else False
     assert isinstance(version_index, int)
 
+    full_positive_num = 160
+    full_negative_num = 160
+    train_portion = 0.375
+    valid_portion = 0
+    patient_dataset, _, _, _, test_positive_list, test_negative_list = (
+        get_data(disease, 'gpt_4_turbo', full_positive_num, full_negative_num, train_portion, valid_portion,
+                 1, 1))
+
     if not eval_mode:
         # sample_num = None
         os.makedirs(differential_result_folder, exist_ok=True)
-        full_positive_num = 160
-        full_negative_num = 160
-        train_portion = 0.375
-        valid_portion = 0
         with open(knowledge_origin_text_path, 'r', encoding='utf-8-sig') as f:
             diagnosis_text = '\n'.join(f.readlines())
-
-        patient_dataset, _, _, _, test_positive_list, test_negative_list = (
-            get_data(disease, 'gpt_4_turbo', full_positive_num, full_negative_num, train_portion, valid_portion,
-                     1, 1))
 
         decision_procedure_path_dict = \
             {disease: diagnosis_procedure_template_path.format(version_index)}
@@ -95,9 +95,14 @@ def main():
                         args=(path, key, data, env, flag_1, flag_2, doctor_llm_name))
                     threads.append(thread)
                     thread.start()
+                else:
+                    logger.info('{} existed'.format(unified_id))
             for thread in threads:
                 thread.join()
-    evaluate_performance(differential_result_folder)
+    logger.info('test data')
+    evaluate_performance(differential_result_folder, test_positive_list + test_negative_list)
+    logger.info('including previous result')
+    evaluate_performance(differential_result_folder, None)
 
 
 def run_sample(path, key, data, env, flag_1, flag_2, doctor_llm_name):

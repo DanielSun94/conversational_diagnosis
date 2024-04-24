@@ -92,7 +92,8 @@ class GetNextBatch(object):
             return batch, self.terminate
 
 
-def evaluate_performance(result_folder):
+def evaluate_performance(result_folder, id_list=None):
+    id_set = set(id_list) if id_list is not None else None
     path_list = os.listdir(result_folder)
     valid_path_list = []
     for path in path_list:
@@ -103,6 +104,8 @@ def evaluate_performance(result_folder):
         key = info_list[3]
         model = "_".join(info_list[4:-1] + [info_list[1]])
         full_path = os.path.join(result_folder, path)
+        if id_set is not None and key not in id_set:
+            continue
         valid_path_list.append([full_path, key, flag, model, disease])
 
     result_list = list()
@@ -112,38 +115,41 @@ def evaluate_performance(result_folder):
         last_utterance = json_str['dialogue'][-1]['question']
         if confirm_flag:
             if 'you have' in last_utterance.lower() or 'confirm' in last_utterance.lower():
-                result_list.append([disease, key, model, 'TP', 'POSITIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'TP', True, 'POSITIVE', len(json_str['dialogue'])])
             elif 'too long' in last_utterance.lower():
-                result_list.append([disease, key, model, 'FN', 'POSITIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'FN', False, 'POSITIVE', len(json_str['dialogue'])])
             else:
-                result_list.append([disease, key, model, 'FN', 'POSITIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'FN', True, 'POSITIVE', len(json_str['dialogue'])])
         else:
             if 'you don\'t have' in last_utterance.lower() or 'exclude' in last_utterance.lower():
-                result_list.append([disease, key, model, 'TN', 'NEGATIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'TN', True, 'NEGATIVE', len(json_str['dialogue'])])
             elif 'too long' in last_utterance.lower():
-                result_list.append([disease, key, model, 'TN', 'NEGATIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'TN', False, 'NEGATIVE', len(json_str['dialogue'])])
             else:
-                result_list.append([disease, key, model, 'FP', 'NEGATIVE', len(json_str['dialogue'])])
+                result_list.append([disease, key, model, 'FP', True, 'NEGATIVE', len(json_str['dialogue'])])
 
     result_dict = dict()
     for item in result_list:
-        disease, model, result = item[0], item[2], item[3]
+        disease, model, result, success = item[0], item[2], item[3], item[4]
         key = disease + '-' + model
         if key not in result_dict:
             result_dict[key] = {"TP": 0, "TN": 0, "FP": 0, "FN": 0, 'FAILED': 0}
         result_dict[key][result] += 1
+        if not success:
+            result_dict[key]['FAILED'] += 1
 
     for key in result_dict:
         tp, tn, fp, fn, failed = (result_dict[key]["TP"], result_dict[key]["TN"],
                                   result_dict[key]["FP"], result_dict[key]["FN"], result_dict[key]['FAILED'])
-        size = tp + tn + fp + fn + failed
-        success_rate = (tp + tn + fp + fn) / size if size > 0 else 'na'
-        acc = ((tp + tn) / (tp + tn + fp + fn + failed)) if (tp + tn + fp + fn + failed) > 0 else 'na'
+        size = tp + tn + fp + fn
+        success_rate = (size - failed) / size if size > 0 else 'na'
+        acc = ((tp + tn) / (tp + tn + fp + fn)) if (tp + tn + fp + fn) > 0 else 'na'
         precision = (tp / (tp + fp)) if (tp + fp) > 0 else 'na'
         recall = (tp / (tp + fn)) if (tp + fn) > 0 else 'na'
         f1 = (2 * precision * recall / (precision + recall)) \
             if (isinstance(recall, float) and isinstance(precision, float)) else 'na'
-        print('model: {}, acc: {}, precision: {}, recall: {}, f1: {}, success_rate: {}, size: {}'
-              .format(key, acc, precision, recall, f1, success_rate, size))
+        print('model: {}, acc: {}, precision: {}, recall: {}, f1: {}, success_rate: {}, size: '
+              '{}, TP: {}, TN: {}, FP: {}, FN: {}'
+              .format(key, acc, precision, recall, f1, success_rate, size, tp, tn, fp, fn))
     print('\n\n\n\n')
     return result_list, result_dict
