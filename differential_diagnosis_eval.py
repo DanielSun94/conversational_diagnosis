@@ -8,6 +8,7 @@ from doctor_simulator import (PureGPTDoctorSimulator, TextKnowledgeGPTDoctorSimu
 from environment import Environment
 from config import differential_result_folder, knowledge_origin_text_path, diagnosis_procedure_template_path
 from logger import logger
+from modelscope import AutoTokenizer
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -46,13 +47,20 @@ def main():
     if not eval_mode:
         # sample_num = None
         os.makedirs(differential_result_folder, exist_ok=True)
+        if 'gpt' in doctor_llm_name:
+            assert 'brief' not in knowledge_origin_text_path
+        if 'llama' in doctor_llm_name:
+            assert 'brief' in knowledge_origin_text_path
         with open(knowledge_origin_text_path, 'r', encoding='utf-8-sig') as f:
             diagnosis_text = '\n'.join(f.readlines())
 
         decision_procedure_path_dict = \
             {disease: diagnosis_procedure_template_path.format(version_index)}
         procedure_structure, start_index, procedure_text = read_text(decision_procedure_path_dict[disease])
-
+        if 'llama3-70b' == doctor_llm_name:
+            tokenizer = AutoTokenizer.from_pretrained("LLM-Research/Meta-Llama-3-70B-Instruct")
+        else:
+            tokenizer = None
         logger.info('start analyze')
         setting_dict = dict()
         for flag_1, id_list in zip(('confirmed', 'excluded'), (test_positive_list, test_negative_list)):
@@ -61,12 +69,12 @@ def main():
                 setting_key = str('-'.join([flag_1, unified_id, model_type]))
                 if model_type == 'pure_gpt':
                     assert version_index == 0
-                    doctor = PureGPTDoctorSimulator(disease, doctor_llm_name)
+                    doctor = PureGPTDoctorSimulator(disease, doctor_llm_name, tokenizer)
                     env = Environment(patient, doctor)
                     setting_dict[setting_key] = [flag_1, unified_id, model_type, env]
                 elif model_type == 'text_knowledge_gpt':
                     assert version_index == 0
-                    doctor = TextKnowledgeGPTDoctorSimulator(disease, diagnosis_text, doctor_llm_name)
+                    doctor = TextKnowledgeGPTDoctorSimulator(disease, diagnosis_text, doctor_llm_name, tokenizer)
                     env = Environment(patient, doctor)
                     setting_dict[setting_key] = [flag_1, unified_id, model_type, env]
                 else:

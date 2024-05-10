@@ -1,6 +1,6 @@
 import csv
 from itertools import islice
-from screnning_agent.config import (
+from screen_agent.screen_config import (
     reserved_note_path, disease_reserve_path, filtered_note_id_path, discharge_path, diagnosis_icd_path)
 
 

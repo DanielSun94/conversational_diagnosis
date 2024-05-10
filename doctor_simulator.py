@@ -1,5 +1,6 @@
 import re
 from llm_util import call_llm
+from modelscope import AutoTokenizer
 from logger import logger
 
 
@@ -76,16 +77,18 @@ class Condition(object):
 
 
 class TextKnowledgeGPTDoctorSimulator(object):
-    def __init__(self, disease, knowledge, llm_name):
+    def __init__(self, disease, knowledge, llm_name, tokenizer):
         self.disease = disease
         self.terminate = False
         self.knowledge = knowledge
         self.conclusion = None
         self.llm_name = llm_name
         if 'llama3' in self.llm_name:
-            self.max_length = 8000
+            self.max_length = 7500
+            self.tokenizer = tokenizer
         else:
-            self.max_length = 32000
+            assert 'gpt' in self.llm_name
+            self.max_length = None
         logger.info('max_length: {}'.format(self.max_length))
 
         if self.disease == 'hf':
@@ -110,23 +113,35 @@ class TextKnowledgeGPTDoctorSimulator(object):
                 "Please assume you are a doctor specializing in cardiovascular diseases. "
                 "You are engaged in a {} diagnosis conversation. Your task is to ask a series of questions "
                 "(one question per turn) to ascertain whether the patient has {}. The previous dialogue "
-               "history is as follows:\n {}\n\n "
-               "Note: You may inquire about any patient information, including laboratory test results "
-               "and medical examination findings.\n"
-               "You should return #CONFIRM# if you believe the patient has the disease, "
-                "or #EXCLUDE# if you believe the patient does not have the disease.\n"
-               "Otherwise, please formulate the next question you need to ask based on the "
-               "following diagnostic knowledge:\n {}\n\n\n"
+                "history is as follows:\n {}\n\n "
+                "Note: You may inquire about any patient information, including laboratory test results "
+                "and medical examination findings.\n If you think the information is sufficient, "
+                "please confirm or exclude the diagnosis. You need to return #CONFIRM# if you believe "
+                "the patient has the disease or #EXCLUDE# if you think the patient does not have the disease.\n"
+                "Otherwise, please formulate the next question you need to ask based on the "
+                "following diagnostic knowledge:\n {}\n\n\n"
             )
-        remain_length = self.max_length - 200 - len(prompt_template) - len(self.knowledge)
+
+        if 'llama3' in self.llm_name:
+            prompt_token_len = len(self.tokenizer.tokenize(prompt_template))
+            knowledge_token_len = len(self.tokenizer.tokenize(self.knowledge))
+            remain_length = self.max_length - prompt_token_len - knowledge_token_len
+        else:
+            assert 'gpt' in self.llm_name
+            remain_length = 96000
+
         history_str = ''
         for i in range(len(data_list), 0, -1):
             utt = data_list[i - 1]
-            if len(utt) + len(history_str) <= remain_length:
+            utt_token_len = len(self.tokenizer.tokenize(utt))
+            history_token_len = len(self.tokenizer.tokenize(history_str))
+            if utt_token_len + history_token_len <= remain_length:
                 history_str = utt + '\n' + history_str
             else:
+                logger.warn('Text Over length')
                 break
-        prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str, self.knowledge)
+        prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str,
+                                        self.knowledge)
         response = call_llm(self.llm_name, prompt)
         if "#CONFIRM#" in response:
             terminate = True
@@ -144,7 +159,7 @@ class TextKnowledgeGPTDoctorSimulator(object):
 
 
 class PureGPTDoctorSimulator(object):
-    def __init__(self, disease, llm_name):
+    def __init__(self, disease, llm_name, tokenizer):
         self.disease = disease
         self.terminate = False
         self.conclusion = None
@@ -155,33 +170,56 @@ class PureGPTDoctorSimulator(object):
         else:
             assert ValueError('')
 
+        if 'llama3' in self.llm_name:
+            self.max_length = 7500
+            self.tokenizer = tokenizer
+        else:
+            assert 'gpt' in self.llm_name
+            self.max_length = None
+            self.tokenizer = None
+        logger.info('max_length: {}'.format(self.max_length))
+
     def reset(self):
         self.terminate = False
         self.conclusion = None
 
     def step(self, history):
-        if len(history) == 0:
-            history_str = ''
+        data_list = []
+        for i, item in enumerate(history):
+            question = item['question']
+            response = item['response']
+            utt = 'ROUND: {}, DOCTOR ASK: {}, PATIENT RESPONSE: {}'.format(i, question, response)
+            data_list.append(utt)
+
+        prompt_template = ('Please assume you are a doctor specializing in cardiovascular disease. '
+                           'You are engaged in a {} diagnosis conversation.\n'
+                           'You need to ask a series of questions (one question at a time) to determine whether the '
+                           'patient has {}. The previous dialogue history is:\n {}\n\n'
+                           'You can ask for any information about the patient, including lab test results and '
+                           'medical exam outcomes. If you think the information is sufficient, '
+                           'please confirm or exclude the diagnosis. You need to return #CONFIRM# if you believe '
+                           'the patient has the disease or #EXCLUDE# if you think the patient does not have '
+                           'the disease.\n Otherwise, please generate the next question you need to ask.')
+
+        if 'llama3' in self.llm_name:
+            prompt_token_len = len(self.tokenizer.tokenize(prompt_template))
+            remain_length = self.max_length - prompt_token_len
         else:
-            data_list = []
-            for i, item in enumerate(history):
-                question = item['question']
-                response = item['response']
-                utt = 'ROUND: {}, DOCTOR ASK: {}, PATIENT RESPONSE: {}'.format(i, question, response)
-                data_list.append(utt)
-            history_str = '\n'.join(data_list)
+            assert 'gpt' in self.llm_name
+            remain_length = 96000
 
-        prompt = (('Please assume you are a doctor specializing in cardiovascular disease. '
-                   'You are engaged in a {} diagnosis conversation.\n'
-                   'You need to ask a series of questions (one question at a time) to determine whether the '
-                   'patient has {}. The previous dialogue history is:\n {}\n\n'
-                   'You can ask for any information about the patient, including lab test results and '
-                   'medical exam outcomes. If you think the information is sufficient, '
-                   'please confirm or exclude the diagnosis. You need to return #CONFIRM# if you believe '
-                   'the patient has the disease or #EXCLUDE# if you think the patient does not have the disease.\n'
-                   'Otherwise, please generate the next question you need to ask.')
-                  .format(self.disease_full_name, self.disease_full_name, history_str))
+        history_str = ''
+        for i in range(len(data_list), 0, -1):
+            utt = data_list[i - 1]
+            utt_token_len = len(self.tokenizer.tokenize(utt))
+            history_str_len = len(self.tokenizer.tokenize(history_str))
+            if utt_token_len + history_str_len <= remain_length:
+                history_str = utt + '\n' + history_str
+            else:
+                logger.warn('Text Over length')
+                break
 
+        prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str)
         response = call_llm(self.llm_name, prompt)
         if "#CONFIRM#" in response:
             terminate = True
@@ -280,4 +318,3 @@ class DoctorSimulator(object):
             self.current_index = next_step
             terminate = False
         return terminate
-

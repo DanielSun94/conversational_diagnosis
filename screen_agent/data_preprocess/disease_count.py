@@ -1,10 +1,9 @@
 import csv
 from itertools import islice
 from get_admission_emr import read_valid_emr_id
-from screnning_agent.config import diagnosis_icd_path, disease_count_path, discharge_path, d_icd_diagnoses
+from screen_agent.screen_config import diagnosis_icd_path, disease_count_path_template, discharge_path, d_icd_diagnoses
 
 mimic4_file_path = diagnosis_icd_path
-disease_count_path = disease_count_path
 discharge_emr_path = discharge_path
 diagnosis_description_path = d_icd_diagnoses
 
@@ -38,29 +37,33 @@ def read_mimic_iv_disease(top_k, key, valid_visit_set, code_num=4):
             if seq_num > top_k:
                 continue
 
+            if unified_id not in valid_dict:
+                valid_dict[unified_id] = []
+
             assert icd_version == '9' or icd_version == '10'
             if key == 'circulatory system':
                 if icd_version == '9' and icd_code.isdigit():
                     icd_code = int(icd_code[:code_num])
                     if 390 <= icd_code <= 459:
-                        valid_dict[unified_id] = icd_code
+                        valid_dict[unified_id].append(icd_code)
                 else:
                     if icd_code[0].lower() == 'i':
-                        valid_dict[unified_id] = icd_code
+                        valid_dict[unified_id].append(icd_code)
             else:
                 assert key == 'all'
                 if icd_version == '9' and icd_code.isdigit():
                     icd_code = int(icd_code[:code_num])
-                    valid_dict[unified_id] = str(icd_code)
-                valid_dict[unified_id] = str(icd_code)[:code_num]
+                    valid_dict[unified_id].append(str(icd_code))
+                valid_dict[unified_id].append(str(icd_code)[:code_num])
     print('single visit count: {}'.format(len(visit_id_set)))
     print('valid visit count: {}'.format(len(valid_dict)))
 
     icd_count_dict = {}
     for unified_id in valid_dict:
-        if valid_dict[unified_id] not in icd_count_dict:
-            icd_count_dict[valid_dict[unified_id]] = 0
-        icd_count_dict[valid_dict[unified_id]] += 1
+        for icd_code in valid_dict[unified_id]:
+            if icd_code not in icd_count_dict:
+                icd_count_dict[icd_code] = 0
+            icd_count_dict[icd_code] += 1
     icd_count_list = []
     for key in icd_count_dict:
         icd_count_list.append([key, icd_count_dict[key]])
@@ -71,11 +74,14 @@ def read_mimic_iv_disease(top_k, key, valid_visit_set, code_num=4):
 
 # 1
 def main():
-    top_k, key, threshold = 1, 'all', 100
-    valid_visit_set = read_valid_emr_id(discharge_emr_path, threshold)
+    top_k, key, word_threshold = 100, 'all', 200
+    valid_visit_set = read_valid_emr_id(discharge_emr_path, word_threshold)
     print('len valid set: {}'.format(len(valid_visit_set)))
     icd_count_list = read_mimic_iv_disease(top_k, key, valid_visit_set)
+    print('load icd count list')
     diagnosis_dict = read_diagnosis_description(diagnosis_description_path)
+    print('load diagnosis dict')
+    disease_count_path = disease_count_path_template.format(key, top_k)
 
     with open(disease_count_path, 'w', encoding='utf-8-sig', newline='') as f:
         data_to_write = [

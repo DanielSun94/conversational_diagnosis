@@ -147,7 +147,7 @@ def evaluate_performance(result_folder, id_list=None):
         precision = (tp / (tp + fp)) if (tp + fp) > 0 else 'na'
         recall = (tp / (tp + fn)) if (tp + fn) > 0 else 'na'
         f1 = (2 * precision * recall / (precision + recall)) \
-            if (isinstance(recall, float) and isinstance(precision, float)) else 'na'
+            if (isinstance(recall, float) and isinstance(precision, float) and (recall+precision) > 0) else 'na'
         print('model: {}, acc: {}, precision: {}, recall: {}, f1: {}, success_rate: {}, size: '
               '{}, TP: {}, TN: {}, FP: {}, FN: {}'
               .format(key, acc, precision, recall, f1, success_rate, size, tp, tn, fp, fn))

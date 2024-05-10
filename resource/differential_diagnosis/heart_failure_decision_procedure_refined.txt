@@ -18,7 +18,7 @@ Start
   - Yes: #PROCEED TO QUESTION #6#
   - No: #PROCEED TO QUESTION #5#
 
-#QUESTION #5#: Despite normal NT-proBNP/BNP levels, is heart failure still strongly suspected, or are these biomarkers unavailable?
+#QUESTION #5#: Despite normal NT-proBNP/BNP levels, is heart failure still strongly suspected, or are these biomarkers unavailable? If this patient exhibits symptoms of heart failure and has high-risk factors for heart failure, or is extremely obese, it should be highly suspected that they have heart failure.
   - Yes: #PROCEED TO QUESTION #6#
   - No: YOU DON'T HAVE heart failure
 

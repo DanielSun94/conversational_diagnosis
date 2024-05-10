@@ -7,7 +7,7 @@ from openai import AzureOpenAI
 
 os.environ['AZURE_OPENAI_KEY'] = ''
 client = AzureOpenAI(
-  azure_endpoint="https://zhejianglab.openai.azure.com/",
+  azure_endpoint="",
   api_key=os.getenv("AZURE_OPENAI_KEY"),
   api_version="2024-02-15-preview"
 )
@@ -39,20 +39,11 @@ def call_llm(llm_name, prompt):
     if 'gpt' in llm_name:
         response = call_open_ai(prompt, llm_name)
     elif 'llama2-70b' in llm_name:
-        if len(prompt) > 8000:
-            prompt = prompt[-8000:]
-            logger.info('prompt truncated to 8000')
         response = call_llama2_70(prompt)
     elif llm_name == 'qwen_7':
-        if len(prompt) > 8000:
-            prompt = prompt[-8000:]
-            logger.info('prompt truncated to 8000')
         response = call_qwen(prompt, 7)
     else:
         assert llm_name == 'qwen_14'
-        if len(prompt) > 8000:
-            prompt = prompt[-8000:]
-            logger.info('prompt truncated to 8000')
         response = call_qwen(prompt, 14)
     return response
 
