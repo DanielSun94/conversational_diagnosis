@@ -24,13 +24,13 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--eval_mode', help='', default=1, type=int)
 parser.add_argument('--init_idx', help='', default=0, type=int)
-parser.add_argument('--data_size', help='', default=300, type=int)
+parser.add_argument('--data_size', help='', default=301, type=int)
 parser.add_argument('--split_num', help='', default=1, type=int)
 
 parser.add_argument('--max_round', help='', default=10, type=int)
 parser.add_argument('--mode', help='', default='dialogue', type=str)
-parser.add_argument('--patient_llm_name', help='', default='gpt_4_turbo', type=str)
-parser.add_argument('--doctor_llm_name', help='', default='gpt_4_turbo', type=str)
+parser.add_argument('--patient_llm_name', help='', default='gpt_4o', type=str)
+parser.add_argument('--doctor_llm_name', help='', default='gpt_4o', type=str)
 parser.add_argument('--doctor_type', help='', default='ppo', type=str)
 args = vars(parser.parse_args())
 for arg in args:
@@ -39,7 +39,7 @@ for arg in args:
 
 def main():
     assert args['eval_mode'] == 1 or args['eval_mode'] == 0
-    assert args['doctor_llm_name'] in {'gpt_4_turbo', 'gpt_35_turbo', 'llama2-70b', 'llama3-70b'}
+    assert args['doctor_llm_name'] in {'gpt_4_turbo', 'gpt_4o', 'gpt_35_turbo', 'llama2-70b', 'llama3-70b'}
 
     eval_mode = True if args['eval_mode'] == 1 else False
     init_idx = args['init_idx']

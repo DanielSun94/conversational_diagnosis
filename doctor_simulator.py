@@ -128,18 +128,21 @@ class TextKnowledgeGPTDoctorSimulator(object):
             remain_length = self.max_length - prompt_token_len - knowledge_token_len
         else:
             assert 'gpt' in self.llm_name
-            remain_length = 96000
+            remain_length = None
 
         history_str = ''
         for i in range(len(data_list), 0, -1):
             utt = data_list[i - 1]
-            utt_token_len = len(self.tokenizer.tokenize(utt))
-            history_token_len = len(self.tokenizer.tokenize(history_str))
-            if utt_token_len + history_token_len <= remain_length:
-                history_str = utt + '\n' + history_str
+            if remain_length is not None:
+                utt_token_len = len(self.tokenizer.tokenize(utt))
+                history_token_len = len(self.tokenizer.tokenize(history_str))
+                if utt_token_len + history_token_len <= remain_length:
+                    history_str = utt + '\n' + history_str
+                else:
+                    logger.warn('Text Over length')
+                    break
             else:
-                logger.warn('Text Over length')
-                break
+                history_str = utt + '\n' + history_str
         prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str,
                                         self.knowledge)
         response = call_llm(self.llm_name, prompt)
@@ -206,17 +209,20 @@ class PureGPTDoctorSimulator(object):
             remain_length = self.max_length - prompt_token_len
         else:
             assert 'gpt' in self.llm_name
-            remain_length = 96000
+            remain_length = None
 
         history_str = ''
         for i in range(len(data_list), 0, -1):
             utt = data_list[i - 1]
-            utt_token_len = len(self.tokenizer.tokenize(utt))
-            history_str_len = len(self.tokenizer.tokenize(history_str))
-            if utt_token_len + history_str_len <= remain_length:
+            if remain_length is None:
                 history_str = utt + '\n' + history_str
             else:
-                logger.warn('Text Over length')
+                utt_token_len = len(self.tokenizer.tokenize(utt))
+                history_str_len = len(self.tokenizer.tokenize(history_str))
+                if utt_token_len + history_str_len <= remain_length:
+                    history_str = utt + '\n' + history_str
+                else:
+                    logger.warn('Text Over length')
                 break
 
         prompt = prompt_template.format(self.disease_full_name, self.disease_full_name, history_str)

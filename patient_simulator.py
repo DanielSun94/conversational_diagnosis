@@ -3,7 +3,7 @@ from llm_util import call_llm
 
 class PatientSimulator(object):
     def __init__(self, patient_llm_name):
-        assert patient_llm_name == 'gpt_4_turbo'
+        assert patient_llm_name == 'gpt_4_turbo' or patient_llm_name == 'gpt_4o'
         self.current_key = None
         self.current_data = None
         self.llm_name = patient_llm_name

@@ -13,10 +13,12 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--disease', help='', default='hf', type=str)
-parser.add_argument('--doctor_llm_name', help='gpt_4_turbo, llama3-70b',
-                    default='llama3-70b', type=str)
+parser.add_argument('--doctor_llm_name', help='gpt_4_turbo, llama3-70b, gpt_4o',
+                    default='gpt_4o', type=str)
+parser.add_argument('--patient_llm_name', help='gpt_4_turbo, llama3-70b, gpt_4o',
+                    default='gpt_4o', type=str)
 parser.add_argument('--model_type', help='text_knowledge_gpt, ka_gpt, pure_gpt',
-                    default='text_knowledge_gpt', type=str)
+                    default='pure_gpt', type=str)
 parser.add_argument('--eval_mode', help='', default=1, type=int)
 parser.add_argument('--version_index', help='', default=0, type=int)
 parser.add_argument('--thread_num', help='', default=1, type=int)
@@ -32,6 +34,7 @@ def main():
     eval_mode = args['eval_mode']
     version_index = args['version_index']
     thread_num = args['thread_num']
+    patient_llm_name = args['patient_llm_name']
     assert eval_mode == 0 or eval_mode == 1
     eval_mode = True if eval_mode == 1 else False
     assert isinstance(version_index, int)
@@ -65,7 +68,7 @@ def main():
         setting_dict = dict()
         for flag_1, id_list in zip(('confirmed', 'excluded'), (test_positive_list, test_negative_list)):
             for unified_id in id_list:
-                patient = PatientSimulator('gpt_4_turbo')
+                patient = PatientSimulator(patient_llm_name)
                 setting_key = str('-'.join([flag_1, unified_id, model_type]))
                 if model_type == 'pure_gpt':
                     assert version_index == 0
