@@ -1,26 +1,25 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from diagnosis_env import PatientEnvironment
-from read_data import read_data_primary_diagnosis, read_data_full_diagnosis
+from read_data import read_data_full_diagnosis
+from screen_config import (structured_data_folder, model_save_folder, default_mode, default_model_id, \
+    default_model_name, default_n_envs, default_action_num, default_symptom_num, default_first_level, \
+    default_value_weight, default_entropy_weight, default_value_net_length, default_learning_rate,
+                           default_update_per_step)
 import argparse
 from logger import logger
 from stable_baselines3 import PPO, A2C, DQN
 import torch as th
 from util import make_vec_env, LinearSchedule
-from eval import DiagnosisDiagnosisEvalCallback
+from eval import DiagnosisFullDiagnosisEvalCallback
 from policy_model import SymptomInquireActorCriticPolicy
-from screen_config import (structured_data_folder, model_save_folder, default_mode, default_model_id, \
-    default_model_name, default_n_envs, default_action_num, default_symptom_num, default_first_level, \
-    default_value_weight, default_entropy_weight, default_value_net_length, default_learning_rate,
-                           default_update_per_step)
 
 
-default_device = 'cuda:1'
-target = 'primary'
+default_device = 'cuda:0'
 parser = argparse.ArgumentParser()
 parser.add_argument('--language', help='', default='chinese', type=str)
-parser.add_argument('--target', help='', default=target, type=str)
 parser.add_argument('--fixed_question', help='', default=1, type=int)
 parser.add_argument('--model_name', help='', default=default_model_name, type=str)
 parser.add_argument('--model_id', help='', default=default_model_id, type=str)
@@ -44,7 +43,6 @@ for key in args:
 
 def main():
     n_envs = args['n_envs']
-    target = args['target']
     init_learning_rate = args['learning_rate']
     first_level = args['first_level']
     episode_max_len = args['episode_max_len']
@@ -56,9 +54,8 @@ def main():
     entropy_weight = args['entropy_weight']
     value_net_length = args['value_net_length']
     language = args['language']
-    assert target == 'primary' or target == 'full'
-    assert args['fixed_question'] == 0 or args['fixed_question'] == 1
     assert language == 'chinese' or language == 'english'
+    assert args['fixed_question'] == 0 or args['fixed_question'] == 1
     assert args['use_text_embedding'] == 1 or args['use_text_embedding'] == 0
     # question true代表使用fixed question answer的embedding，否则使用open ai的全admission信息embedding
     question = True if args['fixed_question'] == 1 else False
@@ -66,19 +63,12 @@ def main():
         embedding_size = 1024
     else:
         embedding_size = 3072
-
-    if target == 'primary':
-        train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
-            read_data_primary_diagnosis(structured_data_folder, minimum_symptom=1, mode=language, question=question,
-                      read_from_cache=True)
-    else:
-        assert target == 'full'
-        train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
-            read_data_full_diagnosis(structured_data_folder, minimum_symptom=1, mode=language, question=question,
-                      read_from_cache=True)
-    logger.info('data read success')
+    train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
+        read_data_full_diagnosis(structured_data_folder, minimum_symptom=1, mode=language, question=question,
+                  read_from_cache=True)
     symptom_dim = len(train_dataset.symptom[0]) // 3
-    diagnosis_dim = len(train_dataset.diagnosis[0])
+    diagnosis_dim = len(diagnosis_index_dict)
+    logger.info('data read success')
 
     envs_kwarg_train = {
         'first_level_symptom_num': first_level,
@@ -190,14 +180,13 @@ def main():
     else:
         raise ValueError('')
     # 2048000约为10个epoch的结果 1024 env, 40 step, 5 batch per epoch, 10 epoch
-    callback_interval = update_per_step * n_envs * 5 * 10
-    classifier_optimize_step = 250
+    callback_interval = 1024
     vec_env_eval_train = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_train)
     vec_env_eval_valid = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_valid)
     vec_env_eval_test = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_test)
-    eval_callback = DiagnosisDiagnosisEvalCallback(
+    eval_callback = DiagnosisFullDiagnosisEvalCallback(
         vec_env_eval_train, vec_env_eval_valid, vec_env_eval_test, model, language, callback_interval, episode_max_len,
-        target, classifier_optimize_step, model_save_folder)
+        model_save_folder)
     logger.info('start training')
     model.learn(
         total_timesteps=callback_interval * 6,

@@ -24,7 +24,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--eval_mode', help='', default=1, type=int)
 parser.add_argument('--init_idx', help='', default=0, type=int)
-parser.add_argument('--data_size', help='', default=301, type=int)
+parser.add_argument('--data_size', help='', default=300, type=int)
 parser.add_argument('--split_num', help='', default=1, type=int)
 
 parser.add_argument('--max_round', help='', default=10, type=int)
@@ -189,7 +189,7 @@ def read_symptom_dict(symptom_folder):
     return symptom_path_dict
 
 
-def read_planner_classifier(planner_path, clf_path, symptom_num=717, embedding_size=3072):
+def read_planner_classifier(planner_path, clf_path, symptom_num=717, embedding_size=1024):
     classifier, symptom_index_dict = pickle.load(open(clf_path, 'rb'))
     info_dict_path = prepared_data_pkl_path.format('1', 'info_dict')
     info_dict = pickle.load(open(info_dict_path, 'rb'))
@@ -400,7 +400,7 @@ class ScreenReviewPureGPTDoctorSimulator:
 class ScreeningExternalPlannerDoctorSimulator(object):
     def __init__(self, classifier, policy_model, diagnosis_dict, diagnosis_index_mapping, symptom_index_dict,
                  index_question_dict, embedding_path_dict, symptom_path_dict, max_round, llm_name, patient_key,
-                 symptom_num=717, embedding_size=3072, primary_symptom_num=28):
+                 symptom_num=717, embedding_size=1024, primary_symptom_num=28):
         self.classifier = classifier
         self.policy_model = policy_model
         self.diagnosis_dict = diagnosis_dict

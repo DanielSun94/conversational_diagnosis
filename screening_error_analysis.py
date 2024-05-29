@@ -35,7 +35,7 @@ def read_oracle_data(folder_path, key_set, minimum_symptom=1, mode='english', re
 
 
 def main():
-    doctor_llm = 'gpt_4o'
+    doctor_llm = 'llama3-70b'
     doctor_type = 'ppo'
     max_round = 10
     folder_path = os.path.join(screen_folder, doctor_llm, doctor_type, str(max_round))

@@ -2,8 +2,6 @@ import copy
 import random
 import numpy as np
 from numpy import int64
-from read_data import read_data
-from screen_config import structured_data_folder
 from gymnasium.spaces import Box, Discrete
 from gymnasium import Env
 
@@ -218,18 +216,18 @@ class PatientEnvironment(Env):
         print('close, current key: {}'.format(self.current_key))
 
 
-def main():
-    first_level = 28
-    train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
-        read_data(structured_data_folder, minimum_symptom=1, read_from_cache=True)
-    symptom_dim = len(train_dataset.symptom[0]) // 3
-    diagnosis_dim = len(train_dataset.diagnosis[0])
-    mode = 'collect'
-    max_step = 20
-    _ = PatientEnvironment(
-        train_dataset, symptom_dim, diagnosis_dim, symptom_index_dict, first_level, max_step,
-        mode, True, True, None
-    )
+# def main():
+#     first_level = 28
+#     train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict = \
+#         read_data_primary_diagnosis(structured_data_folder, minimum_symptom=1, read_from_cache=True)
+#     symptom_dim = len(train_dataset.symptom[0]) // 3
+#     diagnosis_dim = len(train_dataset.diagnosis[0])
+#     mode = 'collect'
+#     max_step = 20
+#     _ = PatientEnvironment(
+#         train_dataset, symptom_dim, diagnosis_dim, symptom_index_dict, first_level, max_step,
+#         mode, True, True, None
+#     )
 
 
 

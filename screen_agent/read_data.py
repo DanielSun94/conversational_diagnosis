@@ -1,13 +1,14 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+from data_preprocess.util import get_icd_mapping_dict, get_mapped_diagnosis_icd
 import csv
 import math
 import pickle
 import random
-from screen_config import (structured_data_folder, prepared_data_pkl_path, reserved_note_path, embedding_folder,
-                    translation_path, data_fraction_path_template)
+from screen_config import (structured_data_folder, prepared_data_pkl_path, reserved_note_path,
+                           open_ai_admission_embedding_folder, question_embedding_folder,
+                           translation_path, data_fraction_path_template, full_diagnosis_group_path)
 from logger import logger
 from itertools import islice
 import numpy as np
@@ -17,14 +18,15 @@ from torch.utils.data import Dataset
 
 
 def main():
-    mode = 'english'
+    mode = 'chinese'
     data_folder = structured_data_folder
-    read_data(data_folder, 1, mode, True)
-    print('success')
+    read_data_full_diagnosis(data_folder, 1, mode, True, True)
+    # read_data_primary_diagnosis(data_folder, 1, mode, True, True)
+    logger.info('success')
 
 
-def read_data(data_folder, minimum_symptom, mode, read_from_cache):
-    dump = get_data(data_folder, minimum_symptom, read_from_cache)
+def read_data_full_diagnosis(data_folder, minimum_symptom, mode, question, read_from_cache):
+    dump = get_symptom_full_diagnosis(data_folder, minimum_symptom, question, read_from_cache)
     split_data = data_split(dump, mode)
     (train_key, valid_key, test_key), (train_symptom, valid_symptom, test_symptom), \
         (train_diag, valid_diag, test_diag), (train_embedding, valid_embedding, test_embedding),_ = split_data
@@ -36,10 +38,23 @@ def read_data(data_folder, minimum_symptom, mode, read_from_cache):
     return train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict
 
 
-def data_split(dump, mode, random_split_code=715):
+def read_data_primary_diagnosis(data_folder, minimum_symptom, mode, question, read_from_cache):
+    dump = get_symptom_primary_diagnosis(data_folder, minimum_symptom, question, read_from_cache)
+    split_data = data_split(dump, mode)
+    (train_key, valid_key, test_key), (train_symptom, valid_symptom, test_symptom), \
+        (train_diag, valid_diag, test_diag), (train_embedding, valid_embedding, test_embedding),_ = split_data
+    train_dataset = DiagnosisDataset(train_key, train_symptom, train_diag, train_embedding)
+    valid_dataset = DiagnosisDataset(valid_key, valid_symptom, valid_diag, valid_embedding)
+    test_dataset = DiagnosisDataset(test_key, test_symptom, test_diag, test_embedding)
+    diagnosis_index_dict = dump['diagnosis_group_index_dict']
+    symptom_index_dict = dump['symptom_index_dict']
+    return train_dataset, valid_dataset, test_dataset, diagnosis_index_dict, symptom_index_dict
+
+
+def data_split(dump, mode, read_from_cache=True, random_split_code=1994):
     split_ratio = [0.7, 0.05, 0.25]
     path = data_fraction_path_template.format(random_split_code, split_ratio[0], split_ratio[1], split_ratio[2])
-    if os.path.exists(path):
+    if os.path.exists(path) and read_from_cache:
         list_dict = pickle.load(open(path, 'rb'))
         train_key_list = list_dict['train_key_list']
         valid_key_list = list_dict['valid_key_list']
@@ -62,26 +77,39 @@ def data_split(dump, mode, random_split_code=715):
 
     train_symptom, train_diag, valid_symptom, valid_diag, test_symptom, test_diag = [], [], [], [], [], []
     train_embedding, valid_embedding, test_embedding = [], [], []
+    exist_train_key_list, exist_valid_key_list, exist_test_key_list = [], [], []
     fused_data = dump['fused_data']
-    for key in train_key_list:
-        train_symptom.append(fused_data[key]['symptom'])
-        train_diag.append(fused_data[key]['diagnosis'])
-        train_embedding.append(fused_data[key]['{}_text_embedding'.format(mode)])
-    for key in valid_key_list:
-        valid_symptom.append(fused_data[key]['symptom'])
-        valid_diag.append(fused_data[key]['diagnosis'])
-        valid_embedding.append(fused_data[key]['{}_text_embedding'.format(mode)])
-    for key in test_key_list:
-        test_symptom.append(fused_data[key]['symptom'])
-        test_diag.append(fused_data[key]['diagnosis'])
-        test_embedding.append(fused_data[key]['{}_text_embedding'.format(mode)])
-    return [train_key_list, valid_key_list, test_key_list], \
+    failed_match_count = 0
+    for key_list, exist_key_list, symptom_list, diagnosis_list, embedding_list in zip(
+            (train_key_list, valid_key_list, test_key_list),
+            (exist_train_key_list, exist_valid_key_list, exist_test_key_list),
+            (train_symptom, valid_symptom, test_symptom),
+            (train_diag, valid_diag, test_diag),
+            (train_embedding, valid_embedding, test_embedding)
+    ):
+        for key in key_list:
+            if key in fused_data:
+                exist_key_list.append(key)
+                symptom_list.append(fused_data[key]['symptom'])
+                diagnosis_list.append(fused_data[key]['diagnosis'])
+                embedding_list.append(fused_data[key]['{}_text_embedding'.format(mode)])
+            else:
+                failed_match_count += 1
+                logger.info('key not exist')
+    logger.info('failed match count: {}'.format(failed_match_count))
+    logger.info('train size: {}, valid size: {}, test size: {}'
+                .format(len(train_diag), len(valid_diag),  len(test_diag)))
+    return [exist_train_key_list, exist_valid_key_list, exist_test_key_list], \
         [train_symptom, valid_symptom, test_symptom], \
         [train_diag, valid_diag, test_diag], \
         [train_embedding, valid_embedding, test_embedding], dump
 
 
-def read_embedding(path):
+def read_embedding(question):
+    if question:
+        path = question_embedding_folder
+    else:
+        path = open_ai_admission_embedding_folder
     embedding_dict = dict()
     folder_list = os.listdir(path)
     for folder in folder_list:
@@ -94,9 +122,59 @@ def read_embedding(path):
     return embedding_dict
 
 
-def get_data(data_folder, minimum_symptom, read_from_cache):
-    fused_data_path = prepared_data_pkl_path.format(minimum_symptom, 'fused_data')
-    info_dict_path = prepared_data_pkl_path.format(minimum_symptom, 'info_dict')
+def get_symptom_full_diagnosis(data_folder, minimum_symptom, question, read_from_cache):
+    fused_data_path = prepared_data_pkl_path.format(minimum_symptom, '{}_full_diagnosis_fused_data'.format(question))
+    info_dict_path = prepared_data_pkl_path.format(minimum_symptom, '{}_full_diagnosis_info_dict'.format(question))
+    if read_from_cache and os.path.exists(fused_data_path):
+        fused_data_dict = pickle.load(open(fused_data_path, 'rb'))
+        info_dict = pickle.load(open(info_dict_path, 'rb'))
+        logger.info('read from cache')
+    else:
+        logger.info('data generation')
+        file_path_list = get_file_path_list(data_folder)
+        symptom_dict = get_symptom_index_name_dict(file_path_list[0])
+        diagnosis_structured_dict, diagnosis_group_dict, group_index_dict = get_structured_diagnosis_v2(code_num=3)
+        # chinese_diagnosis_group_index_dict, chinese_symptom_index_dict, diagnosis_mapping, symptom_mapping = \
+        #     data_translate(group_index_dict, symptom_dict, True)
+
+        embedding_dict = read_embedding(question)
+        structured_symptom_dict = get_structured_symptom(file_path_list, symptom_dict, minimum_symptom)
+        fused_data_dict = dict()
+        for key in structured_symptom_dict:
+            if key not in embedding_dict or key not in diagnosis_group_dict:
+                continue
+            fused_data_dict[key] = {
+                'symptom': structured_symptom_dict[key],
+                'diagnosis': diagnosis_structured_dict[key],
+                'chinese_text_embedding': embedding_dict[key]['chinese'],
+                'english_text_embedding': embedding_dict[key]['english']
+            }
+
+        info_dict = {
+            'diagnosis_group_dict': diagnosis_group_dict,
+            'diagnosis_group_index_dict': group_index_dict,
+            'symptom_index_dict': symptom_dict,
+            # 'chinese_diagnosis_group_index_dict': chinese_diagnosis_group_index_dict,
+            # 'chinese_symptom_index_dict': chinese_symptom_index_dict,
+            # 'diagnosis_mapping': diagnosis_mapping,
+            # 'symptom_mapping': symptom_mapping
+        }
+        pickle.dump(fused_data_dict, open(fused_data_path, 'wb'))
+        pickle.dump(info_dict, open(info_dict_path, 'wb'))
+    logger.info('full data size: {}'.format(len(fused_data_dict)))
+
+    dump = {
+        'fused_data': fused_data_dict,
+        'diagnosis_group_dict': info_dict['diagnosis_group_dict'],
+        'diagnosis_group_index_dict': info_dict['diagnosis_group_index_dict'],
+        'symptom_index_dict': info_dict['symptom_index_dict']
+    }
+    return dump
+
+
+def get_symptom_primary_diagnosis(data_folder, minimum_symptom, question, read_from_cache):
+    fused_data_path = prepared_data_pkl_path.format(minimum_symptom, '{}_primary_diagnosis_fused_data'.format(question))
+    info_dict_path = prepared_data_pkl_path.format(minimum_symptom, '{}_primary_diagnosis_dict'.format(question))
 
     if read_from_cache and os.path.exists(fused_data_path):
         fused_data_dict = pickle.load(open(fused_data_path, 'rb'))
@@ -104,14 +182,16 @@ def get_data(data_folder, minimum_symptom, read_from_cache):
         logger.info('read from cache')
     else:
         logger.info('data generation')
-        diagnosis_structured_dict, diagnosis_group_dict, group_index_dict = \
-            get_structured_diagnosis(reserved_note_path)
-        embedding_dict = read_embedding(embedding_folder)
+        embedding_dict = read_embedding(question)
+
         file_path_list = get_file_path_list(data_folder)
         symptom_dict = get_symptom_index_name_dict(file_path_list[0])
-        chinese_diagnosis_group_index_dict, chinese_symptom_index_dict, diagnosis_mapping, symptom_mapping = \
-            data_translate(group_index_dict, symptom_dict, True)
         structured_symptom_dict = get_structured_symptom(file_path_list, symptom_dict, minimum_symptom)
+
+        diagnosis_structured_dict, diagnosis_group_dict, group_index_dict = \
+            get_structured_diagnosis_v1(reserved_note_path)
+        # chinese_diagnosis_group_index_dict, chinese_symptom_index_dict, diagnosis_mapping, symptom_mapping = \
+        #     data_translate(group_index_dict, symptom_dict, True)
 
         fused_data_dict = dict()
         for key in structured_symptom_dict:
@@ -128,10 +208,10 @@ def get_data(data_folder, minimum_symptom, read_from_cache):
             'diagnosis_group_dict': diagnosis_group_dict,
             'diagnosis_group_index_dict': group_index_dict,
             'symptom_index_dict': symptom_dict,
-            'chinese_diagnosis_group_index_dict': chinese_diagnosis_group_index_dict,
-            'chinese_symptom_index_dict': chinese_symptom_index_dict,
-            'diagnosis_mapping': diagnosis_mapping,
-            'symptom_mapping': symptom_mapping
+            # # 'chinese_diagnosis_group_index_dict': chinese_diagnosis_group_index_dict,
+            # # 'chinese_symptom_index_dict': chinese_symptom_index_dict,
+            # 'diagnosis_mapping': diagnosis_mapping,
+            # 'symptom_mapping': symptom_mapping
         }
         pickle.dump(fused_data_dict, open(fused_data_path, 'wb'))
         pickle.dump(info_dict, open(info_dict_path, 'wb'))
@@ -196,7 +276,67 @@ def data_translate(diagnosis_group_index_dict, symptom_index_dict, read_from_cac
     return chinese_diagnosis_group_index_dict, chinese_symptom_index_dict, diagnosis_mapping, symptom_mapping
 
 
-def get_structured_diagnosis(emr_path):
+def get_structured_diagnosis_v2(max_seq_num=5, code_num=3):
+    """
+    将ICD-9映射为ICD-10后处理，考虑所有疾病诊断
+    """
+    diagnosis_group_dict, code_index_dict, group_index_dict = dict(), dict(), dict()
+    icd_dict = get_icd_mapping_dict()
+    diagnosis_dict = get_mapped_diagnosis_icd(icd_dict)
+
+    icd_unified_dict = dict()
+    with open(full_diagnosis_group_path, 'r', encoding='utf-8-sig') as f:
+        csv_reader = csv.reader(f)
+        for line in islice(csv_reader, 1, None):
+            icd_code, _, delete, english, english_group, chinese, chinese_group = line[:7]
+            if delete.lower() == 'true':
+                continue
+            if chinese_group not in group_index_dict:
+                group_index_dict[chinese_group] = len(group_index_dict)
+            if icd_code not in code_index_dict:
+                code_index_dict[icd_code] = group_index_dict[chinese_group]
+            icd_unified_dict[icd_code] = [english, english_group, chinese, chinese_group]
+
+    for patient_id in diagnosis_dict:
+        for visit_id in diagnosis_dict[patient_id]:
+            unified_id = patient_id + "-" + visit_id
+            diagnosis_group_dict[unified_id] = dict()
+            for seq_num in diagnosis_dict[patient_id][visit_id]:
+                icd_code = diagnosis_dict[patient_id][visit_id][seq_num]
+                icd_code_abbr = icd_code[: code_num].lower()
+                if icd_code_abbr not in icd_unified_dict:
+                    continue
+                group_index = code_index_dict[icd_code_abbr]
+                if icd_code not in diagnosis_group_dict[unified_id]:
+                    diagnosis_group_dict[unified_id][icd_code_abbr] = group_index, int(seq_num)
+                else:
+                    previous_seq_num = diagnosis_group_dict[unified_id][icd_code]
+                    if previous_seq_num > int(seq_num):
+                        diagnosis_group_dict[unified_id][icd_code_abbr] = group_index, int(seq_num)
+
+    group_index_list = [[key, group_index_dict[key]] for key in group_index_dict]
+    group_index_list = sorted(group_index_list, key=lambda x: x[0])
+    for i, item in enumerate(group_index_list):
+        logger.info(item + [str(i + 1)])
+
+    # 只考虑前10，前十rank之后的直接丢弃。用等差数列进行评分；为了使评分主要在softmax的梯度区间，取-4到5的值
+    diagnosis_structured_dict = dict()
+    for unified_id in diagnosis_group_dict:
+        diagnosis_structured = np.zeros(len(group_index_dict))
+        for icd_code in diagnosis_group_dict[unified_id]:
+            group_index, seq_num = diagnosis_group_dict[unified_id][icd_code]
+            if seq_num > max_seq_num:
+                continue
+            diagnosis_structured[group_index] = 1
+        diagnosis_structured_dict[unified_id] = diagnosis_structured
+    return diagnosis_structured_dict, diagnosis_group_dict, group_index_dict
+
+
+
+def get_structured_diagnosis_v1(emr_path):
+    """
+    即一开始的版本，ICD-9和ICD-10分开处理，只考虑primary diagnosis
+    """
     diagnosis_group_dict, group_index_dict = dict(), dict()
     with open(emr_path, 'r', encoding='utf-8-sig', newline='') as f:
         csv_reader = csv.reader(f)
@@ -218,7 +358,7 @@ def get_structured_diagnosis(emr_path):
     group_index_list = [[key, group_index_dict[key]] for key in group_index_dict]
     group_index_list = sorted(group_index_list, key=lambda x: x[0])
     for i, item in enumerate(group_index_list):
-        print(item + [str(i+1)])
+        logger.info(item + [str(i+1)])
     return diagnosis_structured_dict, diagnosis_group_dict, group_index_dict
 
 
@@ -261,8 +401,8 @@ def get_structured_symptom(file_path_list, symptom_dict, minimum_symptom):
             if positive_symptom_count >= minimum_symptom:
                 data_dict[visit_key] = sample_data
                 reserve_symptom_count += positive_symptom_count
-    print('avg symptom per visit: {}'.format(total_symptom_count/len(file_path_list)))
-    print('avg reserve symptom per visit: {}'.format(reserve_symptom_count / len(data_dict)))
+    logger.info('avg symptom per visit: {}'.format(total_symptom_count/len(file_path_list)))
+    logger.info('avg reserve symptom per visit: {}'.format(reserve_symptom_count / len(data_dict)))
     return data_dict
 
 
