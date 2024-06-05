@@ -20,7 +20,7 @@ from torch.utils.data import Dataset
 def main():
     mode = 'chinese'
     data_folder = structured_data_folder
-    read_data_full_diagnosis(data_folder, 1, mode, True, True)
+    read_data_full_diagnosis(data_folder, 1, mode, True, False)
     # read_data_primary_diagnosis(data_folder, 1, mode, True, True)
     logger.info('success')
 
@@ -280,7 +280,7 @@ def get_structured_diagnosis_v2(max_seq_num=5, code_num=3):
     """
     将ICD-9映射为ICD-10后处理，考虑所有疾病诊断
     """
-    diagnosis_group_dict, code_index_dict, group_index_dict = dict(), dict(), dict()
+    diagnosis_group_dict, code_index_dict, group_index_dict, index_group_dict = dict(), dict(), dict(), dict()
     icd_dict = get_icd_mapping_dict()
     diagnosis_dict = get_mapped_diagnosis_icd(icd_dict)
 
@@ -292,7 +292,9 @@ def get_structured_diagnosis_v2(max_seq_num=5, code_num=3):
             if delete.lower() == 'true':
                 continue
             if chinese_group not in group_index_dict:
-                group_index_dict[chinese_group] = len(group_index_dict)
+                index = len(group_index_dict)
+                group_index_dict[chinese_group] = index
+                index_group_dict[index] = chinese_group
             if icd_code not in code_index_dict:
                 code_index_dict[icd_code] = group_index_dict[chinese_group]
             icd_unified_dict[icd_code] = [english, english_group, chinese, chinese_group]
@@ -321,14 +323,30 @@ def get_structured_diagnosis_v2(max_seq_num=5, code_num=3):
 
     # 只考虑前10，前十rank之后的直接丢弃。用等差数列进行评分；为了使评分主要在softmax的梯度区间，取-4到5的值
     diagnosis_structured_dict = dict()
+    diagnosis_count_dict = dict()
     for unified_id in diagnosis_group_dict:
         diagnosis_structured = np.zeros(len(group_index_dict))
         for icd_code in diagnosis_group_dict[unified_id]:
             group_index, seq_num = diagnosis_group_dict[unified_id][icd_code]
+
             if seq_num > max_seq_num:
                 continue
+
+            if group_index not in diagnosis_count_dict:
+                diagnosis_count_dict[group_index] = [0, index_group_dict[group_index], group_index]
+            diagnosis_count_dict[group_index][0] += 1
+
             diagnosis_structured[group_index] = 1
         diagnosis_structured_dict[unified_id] = diagnosis_structured
+
+    result_list = []
+    for icd_code in diagnosis_count_dict:
+        count, chinese_group, group_index = diagnosis_count_dict[icd_code]
+        result_list.append([group_index, icd_code, chinese_group, count])
+    result_list = sorted(result_list, key=lambda x: x[3])
+    for item in result_list:
+        group_index, icd_code, chinese_group, count = item
+        logger.info('{}, {}, {}, {}'.format(group_index, icd_code, chinese_group, count))
     return diagnosis_structured_dict, diagnosis_group_dict, group_index_dict
 
 

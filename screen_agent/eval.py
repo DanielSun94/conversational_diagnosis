@@ -180,7 +180,7 @@ def symptom_hit_eval(result, first_level_action, step_num, obs_dim):
 
 class DiagnosisDiagnosisEvalCallback(BaseCallback):
     def __init__(self, envs_train, envs_valid, envs_test, model, language, eval_per_step, episode_max_len, target,
-                 classifier_optimize_step, save_path, verbose: int = 0):
+                 use_text_embedding, classifier_optimize_step, save_path, verbose: int = 0):
         super().__init__(verbose)
         self.eval_model = model
         self.eval_envs_train = envs_train
@@ -190,6 +190,7 @@ class DiagnosisDiagnosisEvalCallback(BaseCallback):
         self.eval_envs_test = envs_test
         self.eval_per_step = eval_per_step
         self.save_path = save_path
+        self.use_text_embedding = use_text_embedding
         self.language = language
         self.episode_max_len = episode_max_len
 
@@ -234,10 +235,12 @@ class DiagnosisDiagnosisEvalCallback(BaseCallback):
     def model_save(self, clf, current_step):
         model = self.model
         now = datetime.now().strftime('%Y%m%d%H%M%S')
-        policy_path = ('model_{}_{}_{}_{}_{}_policy.pth'
-                       .format(self.language, self.episode_max_len, current_step, self.target, now))
-        other_path = ('model_{}_{}_{}_{}_{}_clf_dict.pkl'
-                      .format(self.language, self.episode_max_len, current_step, self.target, now))
+        policy_path = ('model_{}_{}_{}_{}_{}_{}_policy.pth'
+                       .format(self.language, self.episode_max_len, current_step, self.target,
+                               self.use_text_embedding, now))
+        other_path = ('model_{}_{}_{}_{}_{}_{}_clf_dict.pkl'
+                      .format(self.language, self.episode_max_len, current_step, self.target,
+                              self.use_text_embedding, now))
         policy_path = os.path.join(self.save_path, policy_path)
         other_path = os.path.join(self.save_path, other_path)
         torch.save(model.policy.state_dict(), policy_path)
@@ -250,7 +253,7 @@ class DiagnosisDiagnosisEvalCallback(BaseCallback):
         )
 
     def _on_training_start(self) -> None:
-        clf = self.performance_eval(0, self.classifier_optimize_step)
+        clf = self.performance_eval(0, 10)
         self.model_save(clf, 0)
 
     def _on_rollout_start(self) -> None:
@@ -321,23 +324,24 @@ def disease_predict_eval(result, disease_num, epoch_num, clf_iter_num, obs_dim, 
                                 .format(epoch_num, i + 1, top_k, train_top_k_hit, top_k, test_top_k_hit))
                 logger.info('\n')
     else:
-        assert target == 'full'
-        clf.fit(train_obs, diagnosis_list_train)
-        train_diagnosis_prob = clf.predict_proba(train_obs)
-        test_diagnosis_prob = clf.predict_proba(test_obs)
+        if clf_iter_num > 0:
+            assert target == 'full'
+            clf.fit(train_obs, diagnosis_list_train)
+            train_diagnosis_prob = clf.predict_proba(train_obs)
+            test_diagnosis_prob = clf.predict_proba(test_obs)
 
-        average_train_label = np.sum(diagnosis_list_train) / len(diagnosis_list_train)
-        average_test_label = np.sum(diagnosis_list_test) / len(diagnosis_list_test)
-        logger.info('average train label: {:4f}, average test label: {:4f}'
-                    .format(average_train_label, average_test_label))
-        for top_k in [1, 3, 5, 10, 20, 30, 50]:
-            test_top_k_hit = primary_full_calculate(diagnosis_list_test, test_diagnosis_prob, top_k, disease_num)
-            train_top_k_hit = primary_full_calculate(diagnosis_list_train, train_diagnosis_prob, top_k,
-                                                    disease_num)
-            logger.info('step num: {:10d}, iter: {:4d}, train top {:2d} hit: {:5f},'
-                        ' test top {:2d} hit: {:5f}'
-                        .format(epoch_num, clf_iter_num, top_k, train_top_k_hit, top_k, test_top_k_hit))
-        logger.info('\n')
+            average_train_label = np.sum(diagnosis_list_train) / len(diagnosis_list_train)
+            average_test_label = np.sum(diagnosis_list_test) / len(diagnosis_list_test)
+            logger.info('average train label: {:4f}, average test label: {:4f}'
+                        .format(average_train_label, average_test_label))
+            for top_k in [1, 3, 5, 10, 20, 30, 50]:
+                test_top_k_hit = primary_full_calculate(diagnosis_list_test, test_diagnosis_prob, top_k, disease_num)
+                train_top_k_hit = primary_full_calculate(diagnosis_list_train, train_diagnosis_prob, top_k,
+                                                         disease_num)
+                logger.info('step num: {:10d}, iter: {:4d}, train top {:2d} hit: {:5f},'
+                            ' test top {:2d} hit: {:5f}'
+                            .format(epoch_num, clf_iter_num, top_k, train_top_k_hit, top_k, test_top_k_hit))
+            logger.info('\n')
     return clf
 
 

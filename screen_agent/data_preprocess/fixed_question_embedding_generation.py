@@ -6,12 +6,10 @@ import random
 from transformers import AutoTokenizer, AutoModel
 import torch
 import json
-from screen_agent.screen_config import (fixed_question_answer_folder, question_embedding_folder,
-                                        fixed_question_answer_embedding_zh_path)
+from screen_agent.screen_config import (fixed_question_answer_folder, question_embedding_folder)
 
 
 device = 'cuda:0'
-
 
 
 def read_id_order_seq(path, random_seed=715):
@@ -52,15 +50,16 @@ def read_data(general_folder):
 def reorganize_data(data_dict):
     data_list = []
     for key in data_dict:
+        # 只放既往史是因为数据里只有既往史是可用的
         try:
             en_data = data_dict[key]['en']
-            en_text = 'Basic Information: {}.\nPast Medical History: {}.\nFamily History: {}.\n'.format(
-                en_data['basic_information'], en_data['past_medical_history'], en_data['family_history']
+            en_text = 'Past Medical History: {}.'.format(en_data['past_medical_history']
             )
             zh_data = data_dict[key]['zh']
-            zh_text = '基本信息：{}.\n既往史：{}.\n家族史：{}.\n'.format(
-                zh_data['基本信息'], zh_data['既往史'], zh_data['家族史']
-            )
+            # zh_text = '基本信息：{}.\n既往史：{}.\n家族史：{}.\n'.format(
+            #     zh_data['基本信息'], zh_data['既往史'], zh_data['家族史']
+            # )
+            zh_text = '既往史：{}。'.format(zh_data['既往史'])
             data_list.append([key, en_text, zh_text])
         except Exception as e:
             print('key error: {}, {}'.format(key, data_dict[key]))
@@ -107,9 +106,7 @@ def generate_embedding(data_list):
 def main():
     data_dict = read_data(fixed_question_answer_folder)
     data_list = reorganize_data(data_dict)
-    # en_embedding_dict, zh_embedding_dict = generate_embedding(data_list)
-    # pickle.dump(en_embedding_dict, open(fixed_question_answer_embedding_en_path, 'wb'))
-    # pickle.dump(zh_embedding_dict, open(fixed_question_answer_embedding_zh_path, 'wb'))
+    en_embedding_dict, zh_embedding_dict = generate_embedding(data_list)
 
 
 if __name__ == '__main__':

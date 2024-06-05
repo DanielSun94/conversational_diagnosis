@@ -17,7 +17,14 @@ from screen_config import (structured_data_folder, model_save_folder, default_mo
 
 
 default_device = 'cuda:1'
-target = 'primary'
+target = 'full'
+use_embedding = 0
+episode_max_len = 10
+if target == 'primary':
+    classifier_optimize_step = 250
+else:
+    assert target == 'full'
+    classifier_optimize_step = 1000
 parser = argparse.ArgumentParser()
 parser.add_argument('--language', help='', default='chinese', type=str)
 parser.add_argument('--target', help='', default=target, type=str)
@@ -30,12 +37,12 @@ parser.add_argument('--learning_rate', help='', default=default_learning_rate, t
 parser.add_argument('--value_weight', help='', default=default_value_weight, type=float)
 parser.add_argument('--entropy_weight', help='', default=default_entropy_weight, type=float)
 parser.add_argument('--n_envs', help='', default=default_n_envs, type=int)
-parser.add_argument('--episode_max_len', help='', default=10, type=int)
+parser.add_argument('--episode_max_len', help='', default=episode_max_len, type=int)
 parser.add_argument('--update_per_step', help='', default=default_update_per_step, type=int)
 parser.add_argument('--symptom_num', help='', default=default_symptom_num, type=int)
 parser.add_argument('--device', help='', default=default_device, type=str)
 parser.add_argument('--mode', help='', default=default_mode, type=str)
-parser.add_argument('--use_text_embedding', help='' , default=1, type=int)
+parser.add_argument('--use_text_embedding', help='' , default=use_embedding, type=int)
 parser.add_argument('--value_net_length', help='', default=default_value_net_length , type=int)
 args = vars(parser.parse_args())
 for key in args:
@@ -191,13 +198,12 @@ def main():
         raise ValueError('')
     # 2048000约为10个epoch的结果 1024 env, 40 step, 5 batch per epoch, 10 epoch
     callback_interval = update_per_step * n_envs * 5 * 10
-    classifier_optimize_step = 250
     vec_env_eval_train = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_train)
     vec_env_eval_valid = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_valid)
     vec_env_eval_test = make_vec_env(PatientEnvironment, n_envs=32, env_kwargs=envs_kwarg_eval_test)
     eval_callback = DiagnosisDiagnosisEvalCallback(
         vec_env_eval_train, vec_env_eval_valid, vec_env_eval_test, model, language, callback_interval, episode_max_len,
-        target, classifier_optimize_step, model_save_folder)
+        target, use_text_embedding, classifier_optimize_step, model_save_folder)
     logger.info('start training')
     model.learn(
         total_timesteps=callback_interval * 6,
